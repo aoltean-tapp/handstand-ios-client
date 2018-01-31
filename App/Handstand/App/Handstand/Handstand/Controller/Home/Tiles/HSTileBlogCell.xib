@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AvenirNext.ttc">
+            <string>AvenirNext-DemiBold</string>
+            <string>AvenirNext-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="322" id="KGk-i7-Jjw" customClass="HSTileBlogCell" customModule="Handstand" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="322"/>
+            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="321.5"/>
+                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ui8-KB-6BC" customClass="HSHomeTileBGView" customModule="Handstand" customModuleProvider="target">
+                        <rect key="frame" x="10" y="10" width="300" height="301.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icMarkerTag" translatesAutoresizingMaskIntoConstraints="NO" id="eZ4-R3-Vbu">
+                                <rect key="frame" x="36.5" y="20" width="14" height="14"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="749" text="Featured Fitness Articles" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fFX-Js-TsR">
+                                <rect key="frame" x="54.5" y="15" width="191.5" height="23.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                                <color key="textColor" red="0.396078431372549" green="0.396078431372549" blue="0.396078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Blog_Post_tilesBG" translatesAutoresizingMaskIntoConstraints="NO" id="LAL-PR-76E" customClass="HOImageViewAligned">
+                                <rect key="frame" x="8" y="53.5" width="284" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="LAL-PR-76E" secondAttribute="height" multiplier="16:9" id="xMg-LP-wpB"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meal Prep, Nutrition Tips and Tricks from Our Trainers" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jYv-f4-sBb">
+                                <rect key="frame" x="15" y="228.5" width="270" height="58"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="16"/>
+                                <color key="textColor" red="0.396078431372549" green="0.396078431372549" blue="0.396078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fFX-Js-TsR" firstAttribute="leading" secondItem="eZ4-R3-Vbu" secondAttribute="trailing" constant="4" id="7zN-sJ-wEJ"/>
+                            <constraint firstItem="fFX-Js-TsR" firstAttribute="top" secondItem="Ui8-KB-6BC" secondAttribute="top" constant="15" id="8dI-nQ-OiR"/>
+                            <constraint firstItem="fFX-Js-TsR" firstAttribute="centerX" secondItem="Ui8-KB-6BC" secondAttribute="centerX" id="THT-ky-F0u"/>
+                            <constraint firstItem="LAL-PR-76E" firstAttribute="top" secondItem="fFX-Js-TsR" secondAttribute="bottom" constant="15" id="erY-zw-44G"/>
+                            <constraint firstAttribute="trailing" secondItem="LAL-PR-76E" secondAttribute="trailing" constant="8" id="f3C-6h-q5t"/>
+                            <constraint firstItem="jYv-f4-sBb" firstAttribute="leading" secondItem="Ui8-KB-6BC" secondAttribute="leading" constant="15" id="gq6-et-set"/>
+                            <constraint firstItem="eZ4-R3-Vbu" firstAttribute="centerY" secondItem="fFX-Js-TsR" secondAttribute="centerY" id="hau-Bl-caU"/>
+                            <constraint firstItem="LAL-PR-76E" firstAttribute="leading" secondItem="Ui8-KB-6BC" secondAttribute="leading" constant="8" id="kQb-JI-rNO"/>
+                            <constraint firstAttribute="trailing" secondItem="jYv-f4-sBb" secondAttribute="trailing" constant="15" id="o9D-jB-6hB"/>
+                            <constraint firstAttribute="bottom" secondItem="jYv-f4-sBb" secondAttribute="bottom" constant="15" id="uGE-6H-i0Y"/>
+                            <constraint firstItem="jYv-f4-sBb" firstAttribute="top" secondItem="LAL-PR-76E" secondAttribute="bottom" constant="15" id="zJq-vk-dZG"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Ui8-KB-6BC" secondAttribute="bottom" constant="10" id="EeR-pB-gw7"/>
+                    <constraint firstItem="Ui8-KB-6BC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="FOp-Sc-1p9"/>
+                    <constraint firstAttribute="trailing" secondItem="Ui8-KB-6BC" secondAttribute="trailing" constant="10" id="IAb-XX-MLP"/>
+                    <constraint firstItem="Ui8-KB-6BC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="r1s-Y0-CzF"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="markerTag" destination="eZ4-R3-Vbu" id="quc-aG-ZgQ"/>
+            </connections>
+            <point key="canvasLocation" x="99" y="-12"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Blog_Post_tilesBG" width="311" height="165"/>
+        <image name="icMarkerTag" width="14" height="14"/>
+    </resources>
+</document>

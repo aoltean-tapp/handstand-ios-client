@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+        <array key="Lato-Semibold.ttf">
+            <string>Lato-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HSPaymentSuccessfulController" customModule="Handstand" customModuleProvider="target">
+            <connections>
+                <outlet property="continueBtn" destination="94f-4n-vcl" id="1Fj-XG-AjZ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="360"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BE3-7d-SG6">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="360"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PAYMENT SUCCESSFUL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1wi-ra-4BR">
+                            <rect key="frame" x="102" y="20" width="171.5" height="18"/>
+                            <fontDescription key="fontDescription" name="Lato-Semibold" family="Lato" pointSize="15"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icPaymentCongratsIcon" translatesAutoresizingMaskIntoConstraints="NO" id="PuJ-zh-XiF">
+                            <rect key="frame" x="148.5" y="82.5" width="77" height="77"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="77" id="EIg-q2-UTc"/>
+                                <constraint firstAttribute="height" constant="77" id="sHQ-37-qGW"/>
+                            </constraints>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wmJ-gT-3yO" customClass="HSGlobalSeparator" customModule="Handstand" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="179.5" width="375" height="1"/>
+                            <color key="backgroundColor" red="0.83921568627450982" green="0.83921568627450982" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="6rT-rG-YOX"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CONGRATS!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ao7-RE-C9u">
+                            <rect key="frame" x="131" y="195.5" width="114" height="24"/>
+                            <fontDescription key="fontDescription" name="Lato-Semibold" family="Lato" pointSize="20"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZvM-H2-WP6">
+                            <rect key="frame" x="15" y="229.5" width="345" height="65.5"/>
+                            <string key="text">You’ve just purchased your first in-person
+training session. Browse the app to find the best trainers near you!</string>
+                            <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="13"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="94f-4n-vcl">
+                            <rect key="frame" x="15" y="305" width="345" height="45"/>
+                            <color key="backgroundColor" red="0.3294117647" green="0.80000000000000004" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="zOQ-El-g42"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Lato-Semibold" family="Lato" pointSize="17"/>
+                            <state key="normal" title="CONTINUE">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="didTapContinue:" destination="-1" eventType="touchUpInside" id="Oqp-K3-Zk3"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="ZvM-H2-WP6" secondAttribute="trailing" constant="15" id="99s-w9-05s"/>
+                        <constraint firstAttribute="trailing" secondItem="94f-4n-vcl" secondAttribute="trailing" constant="15" id="DGU-WQ-plD"/>
+                        <constraint firstItem="1wi-ra-4BR" firstAttribute="top" secondItem="BE3-7d-SG6" secondAttribute="top" constant="20" id="F0R-7s-gR9"/>
+                        <constraint firstItem="ZvM-H2-WP6" firstAttribute="leading" secondItem="BE3-7d-SG6" secondAttribute="leading" constant="15" id="RkR-ND-DKm"/>
+                        <constraint firstAttribute="bottom" secondItem="94f-4n-vcl" secondAttribute="bottom" constant="10" id="Tad-vr-oyl"/>
+                        <constraint firstItem="wmJ-gT-3yO" firstAttribute="centerY" secondItem="BE3-7d-SG6" secondAttribute="centerY" id="Ufs-ws-Qo9"/>
+                        <constraint firstItem="wmJ-gT-3yO" firstAttribute="leading" secondItem="BE3-7d-SG6" secondAttribute="leading" id="ahZ-7t-Mz8"/>
+                        <constraint firstItem="wmJ-gT-3yO" firstAttribute="top" secondItem="PuJ-zh-XiF" secondAttribute="bottom" constant="20" id="dBm-g8-Af6"/>
+                        <constraint firstItem="1wi-ra-4BR" firstAttribute="centerX" secondItem="BE3-7d-SG6" secondAttribute="centerX" id="emO-yj-5TT"/>
+                        <constraint firstItem="PuJ-zh-XiF" firstAttribute="top" relation="lessThanOrEqual" secondItem="1wi-ra-4BR" secondAttribute="bottom" constant="44.5" id="fOx-ek-D9f"/>
+                        <constraint firstItem="ZvM-H2-WP6" firstAttribute="top" secondItem="Ao7-RE-C9u" secondAttribute="bottom" constant="10" id="mba-WS-0bN"/>
+                        <constraint firstItem="Ao7-RE-C9u" firstAttribute="top" secondItem="wmJ-gT-3yO" secondAttribute="bottom" constant="15" id="t1X-gF-5VF"/>
+                        <constraint firstItem="Ao7-RE-C9u" firstAttribute="centerX" secondItem="BE3-7d-SG6" secondAttribute="centerX" id="u67-X6-SLb"/>
+                        <constraint firstItem="94f-4n-vcl" firstAttribute="leading" secondItem="BE3-7d-SG6" secondAttribute="leading" constant="15" id="v5z-he-gEK"/>
+                        <constraint firstAttribute="trailing" secondItem="wmJ-gT-3yO" secondAttribute="trailing" id="vG2-yn-G9h"/>
+                        <constraint firstItem="94f-4n-vcl" firstAttribute="top" secondItem="ZvM-H2-WP6" secondAttribute="bottom" constant="10" id="zWm-nA-gax"/>
+                        <constraint firstItem="PuJ-zh-XiF" firstAttribute="centerX" secondItem="BE3-7d-SG6" secondAttribute="centerX" id="zmD-5G-0TM"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="BE3-7d-SG6" secondAttribute="bottom" id="2se-dN-oma"/>
+                <constraint firstItem="BE3-7d-SG6" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="d5J-lM-sIh"/>
+                <constraint firstAttribute="trailing" secondItem="BE3-7d-SG6" secondAttribute="trailing" id="lgZ-Ek-Oa4"/>
+                <constraint firstItem="BE3-7d-SG6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="uGB-s2-nnH"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="33.5" y="54"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icPaymentCongratsIcon" width="77" height="77"/>
+    </resources>
+</document>

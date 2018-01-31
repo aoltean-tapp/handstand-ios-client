@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AvenirNext.ttc">
+            <string>AvenirNext-DemiBold</string>
+            <string>AvenirNext-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="281" id="KGk-i7-Jjw" customClass="HSTileShareCell" customModule="Handstand" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="281"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="281"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="053-OX-fel" customClass="HSHomeTileBGView" customModule="Handstand" customModuleProvider="target">
+                        <rect key="frame" x="10" y="10" width="300" height="260.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Love Handstand? " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yt4-5c-dLY">
+                                <rect key="frame" x="80" y="15" width="140.5" height="23.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                                <color key="textColor" red="0.396078431372549" green="0.396078431372549" blue="0.396078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Share the health, share the wealth!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LQN-eG-hL6">
+                                <rect key="frame" x="25" y="48.5" width="250.5" height="22"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="16"/>
+                                <color key="textColor" red="0.396078431372549" green="0.396078431372549" blue="0.396078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shareTilesImg" translatesAutoresizingMaskIntoConstraints="NO" id="dXV-K9-g45">
+                                <rect key="frame" x="61" y="90.5" width="178" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="dXV-K9-g45" secondAttribute="height" multiplier="16:9" id="wsu-hY-6dh"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pQi-Pf-T0C">
+                                <rect key="frame" x="50" y="210.5" width="200" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="f2i-zr-a56"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                                <color key="tintColor" red="0.3294117647" green="0.80000000000000004" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Share Handstand" image="icShareIcon">
+                                    <color key="titleColor" red="0.3294117647" green="0.80000000000000004" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Yt4-5c-dLY" firstAttribute="top" secondItem="053-OX-fel" secondAttribute="top" constant="15" id="3CN-ww-DZL"/>
+                            <constraint firstItem="Yt4-5c-dLY" firstAttribute="centerX" secondItem="053-OX-fel" secondAttribute="centerX" id="LR1-lJ-IMc"/>
+                            <constraint firstItem="dXV-K9-g45" firstAttribute="top" secondItem="LQN-eG-hL6" secondAttribute="bottom" constant="20" id="SfC-r6-Jm1"/>
+                            <constraint firstItem="pQi-Pf-T0C" firstAttribute="centerX" secondItem="053-OX-fel" secondAttribute="centerX" id="Wae-rd-QaH"/>
+                            <constraint firstAttribute="bottom" secondItem="pQi-Pf-T0C" secondAttribute="bottom" constant="15" id="ZaQ-Sa-M6W"/>
+                            <constraint firstItem="dXV-K9-g45" firstAttribute="centerX" secondItem="053-OX-fel" secondAttribute="centerX" id="bUv-Fa-9fi"/>
+                            <constraint firstItem="LQN-eG-hL6" firstAttribute="top" secondItem="Yt4-5c-dLY" secondAttribute="bottom" constant="10" id="cY4-XY-uOK"/>
+                            <constraint firstItem="pQi-Pf-T0C" firstAttribute="top" secondItem="dXV-K9-g45" secondAttribute="bottom" constant="20" id="xdp-jf-pE0"/>
+                            <constraint firstItem="LQN-eG-hL6" firstAttribute="centerX" secondItem="053-OX-fel" secondAttribute="centerX" id="xsF-Iw-EYN"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="053-OX-fel" secondAttribute="trailing" constant="10" id="6fF-OK-qQ3"/>
+                    <constraint firstItem="053-OX-fel" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="eGX-LA-Eaz"/>
+                    <constraint firstAttribute="bottom" secondItem="053-OX-fel" secondAttribute="bottom" constant="10" id="nb0-kF-9co"/>
+                    <constraint firstItem="053-OX-fel" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="sCR-JC-Pxl"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="shareButton" destination="pQi-Pf-T0C" id="TKa-5z-Uar"/>
+            </connections>
+            <point key="canvasLocation" x="-15" y="-21.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icShareIcon" width="13" height="19"/>
+        <image name="shareTilesImg" width="52" height="100"/>
+    </resources>
+</document>

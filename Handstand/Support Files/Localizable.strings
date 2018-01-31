@@ -1,0 +1,70 @@
+/* 
+  Localizable.strings
+  Handstand
+
+  Created by Fareeth John on 4/5/17.
+  Copyright © 2017 Handstand. All rights reserved.
+*/
+
+//Signup
+"invalid_firstName_error" = "Please enter First Name";
+"invalid_lastName_error" = "Please enter Last Name";
+"enter_email_error" = "Please enter Email";
+"invalid_email_error" = "Please enter valid Email";
+"invalid_phone_error" = "Please enter valid Phone Number";
+"invalid_password_error" = "Please enter Password";
+"invalid_new_password_error" = "Please enter New Password";
+"invalid_zip_error" = "Please enter valid Zip Code";
+"provide_image_error" = "Please provide profile picture";
+"enter_verify_Code" = "Please enter verification code";
+"password_not_matching" = "Password not matching";
+"terms_Info" = "I am over 18 years of #age and# #agree# to #Handstand's# #<tc>Terms and Conditions#";
+"policy_Info" = "Sign me up for Reebok emails I #agree# #that# #I'm# #at# #least# 13 years old. See our #<pp>Privacy Policy# for details";
+"terms_check_error" = "Please confirm our Terms and Conditions";
+
+//Network
+"internal_error" = "Facing some issue, Please try later";
+"network_error" = "The Internet connection appears to be offline.";
+
+//Filter
+"filter_zip_error" = "Please enter a valid zip code";
+"filter_date_error" = "Please select the date";
+"filter_class_error" = "Please select the workout type";
+"City_ComingSoon" = "Check out our daily video content and we’ll notify you when we launch in-person training in (City)!";
+"No_Trainer" = "No Trainer available";
+
+//Workout
+"no_sms" = "Your device doesn't have capability to send SMS";
+"notes_err" = "Please enter your notes";
+"Abort_booking_title" = "Do you want to abandon this booking?";
+"Abort_booking_message" = "You will lose this booking information";
+"Decline_booking_Request" = "You're declining the trainer's booking request";
+"Decline_booking_Message" = "Please use the re-book button under Past Workouts if you'd like to reschedule";
+"Force_Cancel_Message" = "This session is within 12 hours\nYou will be charged in full.\nDo you want to proceed?";
+"Force_Cancel_Title" = "You will incur a cancellation fee.";
+"Workout_Cancel_Msg" = "";
+"Workout_Cancel_Title" = "Cancel this workout?";
+
+//Promo
+"Promo_Msg" = "Code CODEHERE was applied to your account.";
+"Promo_Err" = "Please enter Promo Code";
+
+//System
+"Force_Update_App_Alert" = "Please update your Handstand app for continue using it";
+"Update_App_Alert" = "Please update your Handstand app for better experience";
+
+//Home
+"share_Text" = "To stay healthy use handstand app!.";
+
+//Subscription-Terms
+"Term_1" = "Handstand offers weekly, monthly, and annual subscriptions.";
+"Term_2" = "You’ll be able to access unlimited stories for the duration of your subscription.";
+"Term_3" = "Account will be charged for renewal with 24-hours prior to the end of the current period for monthly subscriptions will be $9.99/month.";
+"Term_4" = "Account will be charged for renewal with 24-hours prior to the end of the current period for weekly subscriptions will be $3.49/weekly.";
+"Term_5" = "Account will be charged for renewal with 24-hours prior to the end of the current period for yearly subscriptions will be $99/year for yearly subscriptions.";
+"Term_6" = "Payment will be charged to iTunes Account at confirmation of purchase.";
+"Term_7" = "Subscriptions may be managed by the user  and auto-renewal may be turned off by going to the user's Account Settings after purchase.";
+"Term_8" = "Handstand Terms of Use:\n https://www.handstandapp.com/mobile-terms";
+"Term_9" = "Handstand Privacy Policy:\n https://www.handstandapp.com/mobile-privacy";
+"Term_10" = "Any unused portion of a free trial period will be forfeited when the user purchases a subscription where applicable.";
+"Term_11" = "Subscription automatically renews unless auto-renew is turned off at least 24-hours before the end of the current period.";

@@ -1,0 +1,68 @@
+PODS:
+  - AAViewAnimator (0.1.0)
+  - Alamofire (4.5.1)
+  - AppsFlyerFramework (4.8.0)
+  - Crashlytics (3.9.0):
+    - Fabric (~> 1.7.0)
+  - Fabric (1.7.0)
+  - GoogleAnalytics (3.17.0)
+  - GoogleMaps (2.4.0):
+    - GoogleMaps/Maps (= 2.4.0)
+  - GoogleMaps/Base (2.4.0)
+  - GoogleMaps/Maps (2.4.0):
+    - GoogleMaps/Base
+  - GooglePlaces (2.4.0):
+    - GoogleMaps/Base (= 2.4.0)
+  - IQKeyboardManagerSwift (5.0.6)
+  - Kahuna (2.5.9)
+  - Mixpanel-swift (2.2.1)
+  - ReachabilitySwift (3)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
+  - Stripe (11.3.0)
+  - SwiftyJSON (3.1.4)
+  - TestFairy (1.11.0)
+  - TextFieldEffects (1.4.0)
+
+DEPENDENCIES:
+  - AAViewAnimator
+  - Alamofire
+  - AppsFlyerFramework
+  - Crashlytics
+  - Fabric
+  - GoogleAnalytics
+  - GoogleMaps
+  - GooglePlaces
+  - IQKeyboardManagerSwift
+  - Kahuna
+  - Mixpanel-swift
+  - ReachabilitySwift
+  - SDWebImage (~> 3.7)
+  - Stripe
+  - SwiftyJSON
+  - TestFairy
+  - TextFieldEffects
+
+SPEC CHECKSUMS:
+  AAViewAnimator: 9a4ae454bb428ebaed906ec4e6e250150bee790e
+  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  AppsFlyerFramework: 63f725f774e020782f8ba530b75240a2cb73d45c
+  Crashlytics: 64aad5dd97249dd3ff94b979fea140144590cdd3
+  Fabric: e6be012366472553807dada21243c5ab8d904151
+  GoogleAnalytics: f42cc53a87a51fe94334821868d9c8481ff47a7b
+  GoogleMaps: 8436ab5d1c25e36915b2f7416d0c8e3fa2e76c61
+  GooglePlaces: aafe5990fa7951e98e078761bbdaaf236d7e0c65
+  IQKeyboardManagerSwift: 02bfbb0dff71c66d0ab77d80d25dfce0c3717735
+  Kahuna: cb669478bf18fbe0a4c8f542d47e8a9034cb3680
+  Mixpanel-swift: d0374c33e38a7f184203eef1c8eae64be54986ed
+  ReachabilitySwift: f5b9bb30a0777fac8f09ce8b067e32faeb29bb64
+  SDWebImage: '098e97e6176540799c27e804c96653ee0833d13c'
+  Stripe: 3c86dc18af21e59dd559aa15e83cb501248f9903
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+  TestFairy: a8748b702388f6eb002faeed42e8cf438a17d811
+  TextFieldEffects: 4ee41b5216e674d55fb6ac25107bf1af7629176f
+
+PODFILE CHECKSUM: f9ea588c11aa5dc85be8e293819f054bb9f799e1
+
+COCOAPODS: 1.2.1

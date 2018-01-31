@@ -1,0 +1,6 @@
+framework module Pods_HandstandLiveDev {
+  umbrella header "Pods-HandstandLiveDev-umbrella.h"
+
+  export *
+  module * { export * }
+}

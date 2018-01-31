@@ -1,0 +1,53 @@
+//
+//  HSQuiz.swift
+//
+//  Created by Ranjith Kumar on 12/14/17
+//  Copyright (c) Handstand. All rights reserved.
+//
+
+import Foundation
+import SwiftyJSON
+
+public class HSQuiz:NSObject {
+    
+    // MARK: Declaration for string constants to be used to decode and also serialize.
+    private let kHSQuizInternalIdentifierKey: String = "id"
+    private let kHSQuizClientKey: String = "client"
+    
+    // MARK: Properties
+    public var internalIdentifier: Int?
+    public var client: HSQuizClient?
+    public var isSelected:Bool = false
+    
+    // MARK: SwiftyJSON Initalizers
+    /**
+     Initates the instance based on the object
+     - parameter object: The object of either Dictionary or Array kind that was passed.
+     - returns: An initalized instance of the class.
+     */
+    public convenience init(object: Any) {
+        self.init(json: JSON(object))
+    }
+    
+    /**
+     Initates the instance based on the JSON that was passed.
+     - parameter json: JSON object from SwiftyJSON.
+     - returns: An initalized instance of the class.
+     */
+    public init(json: JSON) {
+        internalIdentifier = json[kHSQuizInternalIdentifierKey].int
+        client = HSQuizClient(json: json[kHSQuizClientKey])
+    }
+    
+    /**
+     Generates description of the object in the form of a NSDictionary.
+     - returns: A Key value pair containing all valid values in the object.
+     */
+    public func dictionaryRepresentation() -> [String: Any] {
+        var dictionary: [String: Any] = [:]
+        if let value = internalIdentifier { dictionary[kHSQuizInternalIdentifierKey] = value }
+        if let value = client { dictionary[kHSQuizClientKey] = value.dictionaryRepresentation() }
+        return dictionary
+    }
+    
+}

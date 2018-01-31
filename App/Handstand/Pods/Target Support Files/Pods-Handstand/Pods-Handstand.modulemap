@@ -1,0 +1,6 @@
+framework module Pods_Handstand {
+  umbrella header "Pods-Handstand-umbrella.h"
+
+  export *
+  module * { export * }
+}
