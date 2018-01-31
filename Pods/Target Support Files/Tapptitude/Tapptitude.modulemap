@@ -1,0 +1,6 @@
+framework module Tapptitude {
+  umbrella header "Tapptitude-umbrella.h"
+
+  export *
+  module * { export * }
+}

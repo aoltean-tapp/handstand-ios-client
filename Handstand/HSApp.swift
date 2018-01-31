@@ -15,6 +15,7 @@ import Mixpanel
 import Crashlytics
 import UserNotifications
 import IQKeyboardManagerSwift
+import FacebookCore
 
 class HSApp:NSObject,KahunaDelegate,UNUserNotificationCenterDelegate {
     
@@ -33,7 +34,7 @@ class HSApp:NSObject,KahunaDelegate,UNUserNotificationCenterDelegate {
     }
     public func applicationDidBecomeActive(_ application: UIApplication) {
         AppsFlyerTracker.shared().trackAppLaunch()
-        FBSDKAppEvents.activateApp()
+        AppEventsLogger.activate()
     }
     public func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
         Kahuna.setDeviceToken(deviceToken)

@@ -13,6 +13,7 @@ def shared_pods
     pod 'Stripe'
     pod 'TextFieldEffects'
     pod 'IQKeyboardManagerSwift'
+    pod 'Tapptitude', :path => '.'
 
     #Google
     pod 'GoogleMaps'

@@ -1,6 +1,7 @@
 import UIKit
 import Mixpanel
 import Crashlytics
+import FacebookCore
 
 enum eAnalyticsType: Int {
     case googleAnalytics = 1
@@ -70,10 +71,10 @@ struct HSAnalytics {
                 break
             case .facebook:
                 if let theLabel = data?.value(forKey: kAELabel) as? String {
-                    FBSDKAppEvents.logEvent(logString, parameters: [kAELabel : theLabel])
+                    AppEventsLogger.log(logString, parameters: [.custom(kAELabel): theLabel])
                 }
                 else{
-                    FBSDKAppEvents.logEvent(logString)
+                    AppEventsLogger.log(logString)
                 }
                 break
             case .googleAnalyticsEvent:
