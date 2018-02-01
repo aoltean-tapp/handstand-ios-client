@@ -49,7 +49,7 @@ class HSSignupInfoCell: UITableViewCell,CellConfigurer {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        setPrefilledInputs()
+//        setPrefilledInputs()
     }
     
     //MARK:- Private functions

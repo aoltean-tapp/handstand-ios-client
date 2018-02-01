@@ -60,7 +60,7 @@ class HSPaymentDetailsController: HSBaseController,UITextFieldDelegate {
     //MARK: - Overriden functions
     override func viewDidLoad() {
         super.viewDidLoad()
-        setPrefilledInputs()
+//        setPrefilledInputs()
     }
     
     override func didReceiveMemoryWarning() {
