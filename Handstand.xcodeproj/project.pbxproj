@@ -1336,6 +1336,12 @@
 		A5B4252A1F335111006C6EBA /* HSSubscribeTileInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5B425261F335111006C6EBA /* HSSubscribeTileInfoCell.xib */; };
 		A5B4252B1F335111006C6EBA /* HSSubscribeTileInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5B425261F335111006C6EBA /* HSSubscribeTileInfoCell.xib */; };
 		A5B4252C1F335111006C6EBA /* HSSubscribeTileInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5B425261F335111006C6EBA /* HSSubscribeTileInfoCell.xib */; };
+		BB954339202340DF0025C290 /* HSSavedSweatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB954337202340DF0025C290 /* HSSavedSweatViewController.xib */; };
+		BB95433A202340DF0025C290 /* HSSavedSweatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB954337202340DF0025C290 /* HSSavedSweatViewController.xib */; };
+		BB95433B202340DF0025C290 /* HSSavedSweatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB954337202340DF0025C290 /* HSSavedSweatViewController.xib */; };
+		BB95433C202340DF0025C290 /* HSSavedSweatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB954338202340DF0025C290 /* HSSavedSweatViewController.swift */; };
+		BB95433D202340DF0025C290 /* HSSavedSweatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB954338202340DF0025C290 /* HSSavedSweatViewController.swift */; };
+		BB95433E202340DF0025C290 /* HSSavedSweatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB954338202340DF0025C290 /* HSSavedSweatViewController.swift */; };
 		F7F6B892C3F3E30ABE3E61AA /* Pods_HandstandLiveDev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDFE333C1E8803167B903335 /* Pods_HandstandLiveDev.framework */; };
 		FD1F9C5BC7094AC506C7E660 /* Pods_Handstand.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 852B9656D701BE437161A494 /* Pods_Handstand.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 /* End PBXBuildFile section */
@@ -1859,6 +1865,8 @@
 		A5B425211F334A21006C6EBA /* UIColor+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Additions.swift"; sourceTree = "<group>"; };
 		A5B425251F335111006C6EBA /* HSSubscribeTileInfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSSubscribeTileInfoCell.swift; sourceTree = "<group>"; };
 		A5B425261F335111006C6EBA /* HSSubscribeTileInfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HSSubscribeTileInfoCell.xib; sourceTree = "<group>"; };
+		BB954337202340DF0025C290 /* HSSavedSweatViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HSSavedSweatViewController.xib; sourceTree = "<group>"; };
+		BB954338202340DF0025C290 /* HSSavedSweatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSSavedSweatViewController.swift; sourceTree = "<group>"; };
 		DE2DF6567951C71B0CC1A69F /* Pods-HandstandStage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HandstandStage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HandstandStage/Pods-HandstandStage.debug.xcconfig"; sourceTree = "<group>"; };
 		EDFE333C1E8803167B903335 /* Pods_HandstandLiveDev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HandstandLiveDev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEA6EF1A2E7B13C754A850CF /* Pods-HandstandLiveDev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HandstandLiveDev.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HandstandLiveDev/Pods-HandstandLiveDev.debug.xcconfig"; sourceTree = "<group>"; };
@@ -2573,6 +2581,7 @@
 				76C252611ECC47A6002DC7C0 /* Plan & Payment */,
 				76F870661EC491F7004FD5CC /* Subcription */,
 				766D02B21EC1DCFC00C66B54 /* My Workout */,
+				BB954336202340DE0025C290 /* Saved Sweat */,
 				766D02AB1EC1931300C66B54 /* Profile */,
 				7623F0F11EB901A400C245A2 /* Booking */,
 				7623F0E61EB8B7CD00C245A2 /* Workout Plans */,
@@ -3093,6 +3102,15 @@
 			path = Subcription;
 			sourceTree = "<group>";
 		};
+		BB954336202340DE0025C290 /* Saved Sweat */ = {
+			isa = PBXGroup;
+			children = (
+				BB954337202340DF0025C290 /* HSSavedSweatViewController.xib */,
+				BB954338202340DF0025C290 /* HSSavedSweatViewController.swift */,
+			);
+			path = "Saved Sweat";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -3250,6 +3268,7 @@
 				762A32901EE163960043E8D9 /* HSBookingCommentsController.xib in Resources */,
 				07E885801FEA789300B8B408 /* SourceSansPro-ExtraLightIt.otf in Resources */,
 				074E1D321FABFF5000FDEB9D /* HSTileNewTrainerAcceptanceCell.xib in Resources */,
+				BB95433B202340DF0025C290 /* HSSavedSweatViewController.xib in Resources */,
 				07FDED0D1F600BF3004BC833 /* HSMenuViewController.xib in Resources */,
 				070EB3231F3AFB02005821AD /* HSUpdatePasswordConfirmationController.xib in Resources */,
 				762A32911EE163960043E8D9 /* HSPlanNPaymentController.xib in Resources */,
@@ -3518,6 +3537,7 @@
 				76B4A0B21EA799C900CB059E /* HSTrainerListHeaderView.xib in Resources */,
 				76D3BE441E8A505D000DCBCE /* Assets.xcassets in Resources */,
 				07E885681FEA76AB00B8B408 /* SourceSansPro-ExtraLightIt.otf in Resources */,
+				BB954339202340DF0025C290 /* HSSavedSweatViewController.xib in Resources */,
 				07FDED251F600D5A004BC833 /* HSSubscriptionTermsCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -3540,6 +3560,7 @@
 				76E31FAC1ECB138600DD4979 /* HSBookingCommentsController.xib in Resources */,
 				07E885741FEA789300B8B408 /* SourceSansPro-ExtraLightIt.otf in Resources */,
 				074E1D311FABFF5000FDEB9D /* HSTileNewTrainerAcceptanceCell.xib in Resources */,
+				BB95433A202340DF0025C290 /* HSSavedSweatViewController.xib in Resources */,
 				07FDED0C1F600BF2004BC833 /* HSMenuViewController.xib in Resources */,
 				070EB3221F3AFB02005821AD /* HSUpdatePasswordConfirmationController.xib in Resources */,
 				76C252671ECC4852002DC7C0 /* HSPlanNPaymentController.xib in Resources */,
@@ -4067,6 +4088,7 @@
 				07FDED301F600D5F004BC833 /* HSSubscriptionTermsCell.swift in Sources */,
 				762A32F01EE55C8A0043E8D9 /* ISRefreshControl.m in Sources */,
 				762A31D11EE163960043E8D9 /* ConstraintViewDSL.swift in Sources */,
+				BB95433E202340DF0025C290 /* HSSavedSweatViewController.swift in Sources */,
 				762A31D21EE163960043E8D9 /* HSHomeComingSoonView.swift in Sources */,
 				762A31D31EE163960043E8D9 /* NVActivityIndicatorAnimationBallClipRotate.swift in Sources */,
 				072AE00B1FA58E3A008EA126 /* UIImageView+ImageLoader.swift in Sources */,
@@ -4371,6 +4393,7 @@
 				76ECF2EA1E8DA2EE0094C2C8 /* ConstraintViewDSL.swift in Sources */,
 				76B4A0AC1EA740BE00CB059E /* HSHomeComingSoonView.swift in Sources */,
 				76ECF2A71E8DA2EE0094C2C8 /* NVActivityIndicatorAnimationBallClipRotate.swift in Sources */,
+				BB95433C202340DF0025C290 /* HSSavedSweatViewController.swift in Sources */,
 				76F8705D1EC4789D004FD5CC /* HSBookingCommentsController.swift in Sources */,
 				072AE0091FA58E3A008EA126 /* UIImageView+ImageLoader.swift in Sources */,
 				072A5F241F97541C00FE2FD9 /* HSApp.swift in Sources */,
@@ -4675,6 +4698,7 @@
 				07FDED2A1F600D5F004BC833 /* HSSubscriptionTermsCell.swift in Sources */,
 				762A32EF1EE55C8A0043E8D9 /* ISRefreshControl.m in Sources */,
 				76E31EFA1ECB138600DD4979 /* ConstraintViewDSL.swift in Sources */,
+				BB95433D202340DF0025C290 /* HSSavedSweatViewController.swift in Sources */,
 				76E31EFB1ECB138600DD4979 /* HSHomeComingSoonView.swift in Sources */,
 				76E31EFC1ECB138600DD4979 /* NVActivityIndicatorAnimationBallClipRotate.swift in Sources */,
 				072AE00A1FA58E3A008EA126 /* UIImageView+ImageLoader.swift in Sources */,
@@ -5123,7 +5147,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = Handstand/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -5158,7 +5182,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = Handstand/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
