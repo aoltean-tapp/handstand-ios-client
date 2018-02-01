@@ -116,5 +116,3 @@ class HSAddress: NSObject {
         }
     }
 }
-
-

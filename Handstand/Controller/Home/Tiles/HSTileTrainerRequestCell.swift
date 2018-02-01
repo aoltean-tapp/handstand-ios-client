@@ -33,7 +33,7 @@ class HSTileTrainerRequestCell: HSBaseTableViewCell {
    public override func populateData() {
         if let trainRequest = HSAppManager.shared.trainerRequest {
             locationLabel.text = trainRequest.formattedLocation
-            trainerImageView.imageView.sd_setImage(with: URL(string: (trainRequest.thumbnail)!))
+            trainerImageView.imageView.sd_setImage(with: URL(string: (trainRequest.avatar)!))
             trainerImageView.backgroundColor = HSColorUtility.getMarkerTagColor(with: trainRequest.color)
 
             specialityLabel.text = trainRequest.speciality

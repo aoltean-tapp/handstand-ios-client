@@ -170,7 +170,7 @@ final class HSHomeController: HSBaseController {
     
     private func observeMapWhenEnterForground() {
         NotificationCenter.default.removeObserver(self)
-        NotificationCenter.default.addObserver(self, selector: #selector(self.checkLocationSettings), name: NSNotification.Name.UIApplicationWillEnterForeground , object: nil)
+//        NotificationCenter.default.addObserver(self, selector: #selector(self.checkLocationSettings), name: NSNotification.Name.UIApplicationWillEnterForeground , object: nil)
     }
     @objc private func checkLocationSettings()  {
         mapView.setMyLocation()
@@ -503,20 +503,23 @@ extension HSHomeController:HSHomeSetZipViewDelegate {
     }
     
     func didClickedOnSetZip(_ zipcode : String){
+        HSLoadingView.standardLoading().startLoading()
         HSAddressNetworkHandler().getGeoLocationForZipCode(zipcode: zipcode, onComplete: {[weak self](address, error) in
             HSNavigationBarManager.shared.applyProperties(key: .type_13, viewController: self!)
+            HSLoadingView.standardLoading().stopLoading()
             if address != nil{
                 DispatchQueue.main.async {
+                    self?.selectedAddress = address
                     if let mapBaseView = self?.mapBaseView {
                         self?.viewToShow(mapBaseView)
                     }
-                    self?.searchBar.text = address?.formatedAddress
                     HSLocationHelper.setUserZipCode(zipcode)
                     self?.currentLocation = address
                     if let coordinate = self?.currentLocation?.location?.coordinate {
                         self?.mapView.showLocation(coordinate)
                     }
                     //                self?.mapView.setMyLocation()
+                    self?.searchBar.text = self?.selectedAddress?.formatedAddress
                 }
             }
             else{

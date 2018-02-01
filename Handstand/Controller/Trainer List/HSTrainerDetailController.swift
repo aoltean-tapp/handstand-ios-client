@@ -50,7 +50,7 @@ class HSTrainerDetailController: HSBaseController, HSSelectionViewDelegate, UITa
     var classTypes : Array<String>! = []
     var selectedClass : String! = ""
     let cellIdentifier = "classCell"
-    var selectedAddress : HSAddress! = nil
+    var selectedAddress : HSAddress?
     var searchCntrl : UISearchController! = nil
     let searchCellIdentifier = "searchCell"
     var address : Array<HSAddress>! = []
@@ -125,8 +125,10 @@ class HSTrainerDetailController: HSBaseController, HSSelectionViewDelegate, UITa
         classTypes = trainer.specialities.components(separatedBy: ",")
         classTableView.register(UINib(nibName: "HSTrainerClassCell", bundle: nil), forCellReuseIdentifier: self.cellIdentifier)
         classTableView.reloadData()
-        if selectedAddress.zipCode.count > 0 {
-            locationTextfield.text = selectedAddress.formatedAddress
+        if let address = selectedAddress {
+            if address.zipCode.count > 0 {
+                locationTextfield.text = address.formatedAddress
+            }
         }
         if selectedClass.count > 0 {
             classTextfield.text = selectedClass
@@ -254,11 +256,13 @@ class HSTrainerDetailController: HSBaseController, HSSelectionViewDelegate, UITa
         theData.setValue(dateFormate.string(from: dateObject!) , forKey: kBK_Time)
         theData.setValue(classTextfield.text, forKey: kBK_ClassType)
         theData.setValue(locationTextfield.text, forKey: kBK_Location)
-        if selectedAddress.zipCode.count > 0 {
-            theData.setValue(selectedAddress.zipCode, forKey: kBK_ZipCode)
-        }else {
-            theData.setValue(selectedAddress.location?.coordinate.latitude, forKey: "latitude")
-            theData.setValue(selectedAddress.location?.coordinate.longitude, forKey: "longitude")
+        if let address = selectedAddress {
+            if address.zipCode.count > 0 {
+                theData.setValue(address.zipCode, forKey: kBK_ZipCode)
+            }else {
+                theData.setValue(address.location?.coordinate.latitude, forKey: "latitude")
+                theData.setValue(address.location?.coordinate.longitude, forKey: "longitude")
+            }
         }
         theData.setValue(workoutSize, forKey: kBK_WorkoutSize)
         theData.setValue(trainer.fullName(), forKey: kBK_TrainerName)

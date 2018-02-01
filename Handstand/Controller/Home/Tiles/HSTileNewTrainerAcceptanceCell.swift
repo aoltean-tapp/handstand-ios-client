@@ -50,10 +50,10 @@ class HSTileNewTrainerAcceptanceCell: HSBaseTableViewCell {
     public override func populateData() {
         let originalTrainerDetails = HSAppManager.shared.declinedRequest?.originalTrainerDetails
         if let declinedRequest = HSAppManager.shared.declinedRequest {
-            _newTrainerProfileRoundedView.imageView.setImage(url: (declinedRequest.thumbnail)!, style: .rounded)
+            _newTrainerProfileRoundedView.imageView.setImage(url: (declinedRequest.avatar)!, style: .rounded)
             _newTrainerProfileRoundedView.backgroundColor = HSColorUtility.getMarkerTagColor(with: declinedRequest.color)
 
-            _oldTrainerProfileRoundedView.imageView.setImage(url: (originalTrainerDetails?.trainerThumbnail)!)
+            _oldTrainerProfileRoundedView.imageView.setImage(url: (originalTrainerDetails?.trainerAvatar)!)
             _oldTrainerProfileRoundedView.backgroundColor = HSColorUtility.getMarkerTagColor(with: originalTrainerDetails?.color)
 
             classTypeLabel.text = declinedRequest.speciality
@@ -61,7 +61,7 @@ class HSTileNewTrainerAcceptanceCell: HSBaseTableViewCell {
             let captionText = "Your trainer couldn't make it. But another top trainer is ready to go." + " " + declinedRequest.firstName! + "!"
             captionLabel.text = captionText
         }
-        originalTrainerImageView.imageView.setImage(url: (originalTrainerDetails?.trainerThumbnail)!)
+        originalTrainerImageView.imageView.setImage(url: (originalTrainerDetails?.trainerAvatar)!)
         originalTrainerImageView.backgroundColor = HSColorUtility.getMarkerTagColor(with: originalTrainerDetails?.color)
         originalTrainerNameLabel.text = originalTrainerDetails?.trainerFirstname
         orFindAnotherTrainerLabel.text = "Or find another time with" + " " + (originalTrainerDetails?.trainerFirstname)!

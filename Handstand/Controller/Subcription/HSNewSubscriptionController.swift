@@ -114,6 +114,7 @@ class HSNewSubscriptionController: UIViewController {
                 }
             }
             else{
+                HSLoadingView.standardLoading().stopLoading()
                 HSAppManager.shared.handPickedProductIdentifier = nil
                 HSUtility.showMessage(string: NSLocalizedString("internal_error", comment: ""))
             }

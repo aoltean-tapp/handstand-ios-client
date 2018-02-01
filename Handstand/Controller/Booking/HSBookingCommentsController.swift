@@ -17,11 +17,24 @@ class HSBookingCommentsController: HSBaseController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Additional Comments"
         self.screenName = HSA.commentScreen
         self.screenName = HSA.bookTrainerNotes
 
         registerForKeyboardNotifications()
+        HSNavigationBarManager.shared.applyProperties(key: .type_14, viewController: self, titleView:getTitleLabelView())
+    }
+
+    fileprivate func getTitleLabelView()->UILabel {
+        let label = UILabel()
+        label.text = "Additional Comments"
+        label.textColor = UIColor.rgb(0x2A2A2A)
+        if ScreenCons.SCREEN_HEIGHT < 600 {
+            label.font = HSFontUtilities.avenirNextDemiBold(size: 14)
+        }else {
+            label.font = HSFontUtilities.avenirNextDemiBold(size: 17)
+        }
+        label.sizeToFit()
+        return label
     }
 
     override func didReceiveMemoryWarning() {
