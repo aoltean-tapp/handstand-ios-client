@@ -45,9 +45,9 @@ class HSBaseTabBarController: UITabBarController {
             image: #imageLiteral(resourceName: "icMyWorkoutsTabInActive").withRenderingMode(UIImageRenderingMode.alwaysOriginal),
             selectedImage: #imageLiteral(resourceName: "icMyWorkoutsTabActive").withRenderingMode(UIImageRenderingMode.alwaysOriginal))
         favoritesController.tabBarItem = UITabBarItem(
-            title: "Favorites",
-            image: #imageLiteral(resourceName: "icFavoritesTabInActive").withRenderingMode(UIImageRenderingMode.alwaysOriginal),
-            selectedImage: #imageLiteral(resourceName: "icFavoritesTabActive").withRenderingMode(UIImageRenderingMode.alwaysOriginal))
+            title: "Saved Sweat",
+            image: #imageLiteral(resourceName: "savedsweat_unselected").withRenderingMode(UIImageRenderingMode.alwaysOriginal),
+            selectedImage: #imageLiteral(resourceName: "savedsweat_selected").withRenderingMode(UIImageRenderingMode.alwaysOriginal))
         profileController.tabBarItem = UITabBarItem(
             title: "Profile",
             image: #imageLiteral(resourceName: "icMyProfileTabInActive").withRenderingMode(UIImageRenderingMode.alwaysOriginal),

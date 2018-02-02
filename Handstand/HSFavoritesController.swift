@@ -12,7 +12,7 @@ class HSFavoritesController: HSBaseController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Favorites"
+        title = "Saved Sweat"
         HSNavigationBarManager.shared.applyProperties(key: .type_5, viewController: self)
     }
 
