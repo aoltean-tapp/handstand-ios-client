@@ -48,7 +48,7 @@ class HSBaseController: UIViewController,EventTrackingProtocol,LongTaskHelperPro
     }
     
     func getTitleView()->UIImageView {
-        return UIImageView.init(image: #imageLiteral(resourceName: "icHandstandLogoIcon"))
+        return UIImageView.init(image: #imageLiteral(resourceName: "icHandstandOnlyLogo"))
     }
 
 }

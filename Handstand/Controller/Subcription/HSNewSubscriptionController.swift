@@ -26,7 +26,7 @@ class HSNewSubscriptionController: UIViewController {
     }
     @IBOutlet weak var purchaseButton: UIButton! {
         didSet {
-            if HSUserManager.shared.hasValidMembership == false && HSUserManager.shared.currentUser?.subscribeBefore == false {
+            if HSUserManager.shared.currentUser?.subscribeBefore == false {
                 purchaseButton.setTitle("START MY FREE TRIAL NOW", for: .normal)
             }
             purchaseButton.layer.cornerRadius = 4.0
