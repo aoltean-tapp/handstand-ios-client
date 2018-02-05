@@ -1348,6 +1348,42 @@
 		BB95434B2024B9C00025C290 /* HSUpcomingSessionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB954344202495FA0025C290 /* HSUpcomingSessionCell.xib */; };
 		BB95434C2024B9C10025C290 /* HSUpcomingSessionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB954344202495FA0025C290 /* HSUpcomingSessionCell.xib */; };
 		BB95434D2024B9C40025C290 /* HSUpcomingSessionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB954344202495FA0025C290 /* HSUpcomingSessionCell.xib */; };
+		BB95434E202884B90025C290 /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 07E8858A1FEA7E8E00B8B408 /* Lato-Black.ttf */; };
+		BB95434F202884B90025C290 /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 07E8858A1FEA7E8E00B8B408 /* Lato-Black.ttf */; };
+		BB954350202884BE0025C290 /* Lato-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 07E8858B1FEA7E8E00B8B408 /* Lato-BlackItalic.ttf */; };
+		BB954351202884BF0025C290 /* Lato-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 07E8858B1FEA7E8E00B8B408 /* Lato-BlackItalic.ttf */; };
+		BB954352202884C20025C290 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 07E8858C1FEA7E8E00B8B408 /* Lato-Bold.ttf */; };
+		BB954353202884C20025C290 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 07E8858C1FEA7E8E00B8B408 /* Lato-Bold.ttf */; };
+		BB954354202884C40025C290 /* Lato-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 07E8858D1FEA7E8E00B8B408 /* Lato-BoldItalic.ttf */; };
+		BB954355202884C50025C290 /* Lato-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 07E8858D1FEA7E8E00B8B408 /* Lato-BoldItalic.ttf */; };
+		BB954356202884C70025C290 /* Lato-Hairline.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 07E8858E1FEA7E8E00B8B408 /* Lato-Hairline.ttf */; };
+		BB954357202884C70025C290 /* Lato-Hairline.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 07E8858E1FEA7E8E00B8B408 /* Lato-Hairline.ttf */; };
+		BB954358202884C90025C290 /* Lato-HairlineItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 07E8858F1FEA7E8E00B8B408 /* Lato-HairlineItalic.ttf */; };
+		BB95435A202884CB0025C290 /* Lato-HairlineItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 07E8858F1FEA7E8E00B8B408 /* Lato-HairlineItalic.ttf */; };
+		BB95435B202884CE0025C290 /* Lato-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 07E885901FEA7E8E00B8B408 /* Lato-Heavy.ttf */; };
+		BB95435C202884CE0025C290 /* Lato-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 07E885901FEA7E8E00B8B408 /* Lato-Heavy.ttf */; };
+		BB95435D202884D00025C290 /* Lato-HeavyItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 07E885911FEA7E8E00B8B408 /* Lato-HeavyItalic.ttf */; };
+		BB95435E202884D10025C290 /* Lato-HeavyItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 07E885911FEA7E8E00B8B408 /* Lato-HeavyItalic.ttf */; };
+		BB95435F202884D30025C290 /* Lato-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 07E885921FEA7E8E00B8B408 /* Lato-Italic.ttf */; };
+		BB954360202884D40025C290 /* Lato-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 07E885921FEA7E8E00B8B408 /* Lato-Italic.ttf */; };
+		BB954361202884D60025C290 /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 07E885931FEA7E8E00B8B408 /* Lato-Light.ttf */; };
+		BB954362202884D70025C290 /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 07E885931FEA7E8E00B8B408 /* Lato-Light.ttf */; };
+		BB954363202884DA0025C290 /* Lato-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 07E885941FEA7E8E00B8B408 /* Lato-LightItalic.ttf */; };
+		BB954364202884DA0025C290 /* Lato-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 07E885941FEA7E8E00B8B408 /* Lato-LightItalic.ttf */; };
+		BB954365202884E00025C290 /* Lato-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 07E885951FEA7E8E00B8B408 /* Lato-Medium.ttf */; };
+		BB954366202884E00025C290 /* Lato-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 07E885951FEA7E8E00B8B408 /* Lato-Medium.ttf */; };
+		BB954367202884E30025C290 /* Lato-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 07E885961FEA7E8E00B8B408 /* Lato-MediumItalic.ttf */; };
+		BB954368202884E40025C290 /* Lato-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 07E885961FEA7E8E00B8B408 /* Lato-MediumItalic.ttf */; };
+		BB954369202884E70025C290 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 07E885971FEA7E8E00B8B408 /* Lato-Regular.ttf */; };
+		BB95436A202884E70025C290 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 07E885971FEA7E8E00B8B408 /* Lato-Regular.ttf */; };
+		BB95436B202884EA0025C290 /* Lato-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 07E885981FEA7E8E00B8B408 /* Lato-Semibold.ttf */; };
+		BB95436C202884EB0025C290 /* Lato-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 07E885981FEA7E8E00B8B408 /* Lato-Semibold.ttf */; };
+		BB95436D202884ED0025C290 /* Lato-SemiboldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 07E885991FEA7E8E00B8B408 /* Lato-SemiboldItalic.ttf */; };
+		BB95436E202884EE0025C290 /* Lato-SemiboldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 07E885991FEA7E8E00B8B408 /* Lato-SemiboldItalic.ttf */; };
+		BB95436F202884F00025C290 /* Lato-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 07E8859A1FEA7E8E00B8B408 /* Lato-Thin.ttf */; };
+		BB954370202884F00025C290 /* Lato-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 07E8859A1FEA7E8E00B8B408 /* Lato-Thin.ttf */; };
+		BB954371202884F30025C290 /* Lato-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 07E8859B1FEA7E8E00B8B408 /* Lato-ThinItalic.ttf */; };
+		BB954372202884F30025C290 /* Lato-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 07E8859B1FEA7E8E00B8B408 /* Lato-ThinItalic.ttf */; };
 		F7F6B892C3F3E30ABE3E61AA /* Pods_HandstandLiveDev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDFE333C1E8803167B903335 /* Pods_HandstandLiveDev.framework */; };
 		FD1F9C5BC7094AC506C7E660 /* Pods_Handstand.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 852B9656D701BE437161A494 /* Pods_Handstand.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 /* End PBXBuildFile section */
@@ -3264,6 +3300,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB954368202884E40025C290 /* Lato-MediumItalic.ttf in Resources */,
 				762A328E1EE163960043E8D9 /* HSProfileController.xib in Resources */,
 				07DC95711FD80B4A0008A993 /* HSSplashController.xib in Resources */,
 				0797B4B01F39DDE80098E75A /* HSTilePushNotificationCell.xib in Resources */,
@@ -3280,6 +3317,7 @@
 				074E1D321FABFF5000FDEB9D /* HSTileNewTrainerAcceptanceCell.xib in Resources */,
 				BB95433B202340DF0025C290 /* HSSavedSweatViewController.xib in Resources */,
 				07FDED0D1F600BF3004BC833 /* HSMenuViewController.xib in Resources */,
+				BB95434F202884B90025C290 /* Lato-Black.ttf in Resources */,
 				070EB3231F3AFB02005821AD /* HSUpdatePasswordConfirmationController.xib in Resources */,
 				762A32911EE163960043E8D9 /* HSPlanNPaymentController.xib in Resources */,
 				762A32921EE163960043E8D9 /* HSTileUpcomingSessionCell.xib in Resources */,
@@ -3295,6 +3333,7 @@
 				071EDB5C1FE7EBC300D41BBF /* HSUpdatePasswordViewController.xib in Resources */,
 				07CC5A121FC2B269004A1963 /* HSEntryScreenController.xib in Resources */,
 				762A32981EE163960043E8D9 /* HSTilesTitleCell.xib in Resources */,
+				BB95436E202884EE0025C290 /* Lato-SemiboldItalic.ttf in Resources */,
 				76B44DB41F14F31F00297EAA /* HSTileBlogCell.xib in Resources */,
 				762A329A1EE163960043E8D9 /* HSTextfiledView.xib in Resources */,
 				762A329B1EE163960043E8D9 /* HSVideoViewController.xib in Resources */,
@@ -3312,13 +3351,17 @@
 				76B44DAC1F14EF8D00297EAA /* HSTileShareCell.xib in Resources */,
 				07E885851FEA789300B8B408 /* SourceSansPro-Semibold.otf in Resources */,
 				762A32A41EE163960043E8D9 /* HSForgotPasswordVerifyCodeController.xib in Resources */,
+				BB954353202884C20025C290 /* Lato-Bold.ttf in Resources */,
 				762A32A51EE163960043E8D9 /* HSPlanView.xib in Resources */,
 				762A32A61EE163960043E8D9 /* HSHomeTileController.xib in Resources */,
 				762A32A71EE163960043E8D9 /* HSUpcomingWorkoutCell.xib in Resources */,
 				07082AC720063C1900019418 /* HSNewSubscriptionController.xib in Resources */,
 				07FDED561F600FE1004BC833 /* HSPhneVerificationQueryController.xib in Resources */,
+				BB954362202884D70025C290 /* Lato-Light.ttf in Resources */,
+				BB954370202884F00025C290 /* Lato-Thin.ttf in Resources */,
 				762A32A91EE163960043E8D9 /* HSTitleReebokShopCell.xib in Resources */,
 				762A32AA1EE163960043E8D9 /* HSTrainerListFooterView.xib in Resources */,
+				BB954364202884DA0025C290 /* Lato-LightItalic.ttf in Resources */,
 				071E78971FDDC4E900D5A50C /* HSPlansHeaderReusableView.xib in Resources */,
 				07EE73911FCC16EC00AAF34E /* HSSignupViewController.xib in Resources */,
 				071E789F1FDDD61900D5A50C /* HSChoosePlanCell.xib in Resources */,
@@ -3328,6 +3371,7 @@
 				762A32AC1EE163960043E8D9 /* HSHomeController.xib in Resources */,
 				07CC5A1E1FC2D03A004A1963 /* HSLoginController.xib in Resources */,
 				07E885831FEA789300B8B408 /* SourceSansPro-LightIt.otf in Resources */,
+				BB95435A202884CB0025C290 /* Lato-HairlineItalic.ttf in Resources */,
 				07E8857C1FEA789300B8B408 /* SourceSansPro-BlackIt.otf in Resources */,
 				07FDED501F600FE1004BC833 /* CountryCodeSelectionViewController.xib in Resources */,
 				762A32E71EE55C8A0043E8D9 /* ISRefresgControlIcon.png in Resources */,
@@ -3335,8 +3379,10 @@
 				07E885841FEA789300B8B408 /* SourceSansPro-Regular.otf in Resources */,
 				070318811F3CAAC500AE714E /* HSTileTrainerRequestCell.xib in Resources */,
 				76B44DA41F14E45B00297EAA /* HSTileBuyPackageCell.xib in Resources */,
+				BB954355202884C50025C290 /* Lato-BoldItalic.ttf in Resources */,
 				07349FF91FC706D400407845 /* HSProfileViewController.xib in Resources */,
 				07E38F7B1FDEFCBF003DFCD8 /* HSQuizStyleResultController.xib in Resources */,
+				BB954360202884D40025C290 /* Lato-Italic.ttf in Resources */,
 				BB95434D2024B9C40025C290 /* HSUpcomingSessionCell.xib in Resources */,
 				07FF4BFA1FED31660004B45A /* HSPaymentSuccessfulController.xib in Resources */,
 				079D7E1F1F388875009DED32 /* HSSubscriptionRegisterController.xib in Resources */,
@@ -3347,14 +3393,17 @@
 				075FB5251FF79CB600E5ED2B /* MIDatePicker.xib in Resources */,
 				A5B4252C1F335111006C6EBA /* HSSubscribeTileInfoCell.xib in Resources */,
 				762A32B11EE163960043E8D9 /* HSPaymentCardCell.xib in Resources */,
+				BB954357202884C70025C290 /* Lato-Hairline.ttf in Resources */,
 				762A32B21EE163960043E8D9 /* HSMainViewController.xib in Resources */,
 				762A32B31EE163960043E8D9 /* HSMyWorkoutController.xib in Resources */,
 				762A32B41EE163960043E8D9 /* HSLoginViewController.xib in Resources */,
+				BB954372202884F30025C290 /* Lato-ThinItalic.ttf in Resources */,
 				762A32B61EE163960043E8D9 /* HSTrainerListController.xib in Resources */,
 				0734A00A1FC74B2100407845 /* HSProfilePersonalInfoCell.xib in Resources */,
 				07FDED541F600FE1004BC833 /* HSPhneVerificationCodeController.xib in Resources */,
 				762A32B71EE163960043E8D9 /* HSSignupController.xib in Resources */,
 				763D08481F02ED9900F8D9F1 /* HSAddCardController.xib in Resources */,
+				BB954351202884BF0025C290 /* Lato-BlackItalic.ttf in Resources */,
 				07FF4BF21FED2C830004B45A /* HSPaymentDetailsController.xib in Resources */,
 				0734A0021FC737C000407845 /* HSProfilePictureCell.xib in Resources */,
 				762A32B91EE163960043E8D9 /* HSHomeSetZipView.xib in Resources */,
@@ -3364,6 +3413,7 @@
 				07E885881FEA789600B8B408 /* SIL Open Font License.txt in Resources */,
 				07E885811FEA789300B8B408 /* SourceSansPro-It.otf in Resources */,
 				07E885821FEA789300B8B408 /* SourceSansPro-Light.otf in Resources */,
+				BB954366202884E00025C290 /* Lato-Medium.ttf in Resources */,
 				762A32BC1EE163960043E8D9 /* HSCardView.xib in Resources */,
 				762A32BD1EE163960043E8D9 /* HSForgotPasswordEmailController.xib in Resources */,
 				07E8857B1FEA789300B8B408 /* SourceSansPro-Black.otf in Resources */,
@@ -3378,10 +3428,12 @@
 				762A32C11EE163960043E8D9 /* HSBookingConfirmationController.xib in Resources */,
 				762A32C21EE163960043E8D9 /* LICENSE in Resources */,
 				071EDB871FEA6C8800D41BBF /* HSWhyHandstandCell.xib in Resources */,
+				BB95436C202884EB0025C290 /* Lato-Semibold.ttf in Resources */,
 				070AED5B1FD65C91007F3535 /* HSSignupTermsView.xib in Resources */,
 				07FDED621F601481004BC833 /* country-codes.json in Resources */,
 				762A32C41EE163960043E8D9 /* HSWorkoutPlanController.xib in Resources */,
 				762A32C51EE163960043E8D9 /* HSPromotionController.xib in Resources */,
+				BB95435E202884D10025C290 /* Lato-HeavyItalic.ttf in Resources */,
 				762A32C61EE163960043E8D9 /* LaunchScreen.storyboard in Resources */,
 				762A32C71EE163960043E8D9 /* HSHomeSearchCell.xib in Resources */,
 				078E411E1F61456A00222191 /* HSPackageSuccessController.xib in Resources */,
@@ -3391,9 +3443,11 @@
 				762A32C91EE163960043E8D9 /* HSUpdatePasswordController.xib in Resources */,
 				07CB72A61FC6EDB2004D875A /* HSNotificationsController.xib in Resources */,
 				762A32CA1EE163960043E8D9 /* HSTrainerDetailController.xib in Resources */,
+				BB95436A202884E70025C290 /* Lato-Regular.ttf in Resources */,
 				762A32CB1EE163960043E8D9 /* HSTrainerListHeaderView.xib in Resources */,
 				762A32CC1EE163960043E8D9 /* Assets.xcassets in Resources */,
 				07FDED311F600D5F004BC833 /* HSSubscriptionTermsCell.xib in Resources */,
+				BB95435C202884CE0025C290 /* Lato-Heavy.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3558,6 +3612,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB954367202884E30025C290 /* Lato-MediumItalic.ttf in Resources */,
 				76E31FAA1ECB138600DD4979 /* HSProfileController.xib in Resources */,
 				07DC95701FD80B4A0008A993 /* HSSplashController.xib in Resources */,
 				0797B4AF1F39DDE80098E75A /* HSTilePushNotificationCell.xib in Resources */,
@@ -3574,6 +3629,7 @@
 				074E1D311FABFF5000FDEB9D /* HSTileNewTrainerAcceptanceCell.xib in Resources */,
 				BB95433A202340DF0025C290 /* HSSavedSweatViewController.xib in Resources */,
 				07FDED0C1F600BF2004BC833 /* HSMenuViewController.xib in Resources */,
+				BB95434E202884B90025C290 /* Lato-Black.ttf in Resources */,
 				070EB3221F3AFB02005821AD /* HSUpdatePasswordConfirmationController.xib in Resources */,
 				76C252671ECC4852002DC7C0 /* HSPlanNPaymentController.xib in Resources */,
 				76E31FAD1ECB138600DD4979 /* HSTileUpcomingSessionCell.xib in Resources */,
@@ -3589,6 +3645,7 @@
 				071EDB5B1FE7EBC300D41BBF /* HSUpdatePasswordViewController.xib in Resources */,
 				07CC5A111FC2B269004A1963 /* HSEntryScreenController.xib in Resources */,
 				76E31FB31ECB138600DD4979 /* HSTilesTitleCell.xib in Resources */,
+				BB95436D202884ED0025C290 /* Lato-SemiboldItalic.ttf in Resources */,
 				76B44DB31F14F31F00297EAA /* HSTileBlogCell.xib in Resources */,
 				76E31FB51ECB138600DD4979 /* HSTextfiledView.xib in Resources */,
 				76E31FB61ECB138600DD4979 /* HSVideoViewController.xib in Resources */,
@@ -3606,13 +3663,17 @@
 				76B44DAB1F14EF8D00297EAA /* HSTileShareCell.xib in Resources */,
 				07E885791FEA789300B8B408 /* SourceSansPro-Semibold.otf in Resources */,
 				76E31FBE1ECB138600DD4979 /* HSForgotPasswordVerifyCodeController.xib in Resources */,
+				BB954352202884C20025C290 /* Lato-Bold.ttf in Resources */,
 				76C2526D1ECC51E5002DC7C0 /* HSPlanView.xib in Resources */,
 				76E31FBF1ECB138600DD4979 /* HSHomeTileController.xib in Resources */,
 				76E31FC01ECB138600DD4979 /* HSUpcomingWorkoutCell.xib in Resources */,
 				07082AC620063C1900019418 /* HSNewSubscriptionController.xib in Resources */,
 				07FDED4E1F600FE0004BC833 /* HSPhneVerificationQueryController.xib in Resources */,
+				BB954361202884D60025C290 /* Lato-Light.ttf in Resources */,
+				BB95436F202884F00025C290 /* Lato-Thin.ttf in Resources */,
 				76E31FC21ECB138600DD4979 /* HSTitleReebokShopCell.xib in Resources */,
 				76EECB5E1ED71A7D00CCC596 /* HSTrainerListFooterView.xib in Resources */,
+				BB954363202884DA0025C290 /* Lato-LightItalic.ttf in Resources */,
 				071E78961FDDC4E900D5A50C /* HSPlansHeaderReusableView.xib in Resources */,
 				07EE73901FCC16EC00AAF34E /* HSSignupViewController.xib in Resources */,
 				071E789E1FDDD61900D5A50C /* HSChoosePlanCell.xib in Resources */,
@@ -3622,6 +3683,7 @@
 				76E31FC41ECB138600DD4979 /* HSHomeController.xib in Resources */,
 				07CC5A1D1FC2D03A004A1963 /* HSLoginController.xib in Resources */,
 				07E885771FEA789300B8B408 /* SourceSansPro-LightIt.otf in Resources */,
+				BB954358202884C90025C290 /* Lato-HairlineItalic.ttf in Resources */,
 				07E885701FEA789300B8B408 /* SourceSansPro-BlackIt.otf in Resources */,
 				07FDED481F600FE0004BC833 /* CountryCodeSelectionViewController.xib in Resources */,
 				762A32E61EE55C8A0043E8D9 /* ISRefresgControlIcon.png in Resources */,
@@ -3629,8 +3691,10 @@
 				07E885781FEA789300B8B408 /* SourceSansPro-Regular.otf in Resources */,
 				0703187F1F3CAAC200AE714E /* HSTileTrainerRequestCell.xib in Resources */,
 				76B44DA31F14E45B00297EAA /* HSTileBuyPackageCell.xib in Resources */,
+				BB954354202884C40025C290 /* Lato-BoldItalic.ttf in Resources */,
 				07349FF81FC706D400407845 /* HSProfileViewController.xib in Resources */,
 				07E38F7A1FDEFCBF003DFCD8 /* HSQuizStyleResultController.xib in Resources */,
+				BB95435F202884D30025C290 /* Lato-Italic.ttf in Resources */,
 				BB95434C2024B9C10025C290 /* HSUpcomingSessionCell.xib in Resources */,
 				07FF4BF91FED31660004B45A /* HSPaymentSuccessfulController.xib in Resources */,
 				079D7E1D1F388874009DED32 /* HSSubscriptionRegisterController.xib in Resources */,
@@ -3641,14 +3705,17 @@
 				075FB5231FF79CB600E5ED2B /* MIDatePicker.xib in Resources */,
 				A5B4252B1F335111006C6EBA /* HSSubscribeTileInfoCell.xib in Resources */,
 				764EE6E51ECF22B200ED8BDB /* HSPaymentCardCell.xib in Resources */,
+				BB954356202884C70025C290 /* Lato-Hairline.ttf in Resources */,
 				76E31FC91ECB138600DD4979 /* HSMainViewController.xib in Resources */,
 				76E31FCA1ECB138600DD4979 /* HSMyWorkoutController.xib in Resources */,
 				76E31FCB1ECB138600DD4979 /* HSLoginViewController.xib in Resources */,
+				BB954371202884F30025C290 /* Lato-ThinItalic.ttf in Resources */,
 				76E31FCD1ECB138600DD4979 /* HSTrainerListController.xib in Resources */,
 				0734A0091FC74B2100407845 /* HSProfilePersonalInfoCell.xib in Resources */,
 				07FDED4C1F600FE0004BC833 /* HSPhneVerificationCodeController.xib in Resources */,
 				76E31FCE1ECB138600DD4979 /* HSSignupController.xib in Resources */,
 				763D08471F02ED9900F8D9F1 /* HSAddCardController.xib in Resources */,
+				BB954350202884BE0025C290 /* Lato-BlackItalic.ttf in Resources */,
 				07FF4BF11FED2C830004B45A /* HSPaymentDetailsController.xib in Resources */,
 				0734A0011FC737C000407845 /* HSProfilePictureCell.xib in Resources */,
 				76E31FD01ECB138600DD4979 /* HSHomeSetZipView.xib in Resources */,
@@ -3658,6 +3725,7 @@
 				07E885871FEA789600B8B408 /* SIL Open Font License.txt in Resources */,
 				07E885751FEA789300B8B408 /* SourceSansPro-It.otf in Resources */,
 				07E885761FEA789300B8B408 /* SourceSansPro-Light.otf in Resources */,
+				BB954365202884E00025C290 /* Lato-Medium.ttf in Resources */,
 				76C252821ECDC4E5002DC7C0 /* HSCardView.xib in Resources */,
 				76E31FD31ECB138600DD4979 /* HSForgotPasswordEmailController.xib in Resources */,
 				07E8856F1FEA789300B8B408 /* SourceSansPro-Black.otf in Resources */,
@@ -3672,10 +3740,12 @@
 				76E31FD71ECB138600DD4979 /* HSBookingConfirmationController.xib in Resources */,
 				76E31FD81ECB138600DD4979 /* LICENSE in Resources */,
 				071EDB861FEA6C8800D41BBF /* HSWhyHandstandCell.xib in Resources */,
+				BB95436B202884EA0025C290 /* Lato-Semibold.ttf in Resources */,
 				070AED5A1FD65C91007F3535 /* HSSignupTermsView.xib in Resources */,
 				07FDED611F601481004BC833 /* country-codes.json in Resources */,
 				76E31FD91ECB138600DD4979 /* HSWorkoutPlanController.xib in Resources */,
 				7676B1711EDC354F002302C4 /* HSPromotionController.xib in Resources */,
+				BB95435D202884D00025C290 /* Lato-HeavyItalic.ttf in Resources */,
 				76E31FDA1ECB138600DD4979 /* LaunchScreen.storyboard in Resources */,
 				76E31FDB1ECB138600DD4979 /* HSHomeSearchCell.xib in Resources */,
 				078E411D1F61456A00222191 /* HSPackageSuccessController.xib in Resources */,
@@ -3685,9 +3755,11 @@
 				76E31FDD1ECB138600DD4979 /* HSUpdatePasswordController.xib in Resources */,
 				07CB72A51FC6EDB2004D875A /* HSNotificationsController.xib in Resources */,
 				76E31FDE1ECB138600DD4979 /* HSTrainerDetailController.xib in Resources */,
+				BB954369202884E70025C290 /* Lato-Regular.ttf in Resources */,
 				76E31FDF1ECB138600DD4979 /* HSTrainerListHeaderView.xib in Resources */,
 				76E31FE01ECB138600DD4979 /* Assets.xcassets in Resources */,
 				07FDED2B1F600D5F004BC833 /* HSSubscriptionTermsCell.xib in Resources */,
+				BB95435B202884CE0025C290 /* Lato-Heavy.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
