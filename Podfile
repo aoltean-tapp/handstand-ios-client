@@ -16,6 +16,7 @@ def shared_pods
     pod 'TextFieldEffects'
     pod 'IQKeyboardManagerSwift'
     pod 'Tapptitude', :path => '.'
+    pod 'TTSegmentedControl'
 
     #Google
     pod 'GoogleMaps'
@@ -32,11 +33,24 @@ def shared_pods
 
     #Social
     pod 'FacebookShare'
-
 end
 
 target 'Handstand' do
     shared_pods
+    
+    swift4Targets = ['TTSegmentedControl']
+
+    post_install do |installer|
+        installer.pods_project.targets.each do |target|
+            target.build_configurations.each do |config|
+                if swift4Targets.include? target.name
+                    config.build_settings['SWIFT_VERSION'] = '4'
+                else
+                    config.build_settings['SWIFT_VERSION'] = '3.2'
+                end
+            end
+        end
+    end
 end
 
 target 'HandstandStage' do

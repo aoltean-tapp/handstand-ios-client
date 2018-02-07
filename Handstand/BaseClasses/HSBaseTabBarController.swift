@@ -71,8 +71,6 @@ class HSBaseTabBarController: UITabBarController {
     func updateWorkoutScreen() {
         if let _viewControllers = self.viewControllers {
             let workoutController = (_viewControllers[1] as! HSBaseNavigationController).topViewController as! HSMyWorkoutController
-            workoutController.upcomingButton.isSelected = false
-            workoutController.pastButton.isSelected = true
             workoutController.fetchWorkouts(true)
         }
     }

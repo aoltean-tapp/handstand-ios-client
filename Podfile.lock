@@ -43,6 +43,7 @@ PODS:
   - Tapptitude (2.2)
   - TestFairy (1.11.0)
   - TextFieldEffects (1.4.0)
+  - TTSegmentedControl (0.4.4)
 
 DEPENDENCIES:
   - AAViewAnimator
@@ -64,6 +65,7 @@ DEPENDENCIES:
   - Tapptitude (from `.`)
   - TestFairy
   - TextFieldEffects
+  - TTSegmentedControl
 
 EXTERNAL SOURCES:
   Tapptitude:
@@ -93,7 +95,8 @@ SPEC CHECKSUMS:
   Tapptitude: 32bf6a1b647e01dcd76d68bea0e96e37d2625c09
   TestFairy: a8748b702388f6eb002faeed42e8cf438a17d811
   TextFieldEffects: 4ee41b5216e674d55fb6ac25107bf1af7629176f
+  TTSegmentedControl: 7a5fc6c3e117c340106efd3a35205b987f2ba23c
 
-PODFILE CHECKSUM: 041f5132aec25cd016ba3101c8df35cbf6c15d8d
+PODFILE CHECKSUM: 28dc56cc789436aa320ab1bc3e204bfc16981b2b
 
 COCOAPODS: 1.3.1

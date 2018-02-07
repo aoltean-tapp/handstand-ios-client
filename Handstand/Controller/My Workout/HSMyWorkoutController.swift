@@ -9,14 +9,19 @@
 import UIKit
 import MessageUI
 import SDWebImage
+import TTSegmentedControl
+
+enum WorkoutType {
+    case upcoming
+    case past
+}
 
 class HSMyWorkoutController: HSBaseController, MFMessageComposeViewControllerDelegate, HSSubcriptionControllerDelegate, HSWorkoutPlanControllerDelegate, HSPlanConfirmationControllerDelegate {
     
     //MARK: - iVars
-    @IBOutlet var noWorkoutLabel: UILabel!
-    @IBOutlet var pastButton: UIButton!
-    @IBOutlet var upcomingButton: UIButton!
-    @IBOutlet var tableView: UITableView!
+    @IBOutlet weak var noWorkoutLabel: UILabel!
+    @IBOutlet weak var sessionTypeSegmentedControl: TTSegmentedControl!
+    @IBOutlet weak var tableView: UITableView!
 
     let upcomingCellIdentifier = "upcomingCell"
     let upcomingSessionCellIdentifier = "upcomingSessionCellIdentifier"
@@ -40,6 +45,24 @@ class HSMyWorkoutController: HSBaseController, MFMessageComposeViewControllerDel
         fetchWorkouts(true)
         self.edgesForExtendedLayout = []
         HSNavigationBarManager.shared.applyProperties(key: .type_5, viewController: self)
+        
+        sessionTypeSegmentedControl.layer.borderWidth = 1.0
+        sessionTypeSegmentedControl.layer.borderColor = #colorLiteral(red: 0.3568627451, green: 0.7803921569, blue: 0.5764705882, alpha: 1).cgColor
+        
+        sessionTypeSegmentedControl.padding = CGSize(width: 0, height: 0)
+        sessionTypeSegmentedControl.itemTitles = ["UPCOMING", "RE-BOOK"]
+        sessionTypeSegmentedControl.allowChangeThumbWidth = false
+        sessionTypeSegmentedControl.defaultTextColor = #colorLiteral(red: 0.3725490196, green: 0.3725490196, blue: 0.3725490196, alpha: 1)
+        sessionTypeSegmentedControl.defaultTextFont = UIFont(name: "Lato-Bold", size: 13.0)!
+        sessionTypeSegmentedControl.selectedTextFont = UIFont(name: "Lato-Bold", size: 13.0)!
+        
+        sessionTypeSegmentedControl.didSelectItemWith = { [weak self] (index, title) -> () in
+            if index == 0 {
+                self?.getWorkouts(of: .upcoming)
+            } else {
+                self?.getWorkouts(of: .past)
+            }
+        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -98,12 +121,12 @@ class HSMyWorkoutController: HSBaseController, MFMessageComposeViewControllerDel
     func reloadData()  {
         self.tableView.isUserInteractionEnabled = true
         self.tableView.reloadData()
-        if upcomingButton.isSelected == false {
+        if sessionTypeSegmentedControl.currentIndex == 0 {
             noWorkoutLabel.text = "Book a session by going to your home screen!"
             if upcomingWorkouts.count == 0 {
                 noWorkoutLabel.isHidden = false
             }
-            else{
+            else {
                 noWorkoutLabel.isHidden = true
             }
         }
@@ -112,7 +135,7 @@ class HSMyWorkoutController: HSBaseController, MFMessageComposeViewControllerDel
             if pastWorkouts.count == 0 {
                 noWorkoutLabel.isHidden = false
             }
-            else{
+            else {
                 noWorkoutLabel.isHidden = true
             }
         }
@@ -219,22 +242,12 @@ class HSMyWorkoutController: HSBaseController, MFMessageComposeViewControllerDel
         self.fetchWorkouts(false)
     }
     
-    @IBAction func onUpcomingAction(_ sender: UIButton) {
-        //        HSAnalytics.setEventForTypes(types: [.googleAnalytics], withLog: kGAUpcomingWorkoutScreen, withData:nil)
-        HSAnalytics.setEventForTypes(withLog: HSA.upcomingWorkoutsScreen)
-        if upcomingButton.isSelected {
-            upcomingButton.isSelected = false
-            pastButton.isSelected = true
-        }
-        self.reloadData()
-    }
-    
-    @IBAction func onPastAction(_ sender: UIButton) {
-        //        HSAnalytics.setEventForTypes(types: [.googleAnalytics], withLog: kGApastWorkoutScreen, withData:nil)
-        HSAnalytics.setEventForTypes(withLog: HSA.pastRebookScreen)
-        if pastButton.isSelected {
-            upcomingButton.isSelected = true
-            pastButton.isSelected = false
+    fileprivate func getWorkouts(of type: WorkoutType) {
+        switch type {
+        case .upcoming:
+            HSAnalytics.setEventForTypes(withLog: HSA.upcomingWorkoutsScreen)
+        case .past:
+            HSAnalytics.setEventForTypes(withLog: HSA.pastRebookScreen)
         }
         self.reloadData()
     }
@@ -333,15 +346,15 @@ class HSMyWorkoutController: HSBaseController, MFMessageComposeViewControllerDel
 extension HSMyWorkoutController {
     
     func tableView(_ tableView:UITableView, numberOfRowsInSection section:Int) -> Int{
-        if upcomingButton.isSelected {
-            return pastWorkouts.count
-        }else{
+        if sessionTypeSegmentedControl.currentIndex == 0 {
             return upcomingWorkouts.count
+        } else {
+            return pastWorkouts.count
         }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
-        if upcomingButton.isSelected == false {
+        if sessionTypeSegmentedControl.currentIndex == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: upcomingSessionCellIdentifier) as! HSUpcomingSessionCell
             let theWorkout = upcomingWorkouts[indexPath.row]
             
@@ -431,7 +444,7 @@ extension HSMyWorkoutController {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAtIndexPath indexPath: IndexPath) -> CGFloat {
-        if upcomingButton.isSelected == false {
+        if sessionTypeSegmentedControl.currentIndex == 0 {
             if upcomingExpandedCells[indexPath.row] {
                 return 156
             } else {
@@ -444,7 +457,7 @@ extension HSMyWorkoutController {
     
     func tableView(_ tableView: UITableView, didSelectRowAtIndexPath indexPath: IndexPath) {
         // upcoming workouts
-        if upcomingButton.isSelected == false {
+        if sessionTypeSegmentedControl.currentIndex == 0 {
             if let selectedCell = tableView.cellForRow(at: indexPath) as? HSUpcomingSessionCell {
                 // cell is in center position (not slided)
                 if selectedCell.isExpandable {
