@@ -19,9 +19,12 @@ class HSMyWorkoutController: HSBaseController, MFMessageComposeViewControllerDel
     @IBOutlet var tableView: UITableView!
 
     let upcomingCellIdentifier = "upcomingCell"
+    let upcomingSessionCellIdentifier = "upcomingSessionCellIdentifier"
     let pastCellIdentifier = "pastCellIdentifier"
-    var upcomingWorkouts : Array<HSWorkoutSession>! = []
-    var pastWorkouts : Array<HSWorkoutSession>! = []
+    var upcomingWorkouts: [HSWorkoutSession] = []
+    var pastWorkouts: [HSWorkoutSession] = []
+    var upcomingExpandedCells: [Bool] = []
+    var pastExpandedCells: [Bool] = []
     var selectedWorkout : HSWorkoutSession! = nil
     var refreshControl : ISRefreshControl! = nil
     
@@ -31,6 +34,7 @@ class HSMyWorkoutController: HSBaseController, MFMessageComposeViewControllerDel
         self.title = "Workouts"
         self.screenName = HSA.upcomingWorkoutsScreen
         tableView.register(UINib(nibName: "HSUpcomingWorkoutCell", bundle: nil), forCellReuseIdentifier: self.upcomingCellIdentifier)
+        tableView.register(UINib(nibName: "HSUpcomingSessionCell", bundle: nil), forCellReuseIdentifier: self.upcomingSessionCellIdentifier)
         tableView.register(UINib(nibName: "HSPastWorkoutCell", bundle: nil), forCellReuseIdentifier: self.pastCellIdentifier)
         setupPullToRefresh()
         fetchWorkouts(true)
@@ -65,14 +69,18 @@ class HSMyWorkoutController: HSBaseController, MFMessageComposeViewControllerDel
             if error == nil{
                 var lupcomingWorkouts:[HSWorkoutSession] = []
                 var lpastWorkouts:[HSWorkoutSession] = []
+                self.upcomingExpandedCells = []
+                self.pastExpandedCells = []
                 for theWorkout in workouts {
                     if (theWorkout.startDate != nil) {
                         if theWorkout.startDate.compare(Date()) == .orderedAscending{
                             lpastWorkouts.append(theWorkout)
+                            self.pastExpandedCells.append(false)
                             //                            self.pastWorkouts.append(theWorkout)
                         }
                         else{
                             lupcomingWorkouts.append(theWorkout)
+                            self.upcomingExpandedCells.append(false)
                             //                            self.upcomingWorkouts.append(theWorkout)
                         }
                     }
@@ -319,8 +327,11 @@ class HSMyWorkoutController: HSBaseController, MFMessageComposeViewControllerDel
     func makeBooking(_ payment : String)  {
         doAcceptBooking()
     }
-        
-    //MARK: - Tableview delegate
+}
+
+//MARK: - UITableViewDelegate and UITableViewDataSource
+extension HSMyWorkoutController {
+    
     func tableView(_ tableView:UITableView, numberOfRowsInSection section:Int) -> Int{
         if upcomingButton.isSelected {
             return pastWorkouts.count
@@ -331,57 +342,73 @@ class HSMyWorkoutController: HSBaseController, MFMessageComposeViewControllerDel
     
     func tableView(_ tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
         if upcomingButton.isSelected == false {
-            let cell:HSUpcomingWorkoutCell = tableView.dequeueReusableCell(withIdentifier: upcomingCellIdentifier) as! HSUpcomingWorkoutCell!
-            cell.selectionStyle = UITableViewCellSelectionStyle.none
+            let cell = tableView.dequeueReusableCell(withIdentifier: upcomingSessionCellIdentifier) as! HSUpcomingSessionCell
             let theWorkout = upcomingWorkouts[indexPath.row]
             
-            cell.roundedView.imageView.sd_setImage(with: URL.init(string: theWorkout.avatar))
-            cell.roundedView.backgroundColor = HSColorUtility.getMarkerTagColor(with: theWorkout.color)
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "MMM"
+            cell.monthLabel.text = dateFormatter.string(from: theWorkout.startDate).uppercased()
+            dateFormatter.dateFormat = "dd"
+            cell.dayLabel.text = dateFormatter.string(from: theWorkout.startDate)
+            dateFormatter.dateFormat = "h:mm a"
+            cell.classDurationLabel.text = dateFormatter.string(from: theWorkout.startDate)
             
-            cell.nameLabel.text = theWorkout.partialTrainerName()
-            let dateFormate = DateFormatter()
-            dateFormate.dateFormat = "M/d/yy '-' h:mm a"
-            cell.timeLabel.text = dateFormate.string(from: theWorkout.startDate)
-            cell.locationLabel.text = theWorkout.formatted_location
-            if theWorkout.isSingle {
-                cell.classLabel.text = theWorkout.speciality + ", 1 person"
-            }else{
-                cell.classLabel.text = theWorkout.speciality + ", 2 person"
-            }
-            if theWorkout.requestedBy == .trainer {
-                cell.trainerRequestInfoView.isHidden = false
-                if theWorkout.workoutStatus == .pending {
-                    cell.showDetailForType(.accept)
-                }else{
-                    cell.showDetailForType(.contact)
-                }
-            }else{
-                cell.trainerRequestInfoView.isHidden = true
-                if theWorkout.workoutStatus == .pending {
-                    cell.showDetailForType(.pending)
-                }else{
-                    cell.showDetailForType(.contact)
-                }
-            }
-            cell.contactButton.tag = indexPath.row
-            cell.contactButton.addTarget(self, action: #selector(self.onContactAction(_:)), for: .touchUpInside)
-            cell.cancelButton.tag = indexPath.row
-            cell.cancelButton.addTarget(self, action: #selector(self.onCancelAction(_:)), for: .touchUpInside)
-            cell.acceptButton.tag = indexPath.row
-            cell.acceptButton.addTarget(self, action: #selector(self.onAcceptAction(_:)), for: .touchUpInside)
-            cell.declineButton.tag = indexPath.row
-            cell.declineButton.addTarget(self, action: #selector(self.onDeclineAction(_:)), for: .touchUpInside)
-            cell.pendingCancelButton.tag = indexPath.row
-            cell.pendingCancelButton.addTarget(self, action: #selector(self.onPendingCancelAction(_:)), for: .touchUpInside)
+            cell.trainerNameLabel.text = "\(theWorkout.first_name ?? "") \(theWorkout.last_name ?? "")".uppercased()
+            cell.classNameLabel.text = theWorkout.speciality
+            cell.trainerImageView.sd_setImage(with: URL(string: theWorkout.avatar))
+            
             return cell
-        }else{
+//            let cell:HSUpcomingWorkoutCell = tableView.dequeueReusableCell(withIdentifier: upcomingCellIdentifier) as! HSUpcomingWorkoutCell!
+//            cell.selectionStyle = UITableViewCellSelectionStyle.none
+//            let theWorkout = upcomingWorkouts[indexPath.row]
+//
+//            cell.roundedView.imageView.sd_setImage(with: URL.init(string: theWorkout.avatar))
+//            cell.roundedView.backgroundColor = HSColorUtility.getMarkerTagColor(with: theWorkout.color)
+//
+//            cell.nameLabel.text = theWorkout.partialTrainerName()
+//            let dateFormate = DateFormatter()
+//            dateFormate.dateFormat = "M/d/yy '-' h:mm a"
+//            cell.timeLabel.text = dateFormate.string(from: theWorkout.startDate)
+//            cell.locationLabel.text = theWorkout.formatted_location
+//            if theWorkout.isSingle {
+//                cell.classLabel.text = theWorkout.speciality + ", 1 person"
+//            }else{
+//                cell.classLabel.text = theWorkout.speciality + ", 2 person"
+//            }
+//            if theWorkout.requestedBy == .trainer {
+//                cell.trainerRequestInfoView.isHidden = false
+//                if theWorkout.workoutStatus == .pending {
+//                    cell.showDetailForType(.accept)
+//                }else{
+//                    cell.showDetailForType(.contact)
+//                }
+//            }else{
+//                cell.trainerRequestInfoView.isHidden = true
+//                if theWorkout.workoutStatus == .pending {
+//                    cell.showDetailForType(.pending)
+//                }else{
+//                    cell.showDetailForType(.contact)
+//                }
+//            }
+//            cell.contactButton.tag = indexPath.row
+//            cell.contactButton.addTarget(self, action: #selector(self.onContactAction(_:)), for: .touchUpInside)
+//            cell.cancelButton.tag = indexPath.row
+//            cell.cancelButton.addTarget(self, action: #selector(self.onCancelAction(_:)), for: .touchUpInside)
+//            cell.acceptButton.tag = indexPath.row
+//            cell.acceptButton.addTarget(self, action: #selector(self.onAcceptAction(_:)), for: .touchUpInside)
+//            cell.declineButton.tag = indexPath.row
+//            cell.declineButton.addTarget(self, action: #selector(self.onDeclineAction(_:)), for: .touchUpInside)
+//            cell.pendingCancelButton.tag = indexPath.row
+//            cell.pendingCancelButton.addTarget(self, action: #selector(self.onPendingCancelAction(_:)), for: .touchUpInside)
+//            return cell
+        } else {
             let cell:HSPastWorkoutCell = tableView.dequeueReusableCell(withIdentifier: pastCellIdentifier) as! HSPastWorkoutCell!
             cell.selectionStyle = UITableViewCellSelectionStyle.none
             if pastWorkouts.count > 0 {
                 let theWorkout = pastWorkouts[indexPath.row]
                 cell.roundedView.imageView.sd_setImage(with: URL.init(string: theWorkout.avatar))
                 cell.roundedView.backgroundColor = HSColorUtility.getMarkerTagColor(with: theWorkout.color)
-
+                
                 cell.nameLabel.text = theWorkout.partialTrainerName()
                 cell.classLabel.text = theWorkout.speciality
                 let dateFormate = DateFormatter()
@@ -403,16 +430,23 @@ class HSMyWorkoutController: HSBaseController, MFMessageComposeViewControllerDel
         }
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAtIndexPath indexPath: IndexPath) -> CGFloat{
+    func tableView(_ tableView: UITableView, heightForRowAtIndexPath indexPath: IndexPath) -> CGFloat {
         if upcomingButton.isSelected == false {
-            return 130
-        }else{
+            if upcomingExpandedCells[indexPath.row] {
+                return 156
+            } else {
+                return 93
+            }
+        } else {
             return 105
         }
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath){
-        
+    func tableView(_ tableView: UITableView, didSelectRowAtIndexPath indexPath: IndexPath) {
+        if upcomingButton.isSelected == false {
+            upcomingExpandedCells[indexPath.row] = !upcomingExpandedCells[indexPath.row]
+        }
+        tableView.beginUpdates()
+        tableView.endUpdates()
     }
-    
 }
