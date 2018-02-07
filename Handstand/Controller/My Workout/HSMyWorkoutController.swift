@@ -443,8 +443,21 @@ extension HSMyWorkoutController {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAtIndexPath indexPath: IndexPath) {
+        // upcoming workouts
         if upcomingButton.isSelected == false {
-            upcomingExpandedCells[indexPath.row] = !upcomingExpandedCells[indexPath.row]
+            if let selectedCell = tableView.cellForRow(at: indexPath) as? HSUpcomingSessionCell {
+                // cell is in center position (not slided)
+                if selectedCell.isExpandable {
+                    upcomingExpandedCells[indexPath.row] = !upcomingExpandedCells[indexPath.row]
+                    // cell is expanded => not slideable
+                    if upcomingExpandedCells[indexPath.row] {
+                        selectedCell.isSlideable = false
+                    // cell is not expanded => slideable
+                    } else {
+                        selectedCell.isSlideable = true
+                    }
+                }
+            }
         }
         tableView.beginUpdates()
         tableView.endUpdates()

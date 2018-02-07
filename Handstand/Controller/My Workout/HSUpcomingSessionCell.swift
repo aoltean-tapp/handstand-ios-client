@@ -24,6 +24,11 @@ class HSUpcomingSessionCell: UITableViewCell {
     @IBOutlet weak var classNameLabel: UILabel!
     @IBOutlet weak var trainerImageView: UIImageView!
     
+    var isSlideable: Bool = true
+    var isExpandable: Bool {
+        return mainViewLeadingConstraint.constant == 19 && mainViewTrailingConstraint.constant == 19
+    }
+    
     fileprivate var previousTouchPoint: CGPoint?
     
     override func awakeFromNib() {
@@ -35,44 +40,46 @@ class HSUpcomingSessionCell: UITableViewCell {
     }
     
     @objc fileprivate func didSwipeCell(_ sender: UIPanGestureRecognizer) {
-        if sender.state == .began {
-            previousTouchPoint = sender.location(in: mainView)
-        } else if sender.state == .changed {
-            let currentTouchPoint = sender.location(in: mainView)
-            if let previousTouchPoint = previousTouchPoint {
-                let leftSwipeDifference = previousTouchPoint.x - currentTouchPoint.x
-                let rightSwipeDifference = currentTouchPoint.x - previousTouchPoint.x
-                if (mainViewTrailingConstraint.constant + leftSwipeDifference) <= 122 && (mainViewLeadingConstraint.constant + rightSwipeDifference) <= 138 {
-                    mainViewTrailingConstraint.constant += leftSwipeDifference
-                    mainViewLeadingConstraint.constant += rightSwipeDifference
-                    self.layoutIfNeeded()
+        if isSlideable {
+            if sender.state == .began {
+                previousTouchPoint = sender.location(in: mainView)
+            } else if sender.state == .changed {
+                let currentTouchPoint = sender.location(in: mainView)
+                if let previousTouchPoint = previousTouchPoint {
+                    let leftSwipeDifference = previousTouchPoint.x - currentTouchPoint.x
+                    let rightSwipeDifference = currentTouchPoint.x - previousTouchPoint.x
+                    if (mainViewTrailingConstraint.constant + leftSwipeDifference) <= 122 && (mainViewLeadingConstraint.constant + rightSwipeDifference) <= 138 {
+                        mainViewTrailingConstraint.constant += leftSwipeDifference
+                        mainViewLeadingConstraint.constant += rightSwipeDifference
+                        self.layoutIfNeeded()
+                    }
                 }
+            } else if sender.state == .ended {
+                let xDifference = sender.translation(in: mainView).x
+                // center to left
+                if xDifference < 0 && mainViewTrailingConstraint.constant > 19 {
+                    mainViewLeadingConstraint.constant = -84
+                    mainViewTrailingConstraint.constant = 122
+                }
+                // left to center
+                if xDifference > 0 && mainViewTrailingConstraint.constant > 19 {
+                    mainViewLeadingConstraint.constant = 19
+                    mainViewTrailingConstraint.constant = 19
+                }
+                // center to right
+                if xDifference > 0 && mainViewLeadingConstraint.constant > 19 {
+                    mainViewLeadingConstraint.constant = 138
+                    mainViewTrailingConstraint.constant = -100
+                }
+                // right to center
+                if xDifference < 0 && mainViewLeadingConstraint.constant > 19 {
+                    mainViewLeadingConstraint.constant = 19
+                    mainViewTrailingConstraint.constant = 19
+                }
+                UIView.animate(withDuration: 0.3, animations: {
+                    self.layoutIfNeeded()
+                })
             }
-        } else if sender.state == .ended {
-            let xDifference = sender.translation(in: mainView).x
-            // center to left
-            if xDifference < 0 && mainViewTrailingConstraint.constant > 19 {
-                mainViewLeadingConstraint.constant = -84
-                mainViewTrailingConstraint.constant = 122
-            }
-            // left to center
-            if xDifference > 0 && mainViewTrailingConstraint.constant > 19 {
-                mainViewLeadingConstraint.constant = 19
-                mainViewTrailingConstraint.constant = 19
-            }
-            // center to right
-            if xDifference > 0 && mainViewLeadingConstraint.constant > 19 {
-                mainViewLeadingConstraint.constant = 138
-                mainViewTrailingConstraint.constant = -100
-            }
-            // right to center
-            if xDifference < 0 && mainViewLeadingConstraint.constant > 19 {
-                mainViewLeadingConstraint.constant = 19
-                mainViewTrailingConstraint.constant = 19
-            }
-            UIView.animate(withDuration: 0.3, animations: {
-                self.layoutIfNeeded()
-            })
         }
     }
     
