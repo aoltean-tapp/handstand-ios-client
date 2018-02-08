@@ -1,26 +1,23 @@
 //
-//  HSSessionCell.swift
+//  HSPastSessionCell.swift
 //  Handstand
 //
-//  Created by Andrei Oltean on 2/2/18.
+//  Created by Andrei Oltean on 2/7/18.
 //  Copyright © 2018 Handstand. All rights reserved.
 //
 
 import UIKit
 
-class HSUpcomingSessionCell: UITableViewCell {
-
+class HSPastSessionCell: UITableViewCell {
+    
     @IBOutlet weak var mainView: UIView!
     @IBOutlet weak var mainViewLeadingConstraint: NSLayoutConstraint!
     @IBOutlet weak var mainViewTrailingConstraint: NSLayoutConstraint!
     
-    @IBOutlet weak var monthLabel: UILabel!
-    @IBOutlet weak var dayLabel: UILabel!
-    @IBOutlet weak var dayMonthView: UIView!
-    @IBOutlet weak var trainerNameLabel: UILabel!
-    @IBOutlet weak var classDurationLabel: UILabel!
-    @IBOutlet weak var classNameLabel: UILabel!
     @IBOutlet weak var trainerImageView: UIImageView!
+    @IBOutlet weak var trainerNameLabel: UILabel!
+    @IBOutlet weak var locationLabel: UILabel!
+    @IBOutlet weak var classNameLabel: UILabel!
     
     var isSlideable: Bool = true
     var isExpandable: Bool {
@@ -28,7 +25,7 @@ class HSUpcomingSessionCell: UITableViewCell {
     }
     
     fileprivate var previousTouchPoint: CGPoint?
-    
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -92,9 +89,6 @@ class HSUpcomingSessionCell: UITableViewCell {
         mainView.layer.shadowOffset = CGSize(width: 0.0, height: 1.2)
         mainView.layer.shadowColor = UIColor.black.cgColor
         mainView.layer.shadowOpacity = 0.5
-        
-        dayMonthView.layer.borderWidth = 1.5
-        dayMonthView.layer.borderColor = #colorLiteral(red: 0.3529411765, green: 0.7764705882, blue: 0.5725490196, alpha: 1).cgColor
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

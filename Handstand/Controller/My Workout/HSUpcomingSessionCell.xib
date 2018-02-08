@@ -41,6 +41,11 @@
                         <state key="normal" title="RESCHEDULE">
                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </button>
                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yXd-fn-n6s">
                         <rect key="frame" x="203" y="7" width="153" height="78"/>
@@ -53,6 +58,11 @@
                         <state key="normal" title="CONTACT">
                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </button>
                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="puv-c7-kLD">
                         <rect key="frame" x="19" y="7" width="337" height="78"/>
@@ -94,6 +104,11 @@
                                             <constraint firstItem="CSd-L9-kQu" firstAttribute="centerX" secondItem="Ppq-Ev-zrR" secondAttribute="centerX" id="nf3-HP-2Cr"/>
                                             <constraint firstAttribute="width" constant="65" id="r6N-5O-zWP"/>
                                         </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xJn-TB-0XB">
                                         <rect key="frame" x="104" y="15.5" width="157" height="16"/>
@@ -119,6 +134,11 @@
                                             <constraint firstAttribute="height" constant="48" id="57f-ji-IBf"/>
                                             <constraint firstAttribute="width" constant="45" id="5CO-Jv-44y"/>
                                         </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -225,14 +245,12 @@
             <connections>
                 <outlet property="classDurationLabel" destination="dcf-Yw-PnV" id="WGe-Tk-2qq"/>
                 <outlet property="classNameLabel" destination="PIO-vg-Tdm" id="8qV-oq-AeL"/>
-                <outlet property="contactButton" destination="yXd-fn-n6s" id="dZI-8J-tdB"/>
                 <outlet property="dayLabel" destination="p8l-LM-m1R" id="oJg-Ev-0FY"/>
                 <outlet property="dayMonthView" destination="Ppq-Ev-zrR" id="1UY-9b-ykS"/>
                 <outlet property="mainView" destination="puv-c7-kLD" id="fIM-sS-T1D"/>
                 <outlet property="mainViewLeadingConstraint" destination="ut2-8I-QnM" id="KPO-7z-VEJ"/>
                 <outlet property="mainViewTrailingConstraint" destination="ICd-kY-4oX" id="qn4-5e-c0T"/>
                 <outlet property="monthLabel" destination="j3z-3n-TFI" id="F5L-6r-wPA"/>
-                <outlet property="rescheduleButton" destination="uDE-tq-t2B" id="s3J-YB-lRp"/>
                 <outlet property="trainerImageView" destination="32p-ac-xDq" id="DZh-te-kxp"/>
                 <outlet property="trainerNameLabel" destination="xJn-TB-0XB" id="nD7-V7-fYl"/>
             </connections>

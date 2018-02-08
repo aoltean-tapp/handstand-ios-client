@@ -23,9 +23,8 @@ class HSMyWorkoutController: HSBaseController, MFMessageComposeViewControllerDel
     @IBOutlet weak var sessionTypeSegmentedControl: TTSegmentedControl!
     @IBOutlet weak var tableView: UITableView!
 
-    let upcomingCellIdentifier = "upcomingCell"
     let upcomingSessionCellIdentifier = "upcomingSessionCellIdentifier"
-    let pastCellIdentifier = "pastCellIdentifier"
+    let pastSessionCellIdentifier = "pastSessionCellIdentifier"
     var upcomingWorkouts: [HSWorkoutSession] = []
     var pastWorkouts: [HSWorkoutSession] = []
     var upcomingExpandedCells: [Bool] = []
@@ -38,9 +37,8 @@ class HSMyWorkoutController: HSBaseController, MFMessageComposeViewControllerDel
         super.viewDidLoad()
         self.title = "Workouts"
         self.screenName = HSA.upcomingWorkoutsScreen
-        tableView.register(UINib(nibName: "HSUpcomingWorkoutCell", bundle: nil), forCellReuseIdentifier: self.upcomingCellIdentifier)
         tableView.register(UINib(nibName: "HSUpcomingSessionCell", bundle: nil), forCellReuseIdentifier: self.upcomingSessionCellIdentifier)
-        tableView.register(UINib(nibName: "HSPastWorkoutCell", bundle: nil), forCellReuseIdentifier: self.pastCellIdentifier)
+        tableView.register(UINib(nibName: "HSPastSessionCell", bundle: nil), forCellReuseIdentifier: self.pastSessionCellIdentifier)
         setupPullToRefresh()
         fetchWorkouts(true)
         self.edgesForExtendedLayout = []
@@ -371,74 +369,15 @@ extension HSMyWorkoutController {
             cell.trainerImageView.sd_setImage(with: URL(string: theWorkout.avatar))
             
             return cell
-//            let cell:HSUpcomingWorkoutCell = tableView.dequeueReusableCell(withIdentifier: upcomingCellIdentifier) as! HSUpcomingWorkoutCell!
-//            cell.selectionStyle = UITableViewCellSelectionStyle.none
-//            let theWorkout = upcomingWorkouts[indexPath.row]
-//
-//            cell.roundedView.imageView.sd_setImage(with: URL.init(string: theWorkout.avatar))
-//            cell.roundedView.backgroundColor = HSColorUtility.getMarkerTagColor(with: theWorkout.color)
-//
-//            cell.nameLabel.text = theWorkout.partialTrainerName()
-//            let dateFormate = DateFormatter()
-//            dateFormate.dateFormat = "M/d/yy '-' h:mm a"
-//            cell.timeLabel.text = dateFormate.string(from: theWorkout.startDate)
-//            cell.locationLabel.text = theWorkout.formatted_location
-//            if theWorkout.isSingle {
-//                cell.classLabel.text = theWorkout.speciality + ", 1 person"
-//            }else{
-//                cell.classLabel.text = theWorkout.speciality + ", 2 person"
-//            }
-//            if theWorkout.requestedBy == .trainer {
-//                cell.trainerRequestInfoView.isHidden = false
-//                if theWorkout.workoutStatus == .pending {
-//                    cell.showDetailForType(.accept)
-//                }else{
-//                    cell.showDetailForType(.contact)
-//                }
-//            }else{
-//                cell.trainerRequestInfoView.isHidden = true
-//                if theWorkout.workoutStatus == .pending {
-//                    cell.showDetailForType(.pending)
-//                }else{
-//                    cell.showDetailForType(.contact)
-//                }
-//            }
-//            cell.contactButton.tag = indexPath.row
-//            cell.contactButton.addTarget(self, action: #selector(self.onContactAction(_:)), for: .touchUpInside)
-//            cell.cancelButton.tag = indexPath.row
-//            cell.cancelButton.addTarget(self, action: #selector(self.onCancelAction(_:)), for: .touchUpInside)
-//            cell.acceptButton.tag = indexPath.row
-//            cell.acceptButton.addTarget(self, action: #selector(self.onAcceptAction(_:)), for: .touchUpInside)
-//            cell.declineButton.tag = indexPath.row
-//            cell.declineButton.addTarget(self, action: #selector(self.onDeclineAction(_:)), for: .touchUpInside)
-//            cell.pendingCancelButton.tag = indexPath.row
-//            cell.pendingCancelButton.addTarget(self, action: #selector(self.onPendingCancelAction(_:)), for: .touchUpInside)
-//            return cell
         } else {
-            let cell:HSPastWorkoutCell = tableView.dequeueReusableCell(withIdentifier: pastCellIdentifier) as! HSPastWorkoutCell!
-            cell.selectionStyle = UITableViewCellSelectionStyle.none
-            if pastWorkouts.count > 0 {
-                let theWorkout = pastWorkouts[indexPath.row]
-                cell.roundedView.imageView.sd_setImage(with: URL.init(string: theWorkout.avatar))
-                cell.roundedView.backgroundColor = HSColorUtility.getMarkerTagColor(with: theWorkout.color)
-                
-                cell.nameLabel.text = theWorkout.partialTrainerName()
-                cell.classLabel.text = theWorkout.speciality
-                let dateFormate = DateFormatter()
-                dateFormate.dateFormat = "M/d/yy '-' h:mm a"
-                cell.dateLabel.text = dateFormate.string(from: theWorkout.startDate)
-                cell.rebookButton.tag = indexPath.row
-                if theWorkout.isHidden {
-                    cell.notAvailableLabel.isHidden = false
-                    cell.rebookButton.isUserInteractionEnabled = false
-                    cell.rebookButton.alpha = 0.4
-                }else{
-                    cell.notAvailableLabel.isHidden = true
-                    cell.rebookButton.isUserInteractionEnabled = true
-                    cell.rebookButton.alpha = 1.0
-                }
-                cell.rebookButton.addTarget(self, action: #selector(self.onRebookAction(_:)), for: .touchUpInside)
-            }
+            let cell = tableView.dequeueReusableCell(withIdentifier: pastSessionCellIdentifier) as! HSPastSessionCell
+            let theWorkout = pastWorkouts[indexPath.row]
+            
+            cell.trainerImageView.sd_setImage(with: URL(string: theWorkout.avatar))
+            cell.trainerNameLabel.text = "\(theWorkout.first_name ?? "") \(theWorkout.last_name ?? "")".uppercased()
+            cell.locationLabel.text = theWorkout.formatted_location
+            cell.classNameLabel.text = theWorkout.speciality
+            
             return cell
         }
     }
@@ -451,7 +390,11 @@ extension HSMyWorkoutController {
                 return 93
             }
         } else {
-            return 105
+            if pastExpandedCells[indexPath.row] {
+                return 156
+            } else {
+                return 93
+            }
         }
     }
     
@@ -466,6 +409,20 @@ extension HSMyWorkoutController {
                     if upcomingExpandedCells[indexPath.row] {
                         selectedCell.isSlideable = false
                     // cell is not expanded => slideable
+                    } else {
+                        selectedCell.isSlideable = true
+                    }
+                }
+            }
+        } else {
+            if let selectedCell = tableView.cellForRow(at: indexPath) as? HSPastSessionCell {
+                // cell is in center position (not slided)
+                if selectedCell.isExpandable {
+                    pastExpandedCells[indexPath.row] = !pastExpandedCells[indexPath.row]
+                    // cell is expanded => not slideable
+                    if pastExpandedCells[indexPath.row] {
+                        selectedCell.isSlideable = false
+                        // cell is not expanded => slideable
                     } else {
                         selectedCell.isSlideable = true
                     }

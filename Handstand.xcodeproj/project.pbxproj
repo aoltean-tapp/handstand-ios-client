@@ -634,7 +634,6 @@
 		762A32191EE163960043E8D9 /* NVActivityIndicatorAnimationBallClipRotatePulse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76ECF24B1E8DA2EE0094C2C8 /* NVActivityIndicatorAnimationBallClipRotatePulse.swift */; };
 		762A321B1EE163960043E8D9 /* HOImageViewAligned.m in Sources */ = {isa = PBXBuildFile; fileRef = 76F3130A1E9BC7D600DCF3E2 /* HOImageViewAligned.m */; };
 		762A321C1EE163960043E8D9 /* HSUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DF666D1E9611F8008DC306 /* HSUser.swift */; };
-		762A321D1EE163960043E8D9 /* HSPastWorkoutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7641C2401EC20E8A00743BA2 /* HSPastWorkoutCell.swift */; };
 		762A321E1EE163960043E8D9 /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76ECF2721E8DA2EE0094C2C8 /* Constraint.swift */; };
 		762A321F1EE163960043E8D9 /* HSOnboardingServiceValidateIAP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F870641EC48EB1004FD5CC /* HSOnboardingServiceValidateIAP.swift */; };
 		762A32201EE163960043E8D9 /* HSOnboardingServiceSaveIAP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F870621EC48C0A004FD5CC /* HSOnboardingServiceSaveIAP.swift */; };
@@ -697,7 +696,6 @@
 		762A32641EE163960043E8D9 /* BMPlayerLayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76ECF2401E8DA2EE0094C2C8 /* BMPlayerLayerView.swift */; };
 		762A32651EE163960043E8D9 /* NVActivityIndicatorAnimationBallTrianglePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76ECF2581E8DA2EE0094C2C8 /* NVActivityIndicatorAnimationBallTrianglePath.swift */; };
 		762A32661EE163960043E8D9 /* ConstraintMakerExtendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76ECF2821E8DA2EE0094C2C8 /* ConstraintMakerExtendable.swift */; };
-		762A32671EE163960043E8D9 /* HSUpcomingWorkoutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766D02B71EC1E60B00C66B54 /* HSUpcomingWorkoutCell.swift */; };
 		762A32681EE163960043E8D9 /* HSWorkoutPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7623F0EF1EB8D29B00C245A2 /* HSWorkoutPlan.swift */; };
 		762A32691EE163960043E8D9 /* NVActivityIndicatorShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76ECF2691E8DA2EE0094C2C8 /* NVActivityIndicatorShape.swift */; };
 		762A326A1EE163960043E8D9 /* HSVideoNetworkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DF669A1E97BB42008DC306 /* HSVideoNetworkHandler.swift */; };
@@ -754,7 +752,6 @@
 		762A32A41EE163960043E8D9 /* HSForgotPasswordVerifyCodeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76BC3B801EC5EF09007222CF /* HSForgotPasswordVerifyCodeController.xib */; };
 		762A32A51EE163960043E8D9 /* HSPlanView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76C2526B1ECC51E5002DC7C0 /* HSPlanView.xib */; };
 		762A32A61EE163960043E8D9 /* HSHomeTileController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76BBDD7A1EBC4F3500DBC420 /* HSHomeTileController.xib */; };
-		762A32A71EE163960043E8D9 /* HSUpcomingWorkoutCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 766D02B81EC1E60B00C66B54 /* HSUpcomingWorkoutCell.xib */; };
 		762A32A91EE163960043E8D9 /* HSTitleReebokShopCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76BBDDA41EBCB6F600DBC420 /* HSTitleReebokShopCell.xib */; };
 		762A32AA1EE163960043E8D9 /* HSTrainerListFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76EECB5C1ED71A7D00CCC596 /* HSTrainerListFooterView.xib */; };
 		762A32AB1EE163960043E8D9 /* HSTileBookCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76BBDD8D1EBC812300DBC420 /* HSTileBookCell.xib */; };
@@ -774,7 +771,6 @@
 		762A32BC1EE163960043E8D9 /* HSCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76C252801ECDC4E5002DC7C0 /* HSCardView.xib */; };
 		762A32BD1EE163960043E8D9 /* HSForgotPasswordEmailController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7627C92A1EC5E42600C93808 /* HSForgotPasswordEmailController.xib */; };
 		762A32BE1EE163960043E8D9 /* HSHomeMapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 760644461E9F518900F78C9E /* HSHomeMapView.xib */; };
-		762A32BF1EE163960043E8D9 /* HSPastWorkoutCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7641C2411EC20E8A00743BA2 /* HSPastWorkoutCell.xib */; };
 		762A32C01EE163960043E8D9 /* HSTileVideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76BBDD891EBC6B9E00DBC420 /* HSTileVideoCell.xib */; };
 		762A32C11EE163960043E8D9 /* HSBookingConfirmationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76BBDD721EBA150A00DBC420 /* HSBookingConfirmationController.xib */; };
 		762A32C21EE163960043E8D9 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 76ECF26F1E8DA2EE0094C2C8 /* LICENSE */; };
@@ -835,8 +831,6 @@
 		763D08511F0510D600F8D9F1 /* PDKeychainBindingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 763D084D1F0510D600F8D9F1 /* PDKeychainBindingsController.m */; };
 		763D08521F0510D600F8D9F1 /* PDKeychainBindingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 763D084D1F0510D600F8D9F1 /* PDKeychainBindingsController.m */; };
 		763D08531F0510D600F8D9F1 /* PDKeychainBindingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 763D084D1F0510D600F8D9F1 /* PDKeychainBindingsController.m */; };
-		7641C2421EC20E8A00743BA2 /* HSPastWorkoutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7641C2401EC20E8A00743BA2 /* HSPastWorkoutCell.swift */; };
-		7641C2431EC20E8A00743BA2 /* HSPastWorkoutCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7641C2411EC20E8A00743BA2 /* HSPastWorkoutCell.xib */; };
 		764217F01E8D3A2900E4A5F1 /* HSVideoVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764217EF1E8D3A2900E4A5F1 /* HSVideoVideo.swift */; };
 		764EE6E21ECF22B200ED8BDB /* HSPaymentCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764EE6E01ECF22B200ED8BDB /* HSPaymentCardCell.swift */; };
 		764EE6E31ECF22B200ED8BDB /* HSPaymentCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764EE6E01ECF22B200ED8BDB /* HSPaymentCardCell.swift */; };
@@ -861,8 +855,6 @@
 		766D02AF1EC1932C00C66B54 /* HSProfileController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 766D02AD1EC1932C00C66B54 /* HSProfileController.xib */; };
 		766D02B51EC1DE3600C66B54 /* HSMyWorkoutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766D02B31EC1DE3600C66B54 /* HSMyWorkoutController.swift */; };
 		766D02B61EC1DE3600C66B54 /* HSMyWorkoutController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 766D02B41EC1DE3600C66B54 /* HSMyWorkoutController.xib */; };
-		766D02B91EC1E60B00C66B54 /* HSUpcomingWorkoutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766D02B71EC1E60B00C66B54 /* HSUpcomingWorkoutCell.swift */; };
-		766D02BA1EC1E60B00C66B54 /* HSUpcomingWorkoutCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 766D02B81EC1E60B00C66B54 /* HSUpcomingWorkoutCell.xib */; };
 		7676B16E1EDC354F002302C4 /* HSPromotionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7676B16C1EDC354F002302C4 /* HSPromotionController.swift */; };
 		7676B16F1EDC354F002302C4 /* HSPromotionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7676B16C1EDC354F002302C4 /* HSPromotionController.swift */; };
 		7676B1701EDC354F002302C4 /* HSPromotionController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7676B16D1EDC354F002302C4 /* HSPromotionController.xib */; };
@@ -1077,7 +1069,6 @@
 		76E31F3F1ECB138600DD4979 /* NVActivityIndicatorAnimationBallClipRotatePulse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76ECF24B1E8DA2EE0094C2C8 /* NVActivityIndicatorAnimationBallClipRotatePulse.swift */; };
 		76E31F411ECB138600DD4979 /* HOImageViewAligned.m in Sources */ = {isa = PBXBuildFile; fileRef = 76F3130A1E9BC7D600DCF3E2 /* HOImageViewAligned.m */; };
 		76E31F421ECB138600DD4979 /* HSUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DF666D1E9611F8008DC306 /* HSUser.swift */; };
-		76E31F431ECB138600DD4979 /* HSPastWorkoutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7641C2401EC20E8A00743BA2 /* HSPastWorkoutCell.swift */; };
 		76E31F441ECB138600DD4979 /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76ECF2721E8DA2EE0094C2C8 /* Constraint.swift */; };
 		76E31F451ECB138600DD4979 /* HSOnboardingServiceValidateIAP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F870641EC48EB1004FD5CC /* HSOnboardingServiceValidateIAP.swift */; };
 		76E31F461ECB138600DD4979 /* HSOnboardingServiceSaveIAP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F870621EC48C0A004FD5CC /* HSOnboardingServiceSaveIAP.swift */; };
@@ -1136,7 +1127,6 @@
 		76E31F851ECB138600DD4979 /* BMPlayerLayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76ECF2401E8DA2EE0094C2C8 /* BMPlayerLayerView.swift */; };
 		76E31F861ECB138600DD4979 /* NVActivityIndicatorAnimationBallTrianglePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76ECF2581E8DA2EE0094C2C8 /* NVActivityIndicatorAnimationBallTrianglePath.swift */; };
 		76E31F871ECB138600DD4979 /* ConstraintMakerExtendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76ECF2821E8DA2EE0094C2C8 /* ConstraintMakerExtendable.swift */; };
-		76E31F881ECB138600DD4979 /* HSUpcomingWorkoutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766D02B71EC1E60B00C66B54 /* HSUpcomingWorkoutCell.swift */; };
 		76E31F891ECB138600DD4979 /* HSWorkoutPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7623F0EF1EB8D29B00C245A2 /* HSWorkoutPlan.swift */; };
 		76E31F8A1ECB138600DD4979 /* NVActivityIndicatorShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76ECF2691E8DA2EE0094C2C8 /* NVActivityIndicatorShape.swift */; };
 		76E31F8B1ECB138600DD4979 /* HSVideoNetworkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DF669A1E97BB42008DC306 /* HSVideoNetworkHandler.swift */; };
@@ -1186,7 +1176,6 @@
 		76E31FBC1ECB138600DD4979 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 76DF66631E9532FF008DC306 /* Localizable.strings */; };
 		76E31FBE1ECB138600DD4979 /* HSForgotPasswordVerifyCodeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76BC3B801EC5EF09007222CF /* HSForgotPasswordVerifyCodeController.xib */; };
 		76E31FBF1ECB138600DD4979 /* HSHomeTileController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76BBDD7A1EBC4F3500DBC420 /* HSHomeTileController.xib */; };
-		76E31FC01ECB138600DD4979 /* HSUpcomingWorkoutCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 766D02B81EC1E60B00C66B54 /* HSUpcomingWorkoutCell.xib */; };
 		76E31FC21ECB138600DD4979 /* HSTitleReebokShopCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76BBDDA41EBCB6F600DBC420 /* HSTitleReebokShopCell.xib */; };
 		76E31FC31ECB138600DD4979 /* HSTileBookCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76BBDD8D1EBC812300DBC420 /* HSTileBookCell.xib */; };
 		76E31FC41ECB138600DD4979 /* HSHomeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76DF66791E965E1A008DC306 /* HSHomeController.xib */; };
@@ -1203,7 +1192,6 @@
 		76E31FD21ECB138600DD4979 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 76ECF23B1E8DA2EE0094C2C8 /* .gitkeep */; };
 		76E31FD31ECB138600DD4979 /* HSForgotPasswordEmailController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7627C92A1EC5E42600C93808 /* HSForgotPasswordEmailController.xib */; };
 		76E31FD41ECB138600DD4979 /* HSHomeMapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 760644461E9F518900F78C9E /* HSHomeMapView.xib */; };
-		76E31FD51ECB138600DD4979 /* HSPastWorkoutCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7641C2411EC20E8A00743BA2 /* HSPastWorkoutCell.xib */; };
 		76E31FD61ECB138600DD4979 /* HSTileVideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76BBDD891EBC6B9E00DBC420 /* HSTileVideoCell.xib */; };
 		76E31FD71ECB138600DD4979 /* HSBookingConfirmationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76BBDD721EBA150A00DBC420 /* HSBookingConfirmationController.xib */; };
 		76E31FD81ECB138600DD4979 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 76ECF26F1E8DA2EE0094C2C8 /* LICENSE */; };
@@ -1336,6 +1324,12 @@
 		A5B4252A1F335111006C6EBA /* HSSubscribeTileInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5B425261F335111006C6EBA /* HSSubscribeTileInfoCell.xib */; };
 		A5B4252B1F335111006C6EBA /* HSSubscribeTileInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5B425261F335111006C6EBA /* HSSubscribeTileInfoCell.xib */; };
 		A5B4252C1F335111006C6EBA /* HSSubscribeTileInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5B425261F335111006C6EBA /* HSSubscribeTileInfoCell.xib */; };
+		BB6EB84B202B530F006CC537 /* HSPastSessionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6EB849202B530F006CC537 /* HSPastSessionCell.swift */; };
+		BB6EB84C202B530F006CC537 /* HSPastSessionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6EB849202B530F006CC537 /* HSPastSessionCell.swift */; };
+		BB6EB84D202B5310006CC537 /* HSPastSessionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6EB849202B530F006CC537 /* HSPastSessionCell.swift */; };
+		BB6EB84E202B5310006CC537 /* HSPastSessionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB6EB84A202B530F006CC537 /* HSPastSessionCell.xib */; };
+		BB6EB84F202B5310006CC537 /* HSPastSessionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB6EB84A202B530F006CC537 /* HSPastSessionCell.xib */; };
+		BB6EB850202B5310006CC537 /* HSPastSessionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB6EB84A202B530F006CC537 /* HSPastSessionCell.xib */; };
 		BB954339202340DF0025C290 /* HSSavedSweatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB954337202340DF0025C290 /* HSSavedSweatViewController.xib */; };
 		BB95433A202340DF0025C290 /* HSSavedSweatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB954337202340DF0025C290 /* HSSavedSweatViewController.xib */; };
 		BB95433B202340DF0025C290 /* HSSavedSweatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB954337202340DF0025C290 /* HSSavedSweatViewController.xib */; };
@@ -1638,8 +1632,6 @@
 		763D084B1F0510D600F8D9F1 /* PDKeychainBindings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDKeychainBindings.m; sourceTree = "<group>"; };
 		763D084C1F0510D600F8D9F1 /* PDKeychainBindingsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDKeychainBindingsController.h; sourceTree = "<group>"; };
 		763D084D1F0510D600F8D9F1 /* PDKeychainBindingsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDKeychainBindingsController.m; sourceTree = "<group>"; };
-		7641C2401EC20E8A00743BA2 /* HSPastWorkoutCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSPastWorkoutCell.swift; sourceTree = "<group>"; };
-		7641C2411EC20E8A00743BA2 /* HSPastWorkoutCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HSPastWorkoutCell.xib; sourceTree = "<group>"; };
 		764217E31E8D2D4100E4A5F1 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 		764217E51E8D2E3300E4A5F1 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		764217E71E8D2E4000E4A5F1 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
@@ -1668,8 +1660,6 @@
 		766D02AD1EC1932C00C66B54 /* HSProfileController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HSProfileController.xib; sourceTree = "<group>"; };
 		766D02B31EC1DE3600C66B54 /* HSMyWorkoutController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSMyWorkoutController.swift; sourceTree = "<group>"; };
 		766D02B41EC1DE3600C66B54 /* HSMyWorkoutController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HSMyWorkoutController.xib; sourceTree = "<group>"; };
-		766D02B71EC1E60B00C66B54 /* HSUpcomingWorkoutCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSUpcomingWorkoutCell.swift; sourceTree = "<group>"; };
-		766D02B81EC1E60B00C66B54 /* HSUpcomingWorkoutCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HSUpcomingWorkoutCell.xib; sourceTree = "<group>"; };
 		7676B16C1EDC354F002302C4 /* HSPromotionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSPromotionController.swift; sourceTree = "<group>"; };
 		7676B16D1EDC354F002302C4 /* HSPromotionController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HSPromotionController.xib; sourceTree = "<group>"; };
 		76B44D9D1F14E45B00297EAA /* HSTileBuyPackageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSTileBuyPackageCell.swift; sourceTree = "<group>"; };
@@ -1907,6 +1897,8 @@
 		A5B425211F334A21006C6EBA /* UIColor+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Additions.swift"; sourceTree = "<group>"; };
 		A5B425251F335111006C6EBA /* HSSubscribeTileInfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSSubscribeTileInfoCell.swift; sourceTree = "<group>"; };
 		A5B425261F335111006C6EBA /* HSSubscribeTileInfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HSSubscribeTileInfoCell.xib; sourceTree = "<group>"; };
+		BB6EB849202B530F006CC537 /* HSPastSessionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSPastSessionCell.swift; sourceTree = "<group>"; };
+		BB6EB84A202B530F006CC537 /* HSPastSessionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HSPastSessionCell.xib; sourceTree = "<group>"; };
 		BB954337202340DF0025C290 /* HSSavedSweatViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HSSavedSweatViewController.xib; sourceTree = "<group>"; };
 		BB954338202340DF0025C290 /* HSSavedSweatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSSavedSweatViewController.swift; sourceTree = "<group>"; };
 		BB954343202495FA0025C290 /* HSUpcomingSessionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSUpcomingSessionCell.swift; sourceTree = "<group>"; };
@@ -2481,12 +2473,10 @@
 			children = (
 				766D02B31EC1DE3600C66B54 /* HSMyWorkoutController.swift */,
 				766D02B41EC1DE3600C66B54 /* HSMyWorkoutController.xib */,
-				766D02B71EC1E60B00C66B54 /* HSUpcomingWorkoutCell.swift */,
-				766D02B81EC1E60B00C66B54 /* HSUpcomingWorkoutCell.xib */,
-				7641C2401EC20E8A00743BA2 /* HSPastWorkoutCell.swift */,
-				7641C2411EC20E8A00743BA2 /* HSPastWorkoutCell.xib */,
 				BB954343202495FA0025C290 /* HSUpcomingSessionCell.swift */,
 				BB954344202495FA0025C290 /* HSUpcomingSessionCell.xib */,
+				BB6EB849202B530F006CC537 /* HSPastSessionCell.swift */,
+				BB6EB84A202B530F006CC537 /* HSPastSessionCell.xib */,
 			);
 			path = "My Workout";
 			sourceTree = "<group>";
@@ -3354,7 +3344,6 @@
 				BB954353202884C20025C290 /* Lato-Bold.ttf in Resources */,
 				762A32A51EE163960043E8D9 /* HSPlanView.xib in Resources */,
 				762A32A61EE163960043E8D9 /* HSHomeTileController.xib in Resources */,
-				762A32A71EE163960043E8D9 /* HSUpcomingWorkoutCell.xib in Resources */,
 				07082AC720063C1900019418 /* HSNewSubscriptionController.xib in Resources */,
 				07FDED561F600FE1004BC833 /* HSPhneVerificationQueryController.xib in Resources */,
 				BB954362202884D70025C290 /* Lato-Light.ttf in Resources */,
@@ -3423,7 +3412,7 @@
 				07CB72AE1FC6EDCB004D875A /* HSFavoritesController.xib in Resources */,
 				07025EED1F97826D00FA93AE /* HSPrimaryLaunchScreen.xib in Resources */,
 				07FDED351F600D5F004BC833 /* HSSubscriptionTermsLinkCell.xib in Resources */,
-				762A32BF1EE163960043E8D9 /* HSPastWorkoutCell.xib in Resources */,
+				BB6EB850202B5310006CC537 /* HSPastSessionCell.xib in Resources */,
 				762A32C01EE163960043E8D9 /* HSTileVideoCell.xib in Resources */,
 				762A32C11EE163960043E8D9 /* HSBookingConfirmationController.xib in Resources */,
 				762A32C21EE163960043E8D9 /* LICENSE in Resources */,
@@ -3506,7 +3495,6 @@
 				76BC3B821EC5EF09007222CF /* HSForgotPasswordVerifyCodeController.xib in Resources */,
 				76C2526C1ECC51E5002DC7C0 /* HSPlanView.xib in Resources */,
 				76BBDD7C1EBC4F3500DBC420 /* HSHomeTileController.xib in Resources */,
-				766D02BA1EC1E60B00C66B54 /* HSUpcomingWorkoutCell.xib in Resources */,
 				07FDED461F600F89004BC833 /* HSPhneVerificationQueryController.xib in Resources */,
 				76BBDDA61EBCB6F700DBC420 /* HSTitleReebokShopCell.xib in Resources */,
 				07E885A21FEA7E8F00B8B408 /* Lato-Hairline.ttf in Resources */,
@@ -3562,6 +3550,7 @@
 				071EDB881FEA6C8800D41BBF /* HSWhyHandstandViewController.xib in Resources */,
 				07E885A91FEA7E8F00B8B408 /* Lato-Medium.ttf in Resources */,
 				76ECF2CB1E8DA2EE0094C2C8 /* Pod_Asset_BMPlayer.xcassets in Resources */,
+				BB6EB84E202B5310006CC537 /* HSPastSessionCell.xib in Resources */,
 				76ECF29C1E8DA2EE0094C2C8 /* .gitkeep in Resources */,
 				76C252811ECDC4E5002DC7C0 /* HSCardView.xib in Resources */,
 				7627C92C1EC5E42600C93808 /* HSForgotPasswordEmailController.xib in Resources */,
@@ -3570,7 +3559,6 @@
 				07025EE81F97826700FA93AE /* HSPrimaryLaunchScreen.xib in Resources */,
 				BB95434B2024B9C00025C290 /* HSUpcomingSessionCell.xib in Resources */,
 				07FDED291F600D5A004BC833 /* HSSubscriptionTermsLinkCell.xib in Resources */,
-				7641C2431EC20E8A00743BA2 /* HSPastWorkoutCell.xib in Resources */,
 				07E8856B1FEA76AB00B8B408 /* SourceSansPro-LightIt.otf in Resources */,
 				76BBDD8B1EBC6B9E00DBC420 /* HSTileVideoCell.xib in Resources */,
 				76BBDD741EBA150A00DBC420 /* HSBookingConfirmationController.xib in Resources */,
@@ -3666,7 +3654,6 @@
 				BB954352202884C20025C290 /* Lato-Bold.ttf in Resources */,
 				76C2526D1ECC51E5002DC7C0 /* HSPlanView.xib in Resources */,
 				76E31FBF1ECB138600DD4979 /* HSHomeTileController.xib in Resources */,
-				76E31FC01ECB138600DD4979 /* HSUpcomingWorkoutCell.xib in Resources */,
 				07082AC620063C1900019418 /* HSNewSubscriptionController.xib in Resources */,
 				07FDED4E1F600FE0004BC833 /* HSPhneVerificationQueryController.xib in Resources */,
 				BB954361202884D60025C290 /* Lato-Light.ttf in Resources */,
@@ -3735,7 +3722,7 @@
 				07CB72AD1FC6EDCB004D875A /* HSFavoritesController.xib in Resources */,
 				07025EEB1F97826D00FA93AE /* HSPrimaryLaunchScreen.xib in Resources */,
 				07FDED2F1F600D5F004BC833 /* HSSubscriptionTermsLinkCell.xib in Resources */,
-				76E31FD51ECB138600DD4979 /* HSPastWorkoutCell.xib in Resources */,
+				BB6EB84F202B5310006CC537 /* HSPastSessionCell.xib in Resources */,
 				76E31FD61ECB138600DD4979 /* HSTileVideoCell.xib in Resources */,
 				76E31FD71ECB138600DD4979 /* HSBookingConfirmationController.xib in Resources */,
 				76E31FD81ECB138600DD4979 /* LICENSE in Resources */,
@@ -4136,6 +4123,7 @@
 				762A31B71EE163960043E8D9 /* ConstraintRelation.swift in Sources */,
 				762A31B81EE163960043E8D9 /* ConstraintConfig.swift in Sources */,
 				07E3355E1F9779E400918613 /* HSBaseController.swift in Sources */,
+				BB6EB84D202B5310006CC537 /* HSPastSessionCell.swift in Sources */,
 				76B44DB11F14F31F00297EAA /* HSTileBlogCell.swift in Sources */,
 				07C4E1F51FC327F300703E69 /* HSHudView.swift in Sources */,
 				07B555081FCD7145009E9BC7 /* UISearchBar+Additions.swift in Sources */,
@@ -4288,7 +4276,6 @@
 				07FF4BEF1FED2C830004B45A /* HSPaymentDetailsController.swift in Sources */,
 				07082B42200642CB00019418 /* HSGetNewSubscriptionsResponse.swift in Sources */,
 				762A321C1EE163960043E8D9 /* HSUser.swift in Sources */,
-				762A321D1EE163960043E8D9 /* HSPastWorkoutCell.swift in Sources */,
 				763D083C1F029D5600F8D9F1 /* HSNoCardView.swift in Sources */,
 				762A321E1EE163960043E8D9 /* Constraint.swift in Sources */,
 				07FDED111F600CAD004BC833 /* HSPromoResponse.swift in Sources */,
@@ -4383,7 +4370,6 @@
 				071CBF6420068FA60055A920 /* HSNewSubscriptionHeaderCell.swift in Sources */,
 				762A32661EE163960043E8D9 /* ConstraintMakerExtendable.swift in Sources */,
 				BB954347202495FA0025C290 /* HSUpcomingSessionCell.swift in Sources */,
-				762A32671EE163960043E8D9 /* HSUpcomingWorkoutCell.swift in Sources */,
 				07082ACC20063D5600019418 /* HSSubscriptionInfoCell.swift in Sources */,
 				762A32681EE163960043E8D9 /* HSWorkoutPlan.swift in Sources */,
 				762A32691EE163960043E8D9 /* NVActivityIndicatorShape.swift in Sources */,
@@ -4442,6 +4428,7 @@
 				76ECF2D01E8DA2EE0094C2C8 /* ConstraintConfig.swift in Sources */,
 				07E3355A1F9779B600918613 /* HSBaseNavigationController.swift in Sources */,
 				76B44DAF1F14F31F00297EAA /* HSTileBlogCell.swift in Sources */,
+				BB6EB84B202B530F006CC537 /* HSPastSessionCell.swift in Sources */,
 				763D08361EFBE61400F8D9F1 /* HSPassportNetworkHandler.swift in Sources */,
 				07C4E1F31FC327EF00703E69 /* HSHudView.swift in Sources */,
 				07B555061FCD7145009E9BC7 /* UISearchBar+Additions.swift in Sources */,
@@ -4588,7 +4575,6 @@
 				07B71D511F99F9EA000B60A5 /* HSAppManager.swift in Sources */,
 				76F3130B1E9BC7D600DCF3E2 /* HOImageViewAligned.m in Sources */,
 				76DF666E1E9611F8008DC306 /* HSUser.swift in Sources */,
-				7641C2421EC20E8A00743BA2 /* HSPastWorkoutCell.swift in Sources */,
 				763D083A1F029D5600F8D9F1 /* HSNoCardView.swift in Sources */,
 				76ECF2CE1E8DA2EE0094C2C8 /* Constraint.swift in Sources */,
 				07FF4BED1FED2C830004B45A /* HSPaymentDetailsController.swift in Sources */,
@@ -4685,7 +4671,6 @@
 				76ECF2B61E8DA2EE0094C2C8 /* NVActivityIndicatorAnimationBallTrianglePath.swift in Sources */,
 				76ECF2DE1E8DA2EE0094C2C8 /* ConstraintMakerExtendable.swift in Sources */,
 				07FF4BF51FED31660004B45A /* HSPaymentSuccessfulController.swift in Sources */,
-				766D02B91EC1E60B00C66B54 /* HSUpcomingWorkoutCell.swift in Sources */,
 				071CBF6220068FA60055A920 /* HSNewSubscriptionHeaderCell.swift in Sources */,
 				7623F0F01EB8D29B00C245A2 /* HSWorkoutPlan.swift in Sources */,
 				BB954345202495FA0025C290 /* HSUpcomingSessionCell.swift in Sources */,
@@ -4748,6 +4733,7 @@
 				76E31EE31ECB138600DD4979 /* ConstraintRelation.swift in Sources */,
 				76E31EE41ECB138600DD4979 /* ConstraintConfig.swift in Sources */,
 				07E3355C1F9779E400918613 /* HSBaseController.swift in Sources */,
+				BB6EB84C202B530F006CC537 /* HSPastSessionCell.swift in Sources */,
 				76B44DB01F14F31F00297EAA /* HSTileBlogCell.swift in Sources */,
 				07C4E1F41FC327F300703E69 /* HSHudView.swift in Sources */,
 				07B555071FCD7145009E9BC7 /* UISearchBar+Additions.swift in Sources */,
@@ -4900,7 +4886,6 @@
 				07FF4BEE1FED2C830004B45A /* HSPaymentDetailsController.swift in Sources */,
 				07082B41200642CB00019418 /* HSGetNewSubscriptionsResponse.swift in Sources */,
 				76E31F421ECB138600DD4979 /* HSUser.swift in Sources */,
-				76E31F431ECB138600DD4979 /* HSPastWorkoutCell.swift in Sources */,
 				763D083B1F029D5600F8D9F1 /* HSNoCardView.swift in Sources */,
 				76E31F441ECB138600DD4979 /* Constraint.swift in Sources */,
 				07FDED101F600CAC004BC833 /* HSPromoResponse.swift in Sources */,
@@ -4995,7 +4980,6 @@
 				071CBF6320068FA60055A920 /* HSNewSubscriptionHeaderCell.swift in Sources */,
 				76E31F871ECB138600DD4979 /* ConstraintMakerExtendable.swift in Sources */,
 				BB954346202495FA0025C290 /* HSUpcomingSessionCell.swift in Sources */,
-				76E31F881ECB138600DD4979 /* HSUpcomingWorkoutCell.swift in Sources */,
 				07082ACB20063D5600019418 /* HSSubscriptionInfoCell.swift in Sources */,
 				76E31F891ECB138600DD4979 /* HSWorkoutPlan.swift in Sources */,
 				76E31F8A1ECB138600DD4979 /* NVActivityIndicatorShape.swift in Sources */,
