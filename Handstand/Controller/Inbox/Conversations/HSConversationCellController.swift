@@ -31,4 +31,10 @@ class HSConversationCellController: CollectionCellController<HSConversation, HSC
         dateFormatter.dateFormat = "h:mm a"
         cell.lastContactedTimeLabel.text = dateFormatter.string(from: content.lastContactDate)
     }
+    
+    override func didSelectContent(_ content: HSConversation, at indexPath: IndexPath, in collectionView: UICollectionView) {
+        let chatViewController = HSChatController()
+        chatViewController.hidesBottomBarWhenPushed = true
+        parentViewController?.navigationController?.pushViewController(chatViewController, animated: true)
+    }
 }

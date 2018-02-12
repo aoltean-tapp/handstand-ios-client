@@ -1336,6 +1336,12 @@
 		BB695B76203192EA00A31C86 /* HSConversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB695B75203192EA00A31C86 /* HSConversation.swift */; };
 		BB695B77203192EA00A31C86 /* HSConversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB695B75203192EA00A31C86 /* HSConversation.swift */; };
 		BB695B78203192EA00A31C86 /* HSConversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB695B75203192EA00A31C86 /* HSConversation.swift */; };
+		BB695B7C2031DFD000A31C86 /* HSChatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB695B7A2031DFD000A31C86 /* HSChatController.swift */; };
+		BB695B7D2031DFD000A31C86 /* HSChatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB695B7A2031DFD000A31C86 /* HSChatController.swift */; };
+		BB695B7E2031DFD000A31C86 /* HSChatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB695B7A2031DFD000A31C86 /* HSChatController.swift */; };
+		BB695B7F2031DFD000A31C86 /* HSChatController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB695B7B2031DFD000A31C86 /* HSChatController.xib */; };
+		BB695B802031DFD000A31C86 /* HSChatController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB695B7B2031DFD000A31C86 /* HSChatController.xib */; };
+		BB695B812031DFD000A31C86 /* HSChatController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB695B7B2031DFD000A31C86 /* HSChatController.xib */; };
 		BB6EB84B202B530F006CC537 /* HSPastSessionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6EB849202B530F006CC537 /* HSPastSessionCell.swift */; };
 		BB6EB84C202B530F006CC537 /* HSPastSessionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6EB849202B530F006CC537 /* HSPastSessionCell.swift */; };
 		BB6EB84D202B5310006CC537 /* HSPastSessionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6EB849202B530F006CC537 /* HSPastSessionCell.swift */; };
@@ -1919,6 +1925,8 @@
 		BB695B6A202DEF0E00A31C86 /* HSConversationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HSConversationCell.xib; sourceTree = "<group>"; };
 		BB695B7120318E3C00A31C86 /* HSConversationCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSConversationCellController.swift; sourceTree = "<group>"; };
 		BB695B75203192EA00A31C86 /* HSConversation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSConversation.swift; sourceTree = "<group>"; };
+		BB695B7A2031DFD000A31C86 /* HSChatController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSChatController.swift; sourceTree = "<group>"; };
+		BB695B7B2031DFD000A31C86 /* HSChatController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HSChatController.xib; sourceTree = "<group>"; };
 		BB6EB849202B530F006CC537 /* HSPastSessionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSPastSessionCell.swift; sourceTree = "<group>"; };
 		BB6EB84A202B530F006CC537 /* HSPastSessionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HSPastSessionCell.xib; sourceTree = "<group>"; };
 		BB6EB852202C9427006CC537 /* HSInboxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSInboxViewController.swift; sourceTree = "<group>"; };
@@ -3164,7 +3172,7 @@
 			path = Subcription;
 			sourceTree = "<group>";
 		};
-		BB6EB851202C93EA006CC537 /* Inbox */ = {
+		BB695B822031E00300A31C86 /* Conversations */ = {
 			isa = PBXGroup;
 			children = (
 				BB6EB852202C9427006CC537 /* HSInboxViewController.swift */,
@@ -3172,6 +3180,24 @@
 				BB695B69202DEF0E00A31C86 /* HSConversationCell.swift */,
 				BB695B6A202DEF0E00A31C86 /* HSConversationCell.xib */,
 				BB695B7120318E3C00A31C86 /* HSConversationCellController.swift */,
+			);
+			path = Conversations;
+			sourceTree = "<group>";
+		};
+		BB695B832031E02B00A31C86 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				BB695B7A2031DFD000A31C86 /* HSChatController.swift */,
+				BB695B7B2031DFD000A31C86 /* HSChatController.xib */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		BB6EB851202C93EA006CC537 /* Inbox */ = {
+			isa = PBXGroup;
+			children = (
+				BB695B822031E00300A31C86 /* Conversations */,
+				BB695B832031E02B00A31C86 /* Chat */,
 			);
 			path = Inbox;
 			sourceTree = "<group>";
@@ -3346,6 +3372,7 @@
 				BB95433B202340DF0025C290 /* HSSavedSweatViewController.xib in Resources */,
 				07FDED0D1F600BF3004BC833 /* HSMenuViewController.xib in Resources */,
 				BB95434F202884B90025C290 /* Lato-Black.ttf in Resources */,
+				BB695B812031DFD000A31C86 /* HSChatController.xib in Resources */,
 				070EB3231F3AFB02005821AD /* HSUpdatePasswordConfirmationController.xib in Resources */,
 				762A32911EE163960043E8D9 /* HSPlanNPaymentController.xib in Resources */,
 				762A32921EE163960043E8D9 /* HSTileUpcomingSessionCell.xib in Resources */,
@@ -3584,6 +3611,7 @@
 				07FDED441F600F89004BC833 /* HSPhneVerificationCodeController.xib in Resources */,
 				76DF66541E93D1D9008DC306 /* HSSignupController.xib in Resources */,
 				763D08461F02ED9900F8D9F1 /* HSAddCardController.xib in Resources */,
+				BB695B7F2031DFD000A31C86 /* HSChatController.xib in Resources */,
 				0734A0001FC737C000407845 /* HSProfilePictureCell.xib in Resources */,
 				07E885661FEA76AB00B8B408 /* SourceSansPro-BoldIt.otf in Resources */,
 				07082ACD20063D5600019418 /* HSSubscriptionInfoCell.xib in Resources */,
@@ -3660,6 +3688,7 @@
 				BB95433A202340DF0025C290 /* HSSavedSweatViewController.xib in Resources */,
 				07FDED0C1F600BF2004BC833 /* HSMenuViewController.xib in Resources */,
 				BB95434E202884B90025C290 /* Lato-Black.ttf in Resources */,
+				BB695B802031DFD000A31C86 /* HSChatController.xib in Resources */,
 				070EB3221F3AFB02005821AD /* HSUpdatePasswordConfirmationController.xib in Resources */,
 				76C252671ECC4852002DC7C0 /* HSPlanNPaymentController.xib in Resources */,
 				76E31FAD1ECB138600DD4979 /* HSTileUpcomingSessionCell.xib in Resources */,
@@ -4365,6 +4394,7 @@
 				762A323B1EE163960043E8D9 /* HSTrainerFilterView.swift in Sources */,
 				071EDB961FEA6C8800D41BBF /* HSWhyHandstandViewController.swift in Sources */,
 				762A323C1EE163960043E8D9 /* UGTextfield.m in Sources */,
+				BB695B7E2031DFD000A31C86 /* HSChatController.swift in Sources */,
 				762A323D1EE163960043E8D9 /* HSTrainerNetworkHandler.swift in Sources */,
 				762A323E1EE163960043E8D9 /* HSOnboardingServiceMyHome.swift in Sources */,
 				07082AC420063C1900019418 /* HSNewSubscriptionController.swift in Sources */,
@@ -4674,6 +4704,7 @@
 				76BBDD911EBC8A5E00DBC420 /* HSOnboardingServiceMyHome.swift in Sources */,
 				071EDB941FEA6C8800D41BBF /* HSWhyHandstandViewController.swift in Sources */,
 				76DF666A1E961007008DC306 /* HSUserNetworkHandler.swift in Sources */,
+				BB695B7C2031DFD000A31C86 /* HSChatController.swift in Sources */,
 				76ECF2A61E8DA2EE0094C2C8 /* NVActivityIndicatorAnimationBallBeat.swift in Sources */,
 				763D08431F02ED9900F8D9F1 /* HSAddCardController.swift in Sources */,
 				07082AC220063C1900019418 /* HSNewSubscriptionController.swift in Sources */,
@@ -4983,6 +5014,7 @@
 				76E31F5F1ECB138600DD4979 /* HSTrainerFilterView.swift in Sources */,
 				071EDB951FEA6C8800D41BBF /* HSWhyHandstandViewController.swift in Sources */,
 				76E31F601ECB138600DD4979 /* UGTextfield.m in Sources */,
+				BB695B7D2031DFD000A31C86 /* HSChatController.swift in Sources */,
 				76E31F611ECB138600DD4979 /* HSTrainerNetworkHandler.swift in Sources */,
 				76E31F621ECB138600DD4979 /* HSOnboardingServiceMyHome.swift in Sources */,
 				07082AC320063C1900019418 /* HSNewSubscriptionController.swift in Sources */,
