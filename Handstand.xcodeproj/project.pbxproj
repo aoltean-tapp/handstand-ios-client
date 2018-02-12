@@ -1330,6 +1330,12 @@
 		BB695B6E202DEF0E00A31C86 /* HSConversationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB695B6A202DEF0E00A31C86 /* HSConversationCell.xib */; };
 		BB695B6F202DEF0E00A31C86 /* HSConversationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB695B6A202DEF0E00A31C86 /* HSConversationCell.xib */; };
 		BB695B70202DEF0E00A31C86 /* HSConversationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB695B6A202DEF0E00A31C86 /* HSConversationCell.xib */; };
+		BB695B7220318E3C00A31C86 /* HSConversationCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB695B7120318E3C00A31C86 /* HSConversationCellController.swift */; };
+		BB695B7320318E3C00A31C86 /* HSConversationCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB695B7120318E3C00A31C86 /* HSConversationCellController.swift */; };
+		BB695B7420318E3C00A31C86 /* HSConversationCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB695B7120318E3C00A31C86 /* HSConversationCellController.swift */; };
+		BB695B76203192EA00A31C86 /* HSConversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB695B75203192EA00A31C86 /* HSConversation.swift */; };
+		BB695B77203192EA00A31C86 /* HSConversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB695B75203192EA00A31C86 /* HSConversation.swift */; };
+		BB695B78203192EA00A31C86 /* HSConversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB695B75203192EA00A31C86 /* HSConversation.swift */; };
 		BB6EB84B202B530F006CC537 /* HSPastSessionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6EB849202B530F006CC537 /* HSPastSessionCell.swift */; };
 		BB6EB84C202B530F006CC537 /* HSPastSessionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6EB849202B530F006CC537 /* HSPastSessionCell.swift */; };
 		BB6EB84D202B5310006CC537 /* HSPastSessionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6EB849202B530F006CC537 /* HSPastSessionCell.swift */; };
@@ -1911,6 +1917,8 @@
 		A5B425261F335111006C6EBA /* HSSubscribeTileInfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HSSubscribeTileInfoCell.xib; sourceTree = "<group>"; };
 		BB695B69202DEF0E00A31C86 /* HSConversationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSConversationCell.swift; sourceTree = "<group>"; };
 		BB695B6A202DEF0E00A31C86 /* HSConversationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HSConversationCell.xib; sourceTree = "<group>"; };
+		BB695B7120318E3C00A31C86 /* HSConversationCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSConversationCellController.swift; sourceTree = "<group>"; };
+		BB695B75203192EA00A31C86 /* HSConversation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSConversation.swift; sourceTree = "<group>"; };
 		BB6EB849202B530F006CC537 /* HSPastSessionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSPastSessionCell.swift; sourceTree = "<group>"; };
 		BB6EB84A202B530F006CC537 /* HSPastSessionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HSPastSessionCell.xib; sourceTree = "<group>"; };
 		BB6EB852202C9427006CC537 /* HSInboxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSInboxViewController.swift; sourceTree = "<group>"; };
@@ -2848,6 +2856,7 @@
 				07082B3F200642CB00019418 /* HSGetNewSubscriptionsResponse.swift */,
 				07F9BF9820184D1E007B101A /* HSSpecialities.swift */,
 				07F9BF9920184D1E007B101A /* HSSpecialitiesData.swift */,
+				BB695B75203192EA00A31C86 /* HSConversation.swift */,
 			);
 			path = Module;
 			sourceTree = "<group>";
@@ -3162,6 +3171,7 @@
 				BB6EB853202C9427006CC537 /* HSInboxViewController.xib */,
 				BB695B69202DEF0E00A31C86 /* HSConversationCell.swift */,
 				BB695B6A202DEF0E00A31C86 /* HSConversationCell.xib */,
+				BB695B7120318E3C00A31C86 /* HSConversationCellController.swift */,
 			);
 			path = Inbox;
 			sourceTree = "<group>";
@@ -4144,6 +4154,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB695B7420318E3C00A31C86 /* HSConversationCellController.swift in Sources */,
 				079C81EE1FF3B7E800BE377A /* HSWhyHandstandDataMeta.swift in Sources */,
 				762A31B01EE163960043E8D9 /* HSAssert.swift in Sources */,
 				762A31B11EE163960043E8D9 /* UGScrollView.m in Sources */,
@@ -4172,6 +4183,7 @@
 				762A31BF1EE163960043E8D9 /* YMLocationManager.m in Sources */,
 				07E38F631FDEAB3E003DFCD8 /* HSQuizStyleSelectionController.swift in Sources */,
 				079D7E1E1F388875009DED32 /* HSSubscriptionRegisterController.swift in Sources */,
+				BB695B78203192EA00A31C86 /* HSConversation.swift in Sources */,
 				762A31C01EE163960043E8D9 /* HSPlanNPaymentController.swift in Sources */,
 				072B31681FCECD49004C20E8 /* HSHomeTileBGView.swift in Sources */,
 				762A31C11EE163960043E8D9 /* HSAnalyticsConstant.swift in Sources */,
@@ -4451,6 +4463,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB695B7220318E3C00A31C86 /* HSConversationCellController.swift in Sources */,
 				079C81EA1FF3B7DF00BE377A /* HSWhyHandstandDataMeta.swift in Sources */,
 				76DF66591E94CB89008DC306 /* HSAssert.swift in Sources */,
 				76DF665D1E94CE34008DC306 /* UGScrollView.m in Sources */,
@@ -4479,6 +4492,7 @@
 				079D7E1A1F388822009DED32 /* HSSubscriptionRegisterController.swift in Sources */,
 				07E38F611FDEAB3E003DFCD8 /* HSQuizStyleSelectionController.swift in Sources */,
 				76C252641ECC4852002DC7C0 /* HSPlanNPaymentController.swift in Sources */,
+				BB695B76203192EA00A31C86 /* HSConversation.swift in Sources */,
 				76EECB501ED6E88700CCC596 /* HSAnalyticsConstant.swift in Sources */,
 				072B31661FCECD49004C20E8 /* HSHomeTileBGView.swift in Sources */,
 				760644451E9F517D00F78C9E /* HSHomeMapView.swift in Sources */,
@@ -4758,6 +4772,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB695B7320318E3C00A31C86 /* HSConversationCellController.swift in Sources */,
 				079C81EC1FF3B7E700BE377A /* HSWhyHandstandDataMeta.swift in Sources */,
 				76E31EDC1ECB138600DD4979 /* HSAssert.swift in Sources */,
 				76E31EDD1ECB138600DD4979 /* UGScrollView.m in Sources */,
@@ -4786,6 +4801,7 @@
 				76E31EEB1ECB138600DD4979 /* YMLocationManager.m in Sources */,
 				07E38F621FDEAB3E003DFCD8 /* HSQuizStyleSelectionController.swift in Sources */,
 				079D7E1C1F388874009DED32 /* HSSubscriptionRegisterController.swift in Sources */,
+				BB695B77203192EA00A31C86 /* HSConversation.swift in Sources */,
 				76C252651ECC4852002DC7C0 /* HSPlanNPaymentController.swift in Sources */,
 				072B31671FCECD49004C20E8 /* HSHomeTileBGView.swift in Sources */,
 				76EECB511ED6E88700CCC596 /* HSAnalyticsConstant.swift in Sources */,

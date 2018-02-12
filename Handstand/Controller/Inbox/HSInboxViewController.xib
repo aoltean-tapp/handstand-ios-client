@@ -17,7 +17,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HSInboxViewController" customModule="Handstand" customModuleProvider="target">
             <connections>
-                <outlet property="conversationsTableView" destination="A7p-Vf-1Eu" id="jvO-ZT-lJv"/>
+                <outlet property="collectionView" destination="gsd-sQ-sNC" id="H5s-7B-Nhf"/>
                 <outlet property="textFieldView" destination="yYU-M1-Una" id="Lw8-CS-aV4"/>
                 <outlet property="unreadMessagesLabel" destination="S3h-WV-hfq" id="TE4-Wd-Nuw"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -36,6 +36,9 @@
                             <color key="textColor" red="0.37254901959999998" green="0.37254901959999998" blue="0.37254901959999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="17"/>
                             <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <action selector="didSearchConversation:" destination="-1" eventType="editingChanged" id="jlr-uP-LH5"/>
+                            </connections>
                         </textField>
                         <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="icSearch" translatesAutoresizingMaskIntoConstraints="NO" id="vgc-nK-uIy">
                             <rect key="frame" x="308" y="10" width="17" height="17"/>
@@ -58,20 +61,26 @@
                     <color key="textColor" red="0.37254901960784315" green="0.37254901960784315" blue="0.37254901960784315" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="A7p-Vf-1Eu">
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="gsd-sQ-sNC">
                     <rect key="frame" x="0.0" y="132" width="375" height="535"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                </tableView>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Uri-WP-ib8">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
             </subviews>
             <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="A7p-Vf-1Eu" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="1bu-2F-jgK"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="A7p-Vf-1Eu" secondAttribute="trailing" id="86X-Kj-sLj"/>
                 <constraint firstItem="yYU-M1-Una" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="11" id="D16-XJ-MAg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="gsd-sQ-sNC" secondAttribute="bottom" id="Gcl-XX-ckb"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="yYU-M1-Una" secondAttribute="trailing" constant="19" id="VYE-9b-aZp"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="gsd-sQ-sNC" secondAttribute="trailing" id="XFi-8H-g5b"/>
+                <constraint firstItem="gsd-sQ-sNC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ctN-LQ-qfS"/>
                 <constraint firstItem="S3h-WV-hfq" firstAttribute="top" secondItem="wXn-og-kj8" secondAttribute="bottom" constant="22" id="fwo-h7-ay8"/>
-                <constraint firstItem="A7p-Vf-1Eu" firstAttribute="top" secondItem="S3h-WV-hfq" secondAttribute="bottom" constant="22" id="hXp-jN-V3o"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="A7p-Vf-1Eu" secondAttribute="bottom" id="iMc-ti-9UH"/>
+                <constraint firstItem="gsd-sQ-sNC" firstAttribute="top" secondItem="S3h-WV-hfq" secondAttribute="bottom" constant="22" id="hpA-wV-lbF"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="S3h-WV-hfq" secondAttribute="trailing" constant="19" id="iW0-Kv-Am4"/>
                 <constraint firstItem="S3h-WV-hfq" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="19" id="kRt-Yp-izd"/>
                 <constraint firstItem="yYU-M1-Una" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="19" id="owr-CA-UK4"/>

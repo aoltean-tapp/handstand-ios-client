@@ -1,4 +1,5 @@
 import UIKit
+import Tapptitude
 
 /*enum HudPosition {
     case top,bottom
@@ -120,3 +121,47 @@ extension HSBaseController {
     }
     
 }*/
+
+class HSBaseCollectionFeedController: __CollectionFeedController, EventTrackingProtocol, LongTaskHelperProtocol {
+    var screenName:String = "" {
+        didSet {
+            if screenName.length()>0 {
+                self.sendEvent(with: screenName)
+            }
+        }
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        HSNavigationBarManager.shared.applyProperties(key: .type_0, viewController: self)
+    }
+    
+    func getTitleView() -> UIButton {
+        let button =  UIButton(type: .custom)
+        button.frame = CGRect(x: 0, y: 0, width: 150, height: 40)
+        button.setImage(#imageLiteral(resourceName: "icHandstandOnlyLogo"), for: .normal)
+        button.addTarget(self, action: #selector(self.didTapHomeButton), for: .touchUpInside)
+        return button
+    }
+    
+    func didTapBackButton() {
+        _ = self.navigationController?.popViewController(animated: true)
+    }
+    
+    func didTapHomeButton() {
+        HSUserManager.shared.trainerRequestAcceptType = nil
+        _ = self.navigationController?.popToRootViewController(animated: true)
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "Notification.showHomeScreen"), object: [:])
+    }
+    
+    func didTapNotificationsButton() {
+        let alertController = UIAlertController.init(title: nil, message: "Coming Soon...", preferredStyle: .alert)
+        self.present(alertController, animated: true) {
+            self.perform(#selector(self.hideNotificationComingSoon(with:)), with: alertController, afterDelay: 0.3)
+        }
+    }
+    
+    @objc func hideNotificationComingSoon(with alert:UIAlertController) {
+        alert.dismiss(animated: true, completion: nil)
+    }
+}
