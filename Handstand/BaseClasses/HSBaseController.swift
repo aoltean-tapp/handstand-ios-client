@@ -47,10 +47,13 @@ class HSBaseController: UIViewController,EventTrackingProtocol,LongTaskHelperPro
         HSNavigationBarManager.shared.applyProperties(key: .type_0, viewController: self)
     }
     
-    func getTitleView()->UIImageView {
-        return UIImageView.init(image: #imageLiteral(resourceName: "icHandstandOnlyLogo"))
+    func getTitleView() -> UIButton {
+        let button =  UIButton(type: .custom)
+        button.frame = CGRect(x: 0, y: 0, width: 150, height: 40)
+        button.setImage(#imageLiteral(resourceName: "icHandstandOnlyLogo"), for: .normal)
+        button.addTarget(self, action: #selector(self.didTapHomeButton), for: .touchUpInside)
+        return button
     }
-
 }
 
 //Navigation items Selectors

@@ -137,6 +137,33 @@ class HSBarButtonItemsFactory: NSObject {
         barButton.isEnabled = true
         return barButton
     }
+    internal func inboxGreenButton(properties:Dictionary<String,Any>, viewController:UIViewController) -> UIBarButtonItem {
+        
+        let button = UIButton(frame: CGRect(x:0, y:0, width:self.getWidthForButton(), height:40))
+        button.setImage(#imageLiteral(resourceName: "icInbox"), for: UIControlState.normal)
+        button.tintColor = #colorLiteral(red: 0.3529411765, green: 0.7764705882, blue: 0.5725490196, alpha: 1)
+        button.contentHorizontalAlignment = UIControlContentHorizontalAlignment.right
+        button.backgroundColor = UIColor.clear
+        
+        let barButton = UIBarButtonItem()
+        barButton.customView = button
+        barButton.isEnabled = true
+        return barButton
+    }
+    internal func inboxButton(properties:Dictionary<String,Any>, viewController:UIViewController) -> UIBarButtonItem {
+        
+        let button = UIButton(frame: CGRect(x:0, y:0, width:self.getWidthForButton(), height:40))
+        button.addTarget(viewController, action:Selector(("didTapInboxButton")), for: UIControlEvents.touchUpInside)
+        button.setImage(#imageLiteral(resourceName: "icInbox"), for: UIControlState.normal)
+        button.tintColor = #colorLiteral(red: 0.3725490196, green: 0.3725490196, blue: 0.3725490196, alpha: 1)
+        button.contentHorizontalAlignment = UIControlContentHorizontalAlignment.right
+        button.backgroundColor = UIColor.clear
+        
+        let barButton = UIBarButtonItem()
+        barButton.customView = button
+        barButton.isEnabled = true
+        return barButton
+    }
     internal func editButton(properties:Dictionary<String,Any>, viewController:UIViewController) -> UIBarButtonItem {
         
         let button = UIButton(frame: CGRect(x:0, y:0, width:getWidthForButton(), height:40))

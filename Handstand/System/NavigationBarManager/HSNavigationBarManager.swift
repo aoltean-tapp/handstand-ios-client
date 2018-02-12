@@ -25,6 +25,8 @@ enum navBarType {
     case type_16
     case type_17
     case type_18
+    case type_19
+    case type_20
 }
 
 class HSNavigationBarManager: NSObject {
@@ -119,7 +121,11 @@ class HSNavigationBarManager: NSObject {
                 .type_17:[leftButtonsKey:[["key":"cancelButton"]],
                           rightButtonsKey:[["key":"doneButton"]]],
                 .type_18:[leftButtonsKey:[["key":"emptyTextBtn"]],
-                          rightButtonsKey:[["key":"nextButton"]]]
+                          rightButtonsKey:[["key":"nextButton"]]],
+                .type_19:[leftButtonsKey: [["key":"notificationsButton"]],
+                          rightButtonsKey:[["key":"inboxButton"]]],
+                .type_20:[leftButtonsKey: [["key":"notificationsButton"]],
+                          rightButtonsKey:[["key":"inboxGreenButton"]]]
         ]
     }
 }

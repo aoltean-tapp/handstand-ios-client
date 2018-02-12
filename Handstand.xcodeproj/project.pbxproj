@@ -1330,6 +1330,12 @@
 		BB6EB84E202B5310006CC537 /* HSPastSessionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB6EB84A202B530F006CC537 /* HSPastSessionCell.xib */; };
 		BB6EB84F202B5310006CC537 /* HSPastSessionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB6EB84A202B530F006CC537 /* HSPastSessionCell.xib */; };
 		BB6EB850202B5310006CC537 /* HSPastSessionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB6EB84A202B530F006CC537 /* HSPastSessionCell.xib */; };
+		BB6EB854202C9428006CC537 /* HSInboxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6EB852202C9427006CC537 /* HSInboxViewController.swift */; };
+		BB6EB855202C9428006CC537 /* HSInboxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6EB852202C9427006CC537 /* HSInboxViewController.swift */; };
+		BB6EB856202C9428006CC537 /* HSInboxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6EB852202C9427006CC537 /* HSInboxViewController.swift */; };
+		BB6EB857202C9428006CC537 /* HSInboxViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB6EB853202C9427006CC537 /* HSInboxViewController.xib */; };
+		BB6EB858202C9428006CC537 /* HSInboxViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB6EB853202C9427006CC537 /* HSInboxViewController.xib */; };
+		BB6EB859202C9428006CC537 /* HSInboxViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB6EB853202C9427006CC537 /* HSInboxViewController.xib */; };
 		BB954339202340DF0025C290 /* HSSavedSweatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB954337202340DF0025C290 /* HSSavedSweatViewController.xib */; };
 		BB95433A202340DF0025C290 /* HSSavedSweatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB954337202340DF0025C290 /* HSSavedSweatViewController.xib */; };
 		BB95433B202340DF0025C290 /* HSSavedSweatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB954337202340DF0025C290 /* HSSavedSweatViewController.xib */; };
@@ -1899,6 +1905,8 @@
 		A5B425261F335111006C6EBA /* HSSubscribeTileInfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HSSubscribeTileInfoCell.xib; sourceTree = "<group>"; };
 		BB6EB849202B530F006CC537 /* HSPastSessionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSPastSessionCell.swift; sourceTree = "<group>"; };
 		BB6EB84A202B530F006CC537 /* HSPastSessionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HSPastSessionCell.xib; sourceTree = "<group>"; };
+		BB6EB852202C9427006CC537 /* HSInboxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSInboxViewController.swift; sourceTree = "<group>"; };
+		BB6EB853202C9427006CC537 /* HSInboxViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HSInboxViewController.xib; sourceTree = "<group>"; };
 		BB954337202340DF0025C290 /* HSSavedSweatViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HSSavedSweatViewController.xib; sourceTree = "<group>"; };
 		BB954338202340DF0025C290 /* HSSavedSweatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSSavedSweatViewController.swift; sourceTree = "<group>"; };
 		BB954343202495FA0025C290 /* HSUpcomingSessionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSUpcomingSessionCell.swift; sourceTree = "<group>"; };
@@ -2612,6 +2620,7 @@
 		76D3BE4E1E8A5254000DCBCE /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				BB6EB851202C93EA006CC537 /* Inbox */,
 				76DF664C1E93D1AB008DC306 /* OnBoarding */,
 				7676B16B1EDC34E6002302C4 /* Promotion */,
 				76C252611ECC47A6002DC7C0 /* Plan & Payment */,
@@ -3138,6 +3147,15 @@
 			path = Subcription;
 			sourceTree = "<group>";
 		};
+		BB6EB851202C93EA006CC537 /* Inbox */ = {
+			isa = PBXGroup;
+			children = (
+				BB6EB852202C9427006CC537 /* HSInboxViewController.swift */,
+				BB6EB853202C9427006CC537 /* HSInboxViewController.xib */,
+			);
+			path = Inbox;
+			sourceTree = "<group>";
+		};
 		BB954336202340DE0025C290 /* Saved Sweat */ = {
 			isa = PBXGroup;
 			children = (
@@ -3394,6 +3412,7 @@
 				763D08481F02ED9900F8D9F1 /* HSAddCardController.xib in Resources */,
 				BB954351202884BF0025C290 /* Lato-BlackItalic.ttf in Resources */,
 				07FF4BF21FED2C830004B45A /* HSPaymentDetailsController.xib in Resources */,
+				BB6EB859202C9428006CC537 /* HSInboxViewController.xib in Resources */,
 				0734A0021FC737C000407845 /* HSProfilePictureCell.xib in Resources */,
 				762A32B91EE163960043E8D9 /* HSHomeSetZipView.xib in Resources */,
 				071EDB8A1FEA6C8800D41BBF /* HSWhyHandstandViewController.xib in Resources */,
@@ -3520,6 +3539,7 @@
 				079D7E1B1F388822009DED32 /* HSSubscriptionRegisterController.xib in Resources */,
 				07349FF71FC706D400407845 /* HSProfileViewController.xib in Resources */,
 				07E885A41FEA7E8F00B8B408 /* Lato-Heavy.ttf in Resources */,
+				BB6EB857202C9428006CC537 /* HSInboxViewController.xib in Resources */,
 				07E885AD1FEA7E8F00B8B408 /* Lato-SemiboldItalic.ttf in Resources */,
 				07E38F791FDEFCBF003DFCD8 /* HSQuizStyleResultController.xib in Resources */,
 				76ECF2A41E8DA2EE0094C2C8 /* LICENSE in Resources */,
@@ -3704,6 +3724,7 @@
 				763D08471F02ED9900F8D9F1 /* HSAddCardController.xib in Resources */,
 				BB954350202884BE0025C290 /* Lato-BlackItalic.ttf in Resources */,
 				07FF4BF11FED2C830004B45A /* HSPaymentDetailsController.xib in Resources */,
+				BB6EB858202C9428006CC537 /* HSInboxViewController.xib in Resources */,
 				0734A0011FC737C000407845 /* HSProfilePictureCell.xib in Resources */,
 				76E31FD01ECB138600DD4979 /* HSHomeSetZipView.xib in Resources */,
 				071EDB891FEA6C8800D41BBF /* HSWhyHandstandViewController.xib in Resources */,
@@ -4144,6 +4165,7 @@
 				762A31C21EE163960043E8D9 /* HSHomeMapView.swift in Sources */,
 				071EDB9C1FEA6D1900D41BBF /* HSPersonalInfoController.swift in Sources */,
 				762A31C31EE163960043E8D9 /* NVActivityIndicatorAnimationCubeTransition.swift in Sources */,
+				BB6EB856202C9428006CC537 /* HSInboxViewController.swift in Sources */,
 				762A33031EE55CF60043E8D9 /* ISMethodSwizzling.m in Sources */,
 				0734A00F1FC74B3E00407845 /* HSProfileSettingsCell.swift in Sources */,
 				762A31C41EE163960043E8D9 /* HSTitleReebokShopCell.swift in Sources */,
@@ -4449,6 +4471,7 @@
 				76ECF2BA1E8DA2EE0094C2C8 /* NVActivityIndicatorAnimationCubeTransition.swift in Sources */,
 				071EDB9A1FEA6D1900D41BBF /* HSPersonalInfoController.swift in Sources */,
 				762A33011EE55CF60043E8D9 /* ISMethodSwizzling.m in Sources */,
+				BB6EB854202C9428006CC537 /* HSInboxViewController.swift in Sources */,
 				76BBDDA51EBCB6F700DBC420 /* HSTitleReebokShopCell.swift in Sources */,
 				0734A00D1FC74B3E00407845 /* HSProfileSettingsCell.swift in Sources */,
 				76EECB541ED6E92F00CCC596 /* HSAnalytics.swift in Sources */,
@@ -4754,6 +4777,7 @@
 				76E31EEC1ECB138600DD4979 /* HSHomeMapView.swift in Sources */,
 				071EDB9B1FEA6D1900D41BBF /* HSPersonalInfoController.swift in Sources */,
 				76E31EED1ECB138600DD4979 /* NVActivityIndicatorAnimationCubeTransition.swift in Sources */,
+				BB6EB855202C9428006CC537 /* HSInboxViewController.swift in Sources */,
 				762A33021EE55CF60043E8D9 /* ISMethodSwizzling.m in Sources */,
 				0734A00E1FC74B3E00407845 /* HSProfileSettingsCell.swift in Sources */,
 				76E31EEE1ECB138600DD4979 /* HSTitleReebokShopCell.swift in Sources */,

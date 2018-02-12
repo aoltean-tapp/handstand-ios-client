@@ -63,7 +63,7 @@ class HSHomeTileController: HSBaseController,HomeTileControlerProtocols {
         super.viewDidLoad()
         self.screenName = HSA.homePageScreen
         NotificationCenter.default.addObserver(self, selector: #selector(self.reloadTileUI), name: NSNotification.Name.UIApplicationWillEnterForeground, object: nil)
-        HSNavigationBarManager.shared.applyProperties(key: .type_5, viewController: self, titleView: getTitleView())
+        HSNavigationBarManager.shared.applyProperties(key: .type_19, viewController: self, titleView: getTitleView())
     }
     deinit {
         NotificationCenter.default.removeObserver(self)
@@ -486,6 +486,10 @@ class HSHomeTileController: HSBaseController,HomeTileControlerProtocols {
         }
     }
     
+    func didTapInboxButton() {
+        let inboxViewController = HSInboxViewController()
+        navigationController?.pushViewController(inboxViewController, animated: false)
+    }
 }
 
 extension HSHomeTileController:UITableViewDelegate,UITableViewDataSource {
