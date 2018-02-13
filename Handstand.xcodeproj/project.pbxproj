@@ -1342,6 +1342,18 @@
 		BB695B7F2031DFD000A31C86 /* HSChatController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB695B7B2031DFD000A31C86 /* HSChatController.xib */; };
 		BB695B802031DFD000A31C86 /* HSChatController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB695B7B2031DFD000A31C86 /* HSChatController.xib */; };
 		BB695B812031DFD000A31C86 /* HSChatController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB695B7B2031DFD000A31C86 /* HSChatController.xib */; };
+		BB695B862031F95200A31C86 /* HSTrainerChatBubbleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB695B842031F95200A31C86 /* HSTrainerChatBubbleCell.swift */; };
+		BB695B872031F95200A31C86 /* HSTrainerChatBubbleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB695B842031F95200A31C86 /* HSTrainerChatBubbleCell.swift */; };
+		BB695B882031F95200A31C86 /* HSTrainerChatBubbleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB695B842031F95200A31C86 /* HSTrainerChatBubbleCell.swift */; };
+		BB695B892031F95200A31C86 /* HSTrainerChatBubbleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB695B852031F95200A31C86 /* HSTrainerChatBubbleCell.xib */; };
+		BB695B8A2031F95200A31C86 /* HSTrainerChatBubbleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB695B852031F95200A31C86 /* HSTrainerChatBubbleCell.xib */; };
+		BB695B8B2031F95200A31C86 /* HSTrainerChatBubbleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB695B852031F95200A31C86 /* HSTrainerChatBubbleCell.xib */; };
+		BB695B8E2032E9BB00A31C86 /* HSClientChatBubbleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB695B8C2032E9BB00A31C86 /* HSClientChatBubbleCell.swift */; };
+		BB695B8F2032E9BB00A31C86 /* HSClientChatBubbleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB695B8C2032E9BB00A31C86 /* HSClientChatBubbleCell.swift */; };
+		BB695B902032E9BB00A31C86 /* HSClientChatBubbleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB695B8C2032E9BB00A31C86 /* HSClientChatBubbleCell.swift */; };
+		BB695B912032E9BB00A31C86 /* HSClientChatBubbleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB695B8D2032E9BB00A31C86 /* HSClientChatBubbleCell.xib */; };
+		BB695B922032E9BB00A31C86 /* HSClientChatBubbleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB695B8D2032E9BB00A31C86 /* HSClientChatBubbleCell.xib */; };
+		BB695B932032E9BB00A31C86 /* HSClientChatBubbleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB695B8D2032E9BB00A31C86 /* HSClientChatBubbleCell.xib */; };
 		BB6EB84B202B530F006CC537 /* HSPastSessionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6EB849202B530F006CC537 /* HSPastSessionCell.swift */; };
 		BB6EB84C202B530F006CC537 /* HSPastSessionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6EB849202B530F006CC537 /* HSPastSessionCell.swift */; };
 		BB6EB84D202B5310006CC537 /* HSPastSessionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6EB849202B530F006CC537 /* HSPastSessionCell.swift */; };
@@ -1927,6 +1939,10 @@
 		BB695B75203192EA00A31C86 /* HSConversation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSConversation.swift; sourceTree = "<group>"; };
 		BB695B7A2031DFD000A31C86 /* HSChatController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSChatController.swift; sourceTree = "<group>"; };
 		BB695B7B2031DFD000A31C86 /* HSChatController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HSChatController.xib; sourceTree = "<group>"; };
+		BB695B842031F95200A31C86 /* HSTrainerChatBubbleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSTrainerChatBubbleCell.swift; sourceTree = "<group>"; };
+		BB695B852031F95200A31C86 /* HSTrainerChatBubbleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HSTrainerChatBubbleCell.xib; sourceTree = "<group>"; };
+		BB695B8C2032E9BB00A31C86 /* HSClientChatBubbleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSClientChatBubbleCell.swift; sourceTree = "<group>"; };
+		BB695B8D2032E9BB00A31C86 /* HSClientChatBubbleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HSClientChatBubbleCell.xib; sourceTree = "<group>"; };
 		BB6EB849202B530F006CC537 /* HSPastSessionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSPastSessionCell.swift; sourceTree = "<group>"; };
 		BB6EB84A202B530F006CC537 /* HSPastSessionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HSPastSessionCell.xib; sourceTree = "<group>"; };
 		BB6EB852202C9427006CC537 /* HSInboxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSInboxViewController.swift; sourceTree = "<group>"; };
@@ -3189,6 +3205,10 @@
 			children = (
 				BB695B7A2031DFD000A31C86 /* HSChatController.swift */,
 				BB695B7B2031DFD000A31C86 /* HSChatController.xib */,
+				BB695B842031F95200A31C86 /* HSTrainerChatBubbleCell.swift */,
+				BB695B852031F95200A31C86 /* HSTrainerChatBubbleCell.xib */,
+				BB695B8C2032E9BB00A31C86 /* HSClientChatBubbleCell.swift */,
+				BB695B8D2032E9BB00A31C86 /* HSClientChatBubbleCell.xib */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -3403,6 +3423,7 @@
 				762A32A01EE163960043E8D9 /* HSWorkoutPlanCell.xib in Resources */,
 				07B555101FCD7D68009E9BC7 /* HSHomeLocationRecentsCell.xib in Resources */,
 				762A32A11EE163960043E8D9 /* HTBookClientLocationCell.xib in Resources */,
+				BB695B932032E9BB00A31C86 /* HSClientChatBubbleCell.xib in Resources */,
 				762A32A21EE163960043E8D9 /* Localizable.strings in Resources */,
 				76B44DAC1F14EF8D00297EAA /* HSTileShareCell.xib in Resources */,
 				07E885851FEA789300B8B408 /* SourceSansPro-Semibold.otf in Resources */,
@@ -3426,6 +3447,7 @@
 				762A32AC1EE163960043E8D9 /* HSHomeController.xib in Resources */,
 				07CC5A1E1FC2D03A004A1963 /* HSLoginController.xib in Resources */,
 				07E885831FEA789300B8B408 /* SourceSansPro-LightIt.otf in Resources */,
+				BB695B8B2031F95200A31C86 /* HSTrainerChatBubbleCell.xib in Resources */,
 				BB95435A202884CB0025C290 /* Lato-HairlineItalic.ttf in Resources */,
 				07E8857C1FEA789300B8B408 /* SourceSansPro-BlackIt.otf in Resources */,
 				07FDED501F600FE1004BC833 /* CountryCodeSelectionViewController.xib in Resources */,
@@ -3517,6 +3539,7 @@
 				07C054C91FC42E420019EB63 /* HSChoosePlanController.xib in Resources */,
 				07E8856D1FEA76AB00B8B408 /* SourceSansPro-Semibold.otf in Resources */,
 				07E38F711FDEACA8003DFCD8 /* HSQuizStyleSelectionCell.xib in Resources */,
+				BB695B892031F95200A31C86 /* HSTrainerChatBubbleCell.xib in Resources */,
 				7651149A1EB3574B00DDCEC3 /* HTSearchLocationController.xib in Resources */,
 				763D083E1F029D6A00F8D9F1 /* HSNoCardView.xib in Resources */,
 				071EDB621FE7ED8900D41BBF /* HSUpdatePasswordInputCell.xib in Resources */,
@@ -3591,6 +3614,7 @@
 				07E885AD1FEA7E8F00B8B408 /* Lato-SemiboldItalic.ttf in Resources */,
 				07E38F791FDEFCBF003DFCD8 /* HSQuizStyleResultController.xib in Resources */,
 				76ECF2A41E8DA2EE0094C2C8 /* LICENSE in Resources */,
+				BB695B912032E9BB00A31C86 /* HSClientChatBubbleCell.xib in Resources */,
 				07E885641FEA76AB00B8B408 /* SourceSansPro-BlackIt.otf in Resources */,
 				762A32E81EE55C8A0043E8D9 /* ISRefresgControlIcon@2x.png in Resources */,
 				76C77D051EA9C95B0018405F /* HSTrainerClassCell.xib in Resources */,
@@ -3719,6 +3743,7 @@
 				76E31FBA1ECB138600DD4979 /* HSWorkoutPlanCell.xib in Resources */,
 				07B5550F1FCD7D68009E9BC7 /* HSHomeLocationRecentsCell.xib in Resources */,
 				76E31FBB1ECB138600DD4979 /* HTBookClientLocationCell.xib in Resources */,
+				BB695B922032E9BB00A31C86 /* HSClientChatBubbleCell.xib in Resources */,
 				76E31FBC1ECB138600DD4979 /* Localizable.strings in Resources */,
 				76B44DAB1F14EF8D00297EAA /* HSTileShareCell.xib in Resources */,
 				07E885791FEA789300B8B408 /* SourceSansPro-Semibold.otf in Resources */,
@@ -3742,6 +3767,7 @@
 				76E31FC41ECB138600DD4979 /* HSHomeController.xib in Resources */,
 				07CC5A1D1FC2D03A004A1963 /* HSLoginController.xib in Resources */,
 				07E885771FEA789300B8B408 /* SourceSansPro-LightIt.otf in Resources */,
+				BB695B8A2031F95200A31C86 /* HSTrainerChatBubbleCell.xib in Resources */,
 				BB954358202884C90025C290 /* Lato-HairlineItalic.ttf in Resources */,
 				07E885701FEA789300B8B408 /* SourceSansPro-BlackIt.otf in Resources */,
 				07FDED481F600FE0004BC833 /* CountryCodeSelectionViewController.xib in Resources */,
@@ -4410,6 +4436,7 @@
 				07FDED0B1F600BE3004BC833 /* HSMenuViewController.swift in Sources */,
 				762A32451EE163960043E8D9 /* HSTileVideoCell.swift in Sources */,
 				072A5F271F97548300FE2FD9 /* HSAppDelegate.swift in Sources */,
+				BB695B902032E9BB00A31C86 /* HSClientChatBubbleCell.swift in Sources */,
 				762A32461EE163960043E8D9 /* UIImage+Utils.m in Sources */,
 				762A32471EE163960043E8D9 /* HTSearchLocationController.swift in Sources */,
 				762A32481EE163960043E8D9 /* ConstraintLayoutGuideDSL.swift in Sources */,
@@ -4427,6 +4454,7 @@
 				07FDED5E1F601103004BC833 /* String+Additions.swift in Sources */,
 				762A32531EE163960043E8D9 /* HSLoginViewController.swift in Sources */,
 				762A32541EE163960043E8D9 /* ConstraintView+Extensions.swift in Sources */,
+				BB695B882031F95200A31C86 /* HSTrainerChatBubbleCell.swift in Sources */,
 				762A32561EE163960043E8D9 /* LTHMonthYearPickerView.m in Sources */,
 				762A32571EE163960043E8D9 /* ConstraintLayoutSupport.swift in Sources */,
 				762A32581EE163960043E8D9 /* HSTrainerListFooterView.swift in Sources */,
@@ -4720,6 +4748,7 @@
 				072A5F231F97541C00FE2FD9 /* HSAppDelegate.swift in Sources */,
 				76ECF2A01E8DA2EE0094C2C8 /* BMPlayerItem.swift in Sources */,
 				76C2527B1ECC952E002DC7C0 /* UGTapGestureRecognizer.m in Sources */,
+				BB695B8E2032E9BB00A31C86 /* HSClientChatBubbleCell.swift in Sources */,
 				764217F01E8D3A2900E4A5F1 /* HSVideoVideo.swift in Sources */,
 				76E4C9671EA63DC4002D7A80 /* HSLocationHelper.swift in Sources */,
 				76BBDD801EBC57EC00DBC420 /* HSTilesTitleCell.swift in Sources */,
@@ -4737,6 +4766,7 @@
 				76EECB5A1ED71A4800CCC596 /* HSTrainerListFooterView.swift in Sources */,
 				76BBDD961EBC913D00DBC420 /* NSDate+Utilities.m in Sources */,
 				76E4C9691EA66D57002D7A80 /* HSHomeLocationPin.swift in Sources */,
+				BB695B862031F95200A31C86 /* HSTrainerChatBubbleCell.swift in Sources */,
 				07FDECFC1F600706004BC833 /* HSMenuViewController.swift in Sources */,
 				76ECF2C11E8DA2EE0094C2C8 /* NVActivityIndicatorAnimationPacman.swift in Sources */,
 				07FDED0F1F600CA4004BC833 /* HSPromoResponse.swift in Sources */,
@@ -5030,6 +5060,7 @@
 				07FDED0A1F600BE2004BC833 /* HSMenuViewController.swift in Sources */,
 				76E31F691ECB138600DD4979 /* HSTileVideoCell.swift in Sources */,
 				072A5F251F97548200FE2FD9 /* HSAppDelegate.swift in Sources */,
+				BB695B8F2032E9BB00A31C86 /* HSClientChatBubbleCell.swift in Sources */,
 				76E31F6A1ECB138600DD4979 /* UIImage+Utils.m in Sources */,
 				76E31F6B1ECB138600DD4979 /* HTSearchLocationController.swift in Sources */,
 				76E31F6C1ECB138600DD4979 /* ConstraintLayoutGuideDSL.swift in Sources */,
@@ -5047,6 +5078,7 @@
 				07FDED5C1F601102004BC833 /* String+Additions.swift in Sources */,
 				76E31F761ECB138600DD4979 /* HSLoginViewController.swift in Sources */,
 				76E31F771ECB138600DD4979 /* ConstraintView+Extensions.swift in Sources */,
+				BB695B872031F95200A31C86 /* HSTrainerChatBubbleCell.swift in Sources */,
 				76E31F781ECB138600DD4979 /* LTHMonthYearPickerView.m in Sources */,
 				76E31F791ECB138600DD4979 /* ConstraintLayoutSupport.swift in Sources */,
 				76EECB5B1ED71A4900CCC596 /* HSTrainerListFooterView.swift in Sources */,
