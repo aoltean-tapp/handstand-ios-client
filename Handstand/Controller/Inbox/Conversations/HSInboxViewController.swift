@@ -25,7 +25,7 @@ class HSInboxViewController: HSBaseCollectionFeedController {
     @IBOutlet weak var textFieldView: UIView!
     @IBOutlet weak var unreadMessagesLabel: UILabel!
     
-    var conversations: [HSConversation] = [HSConversation(), HSConversation(), HSConversation()]
+    var conversations: [HSConversation] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,11 +34,25 @@ class HSInboxViewController: HSBaseCollectionFeedController {
         
         self.dataSource = FilteredDataSource<HSConversation>(conversations)
         self.cellController = HSConversationCellController()
+        
+        fetchAPIData()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    fileprivate func fetchAPIData() {
+        HSChatNetworkHandler().getAllChats { result in
+            switch result {
+            case .success(let chats):
+                self.conversations = chats
+                self.dataSource = FilteredDataSource<HSConversation>(chats)
+            case .failure(let error):
+                self.checkAndShow(error: error)
+            }
+        }
     }
     
     override func viewWillLayoutSubviews() {
@@ -52,7 +66,7 @@ class HSInboxViewController: HSBaseCollectionFeedController {
     @IBAction func didSearchConversation(_ sender: UITextField) {
         if let searchedName = sender.text {
             dataSource?.filter(by: { conversation -> Bool in
-                return conversation.trainerName.hasPrefix(searchedName)
+                return conversation.name.hasPrefix(searchedName)
             })
         }
     }

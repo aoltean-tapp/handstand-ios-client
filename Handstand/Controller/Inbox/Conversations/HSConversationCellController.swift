@@ -15,21 +15,21 @@ class HSConversationCellController: CollectionCellController<HSConversation, HSC
     }
     
     override func configureCell(_ cell: HSConversationCell, for content: HSConversation, at indexPath: IndexPath) {
-        if content.sessionStatus == "confirmed" {
-            cell.sessionStatusImageView.image = #imageLiteral(resourceName: "icUpcomingSession")
-        } else if content.sessionStatus == "pending" {
-            cell.sessionStatusImageView.image = #imageLiteral(resourceName: "icPendingApproval")
-        } else if content.sessionStatus == "passed" {
-            cell.sessionStatusImageView.image = #imageLiteral(resourceName: "icApprovedSession")
-        }
-        cell.trainerImageView.sd_setImage(with: URL(string: content.trainerAvatar))
-        cell.trainerNameLabel.text = content.trainerName
-        cell.lastMessageLabel.text = content.lastMessage
+//        if content.sessionStatus == "confirmed" {
+//            cell.sessionStatusImageView.image = #imageLiteral(resourceName: "icUpcomingSession")
+//        } else if content.sessionStatus == "pending" {
+//            cell.sessionStatusImageView.image = #imageLiteral(resourceName: "icPendingApproval")
+//        } else if content.sessionStatus == "passed" {
+//            cell.sessionStatusImageView.image = #imageLiteral(resourceName: "icApprovedSession")
+//        }
+//        cell.trainerImageView.sd_setImage(with: URL(string: content.trainerAvatar))
+        cell.trainerNameLabel.text = content.name
+//        cell.lastMessageLabel.text = content.lastMessage
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "MMMM dd, yyyy | h:mm a"
-        cell.sessionDateLabel.text = "SESSION DATE: \(dateFormatter.string(from: content.sessionDate).uppercased())"
+//        dateFormatter.dateFormat = "MMMM dd, yyyy | h:mm a"
+//        cell.sessionDateLabel.text = "SESSION DATE: \(dateFormatter.string(from: content.sessionDate).uppercased())"
         dateFormatter.dateFormat = "h:mm a"
-        cell.lastContactedTimeLabel.text = dateFormatter.string(from: content.lastContactDate)
+        cell.lastContactedTimeLabel.text = dateFormatter.string(from: content.updatedAt)
     }
     
     override func didSelectContent(_ content: HSConversation, at indexPath: IndexPath, in collectionView: UICollectionView) {

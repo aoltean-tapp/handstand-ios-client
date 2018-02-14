@@ -1354,6 +1354,9 @@
 		BB695B912032E9BB00A31C86 /* HSClientChatBubbleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB695B8D2032E9BB00A31C86 /* HSClientChatBubbleCell.xib */; };
 		BB695B922032E9BB00A31C86 /* HSClientChatBubbleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB695B8D2032E9BB00A31C86 /* HSClientChatBubbleCell.xib */; };
 		BB695B932032E9BB00A31C86 /* HSClientChatBubbleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB695B8D2032E9BB00A31C86 /* HSClientChatBubbleCell.xib */; };
+		BB695BA52033015F00A31C86 /* HSChatNetworkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB695BA42033015E00A31C86 /* HSChatNetworkHandler.swift */; };
+		BB695BA62033015F00A31C86 /* HSChatNetworkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB695BA42033015E00A31C86 /* HSChatNetworkHandler.swift */; };
+		BB695BA72033015F00A31C86 /* HSChatNetworkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB695BA42033015E00A31C86 /* HSChatNetworkHandler.swift */; };
 		BB6EB84B202B530F006CC537 /* HSPastSessionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6EB849202B530F006CC537 /* HSPastSessionCell.swift */; };
 		BB6EB84C202B530F006CC537 /* HSPastSessionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6EB849202B530F006CC537 /* HSPastSessionCell.swift */; };
 		BB6EB84D202B5310006CC537 /* HSPastSessionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6EB849202B530F006CC537 /* HSPastSessionCell.swift */; };
@@ -1943,6 +1946,7 @@
 		BB695B852031F95200A31C86 /* HSTrainerChatBubbleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HSTrainerChatBubbleCell.xib; sourceTree = "<group>"; };
 		BB695B8C2032E9BB00A31C86 /* HSClientChatBubbleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSClientChatBubbleCell.swift; sourceTree = "<group>"; };
 		BB695B8D2032E9BB00A31C86 /* HSClientChatBubbleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HSClientChatBubbleCell.xib; sourceTree = "<group>"; };
+		BB695BA42033015E00A31C86 /* HSChatNetworkHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSChatNetworkHandler.swift; sourceTree = "<group>"; };
 		BB6EB849202B530F006CC537 /* HSPastSessionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSPastSessionCell.swift; sourceTree = "<group>"; };
 		BB6EB84A202B530F006CC537 /* HSPastSessionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HSPastSessionCell.xib; sourceTree = "<group>"; };
 		BB6EB852202C9427006CC537 /* HSInboxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSInboxViewController.swift; sourceTree = "<group>"; };
@@ -2682,6 +2686,7 @@
 			isa = PBXGroup;
 			children = (
 				76DF66681E960FD3008DC306 /* Module */,
+				BB695BA42033015E00A31C86 /* HSChatNetworkHandler.swift */,
 				76DF66691E961007008DC306 /* HSUserNetworkHandler.swift */,
 				07DC95781FD8200E0008A993 /* HSPlanQuizDataCenter.swift */,
 				76DF669A1E97BB42008DC306 /* HSVideoNetworkHandler.swift */,
@@ -4435,6 +4440,7 @@
 				07E3355F1F9779E400918613 /* HSBaseNavigationController.swift in Sources */,
 				07FDED0B1F600BE3004BC833 /* HSMenuViewController.swift in Sources */,
 				762A32451EE163960043E8D9 /* HSTileVideoCell.swift in Sources */,
+				BB695BA72033015F00A31C86 /* HSChatNetworkHandler.swift in Sources */,
 				072A5F271F97548300FE2FD9 /* HSAppDelegate.swift in Sources */,
 				BB695B902032E9BB00A31C86 /* HSClientChatBubbleCell.swift in Sources */,
 				762A32461EE163960043E8D9 /* UIImage+Utils.m in Sources */,
@@ -4747,6 +4753,7 @@
 				76ECF2D91E8DA2EE0094C2C8 /* ConstraintLayoutGuideDSL.swift in Sources */,
 				072A5F231F97541C00FE2FD9 /* HSAppDelegate.swift in Sources */,
 				76ECF2A01E8DA2EE0094C2C8 /* BMPlayerItem.swift in Sources */,
+				BB695BA52033015F00A31C86 /* HSChatNetworkHandler.swift in Sources */,
 				76C2527B1ECC952E002DC7C0 /* UGTapGestureRecognizer.m in Sources */,
 				BB695B8E2032E9BB00A31C86 /* HSClientChatBubbleCell.swift in Sources */,
 				764217F01E8D3A2900E4A5F1 /* HSVideoVideo.swift in Sources */,
@@ -5059,6 +5066,7 @@
 				07E3355D1F9779E400918613 /* HSBaseNavigationController.swift in Sources */,
 				07FDED0A1F600BE2004BC833 /* HSMenuViewController.swift in Sources */,
 				76E31F691ECB138600DD4979 /* HSTileVideoCell.swift in Sources */,
+				BB695BA62033015F00A31C86 /* HSChatNetworkHandler.swift in Sources */,
 				072A5F251F97548200FE2FD9 /* HSAppDelegate.swift in Sources */,
 				BB695B8F2032E9BB00A31C86 /* HSClientChatBubbleCell.swift in Sources */,
 				76E31F6A1ECB138600DD4979 /* UIImage+Utils.m in Sources */,
