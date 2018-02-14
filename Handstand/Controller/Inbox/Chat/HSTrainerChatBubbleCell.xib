@@ -24,7 +24,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="375" height="103"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7Fj-iy-ZeX">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icAvatarPlaceholder" translatesAutoresizingMaskIntoConstraints="NO" id="7Fj-iy-ZeX">
                         <rect key="frame" x="19" y="4" width="47" height="48"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="48" id="e5b-Ok-0rz"/>
@@ -100,6 +100,7 @@
         </collectionViewCell>
     </objects>
     <resources>
+        <image name="icAvatarPlaceholder" width="60" height="60"/>
         <image name="trainerChatBubble" width="280" height="68"/>
     </resources>
 </document>

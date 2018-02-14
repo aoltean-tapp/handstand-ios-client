@@ -9,16 +9,6 @@
 import Foundation
 import Alamofire
 
-struct HSChatAPIResult: Codable {
-    var result: String = ""
-    var chats: [HSConversation] = []
-    
-    enum CodingKeys: String, CodingKey {
-        case result
-        case chats
-    }
-}
-
 class HSChatNetworkHandler: HSNetworkHandler {
     
     func getAllChats(completionHandler: @escaping (_ result: Result<[HSConversation]>) -> ()) {
@@ -29,16 +19,30 @@ class HSChatNetworkHandler: HSNetworkHandler {
                     let decoder = JSONDecoder()
                     decoder.dateDecodingStrategy = .formatted(HSConversation.dateFormatter)
                     
-                    let apiResult = try! decoder.decode(HSChatAPIResult.self, from: responseData)
+                    let apiResult: HSConversationsAPIResult = try! decoder.decode(HSConversationsAPIResult.self, from: responseData)
                     completionHandler(Result<[HSConversation]>.success(apiResult.chats))
                 }
             case .failure(let error):
                 completionHandler(Result<[HSConversation]>.failure(error))
             }
-//            error = HSError()
-//            error?.code = eErrorType.internalServer
-//            error?.message = NSLocalizedString("internal_error", comment: "")
-//            completionHandler(false, error)
+        }
+    }
+    
+    func getChatMessages(for chatId: Int, completionHandler: @escaping (_ result: Result<[HSChatMessage]>) -> ()) {
+        self.request("https://api-stage.handstandapp.com/api/v3/chat/messages/\(chatId)", method: .get, parameters: [:]).responseJSON { response in
+            switch response.result {
+            case .success:
+                if let responseData = response.data {
+                    let decoder = JSONDecoder()
+                    decoder.dateDecodingStrategy = .formatted(HSChatMessage.dateFormatter)
+                    
+                    let apiResult: HSChatAPIResult = try! decoder.decode(HSChatAPIResult.self, from: responseData)
+                    let sortedChatMessages = apiResult.messages.sorted() { $0.0.updatedAt < $0.1.updatedAt }
+                    completionHandler(Result<[HSChatMessage]>.success(sortedChatMessages))
+                }
+            case .failure(let error):
+                completionHandler(Result<[HSChatMessage]>.failure(error))
+            }
         }
     }
 }

@@ -23,6 +23,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HSChatController" customModule="Handstand" customModuleProvider="target">
             <connections>
+                <outlet property="collectionView" destination="eIe-U0-qui" id="gPF-IA-ktD"/>
                 <outlet property="sessionDateLabel" destination="Cn9-li-22G" id="wnA-uM-nvU"/>
                 <outlet property="sessionStatusLabel" destination="our-UN-cNB" id="TLA-0b-Fyj"/>
                 <outlet property="trainerNameLabel" destination="Itn-Hf-syR" id="Z4R-ru-hV7"/>
@@ -71,7 +72,7 @@
                         <constraint firstItem="Itn-Hf-syR" firstAttribute="leading" secondItem="TbH-Ys-UPc" secondAttribute="leading" constant="17" id="uCf-hd-dHE"/>
                     </constraints>
                 </view>
-                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="eIe-U0-qui">
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="onDrag" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="eIe-U0-qui">
                     <rect key="frame" x="0.0" y="115" width="375" height="484"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="KHr-mS-0Bo">

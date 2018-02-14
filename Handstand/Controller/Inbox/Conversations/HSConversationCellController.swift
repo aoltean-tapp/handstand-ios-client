@@ -22,7 +22,7 @@ class HSConversationCellController: CollectionCellController<HSConversation, HSC
 //        } else if content.sessionStatus == "passed" {
 //            cell.sessionStatusImageView.image = #imageLiteral(resourceName: "icApprovedSession")
 //        }
-//        cell.trainerImageView.sd_setImage(with: URL(string: content.trainerAvatar))
+        cell.trainerImageView.sd_setImage(with: URL(string: content.trainerAvatar), placeholderImage: #imageLiteral(resourceName: "icAvatarPlaceholder"))
         cell.trainerNameLabel.text = content.name
 //        cell.lastMessageLabel.text = content.lastMessage
         let dateFormatter = DateFormatter()
@@ -34,6 +34,7 @@ class HSConversationCellController: CollectionCellController<HSConversation, HSC
     
     override func didSelectContent(_ content: HSConversation, at indexPath: IndexPath, in collectionView: UICollectionView) {
         let chatViewController = HSChatController()
+        chatViewController.conversation = content
         chatViewController.hidesBottomBarWhenPushed = true
         parentViewController?.navigationController?.pushViewController(chatViewController, animated: true)
     }

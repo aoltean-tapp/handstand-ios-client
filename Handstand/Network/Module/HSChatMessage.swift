@@ -1,46 +1,37 @@
 //
-//  HSConversation.swift
+//  HSChatMessage.swift
 //  Handstand
 //
-//  Created by Andrei Oltean on 2/12/18.
+//  Created by Andrei Oltean on 2/14/18.
 //  Copyright © 2018 Handstand. All rights reserved.
 //
 
 import Foundation
 
-//class HSConversation {
-//    var id: Int = 0
-//    var trainerId: Int = 0
-//    var trainerName: String = ""
-//    var trainerAvatar: String = ""
-//    var sessionStatus: String = ""
-//    var sessionDate: Date = Date()
-//    var lastContactDate: Date = Date()
-//    var lastMessage: String = ""
-//    var allMessages: [String] = []
-//}
-
-struct HSConversationsAPIResult: Codable {
+struct HSChatAPIResult: Codable {
     var result: String = ""
-    var chats: [HSConversation] = []
+    var messages: [HSChatMessage] = []
     
     enum CodingKeys: String, CodingKey {
         case result
-        case chats
+        case messages
     }
 }
 
-class HSConversation: Codable {
+class HSChatMessage: Codable {
+    
     var id: Int = 0
-    var name: String = ""
+    var chatId: Int = 0
+    var userId: Int = 0
+    var message: String = ""
     var createdAt: Date = Date()
     var updatedAt: Date = Date()
     
-    var trainerAvatar: String = ""
-    
     enum CodingKeys: String, CodingKey {
         case id
-        case name
+        case chatId = "chat_id"
+        case userId = "user_id"
+        case message
         case createdAt = "created_at"
         case updatedAt = "updated_at"
     }
