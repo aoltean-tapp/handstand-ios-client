@@ -13,7 +13,7 @@ import SDWebImage
 class HSOwnChatBubbleCellController: CollectionCellController<HSChatMessage, HSClientChatBubbleCell> {
     
     init() {
-        super.init(cellSize: CGSize(width: -1.0, height: 103.0))
+        super.init(cellSize: CGSize(width: -1.0, height: 65.0))
     }
     
     override func cellSize(for content: HSChatMessage, in collectionView: UICollectionView) -> CGSize {
@@ -33,5 +33,6 @@ class HSOwnChatBubbleCellController: CollectionCellController<HSChatMessage, HSC
     
     override func configureCell(_ cell: HSClientChatBubbleCell, for content: HSChatMessage, at indexPath: IndexPath) {
         cell.clientMessageLabel.text = content.message
+        cell.resizeChatBubble()
     }
 }

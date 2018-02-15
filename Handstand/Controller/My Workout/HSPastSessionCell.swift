@@ -88,7 +88,7 @@ class HSPastSessionCell: UITableViewCell {
         mainView.layer.shadowPath = shadowPath.cgPath
         mainView.layer.shadowOffset = CGSize(width: 0.0, height: 1.2)
         mainView.layer.shadowColor = UIColor.black.cgColor
-        mainView.layer.shadowOpacity = 0.5
+        mainView.layer.shadowOpacity = 0.3
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

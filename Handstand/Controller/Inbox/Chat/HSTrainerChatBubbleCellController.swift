@@ -13,7 +13,7 @@ import SDWebImage
 class HSTrainerChatBubbleCellController: CollectionCellController<(String, HSChatMessage), HSTrainerChatBubbleCell> {
     
     init() {
-        super.init(cellSize: CGSize(width: -1.0, height: 103.0))
+        super.init(cellSize: CGSize(width: -1.0, height: 71.0))
     }
     
     override func cellSize(for content: (String, HSChatMessage), in collectionView: UICollectionView) -> CGSize {
@@ -34,5 +34,6 @@ class HSTrainerChatBubbleCellController: CollectionCellController<(String, HSCha
     override func configureCell(_ cell: HSTrainerChatBubbleCell, for content: (String, HSChatMessage), at indexPath: IndexPath) {
         cell.trainerImageView.sd_setImage(with: URL(string: content.0), placeholderImage: #imageLiteral(resourceName: "icAvatarPlaceholder"))
         cell.trainerMessageLabel.text = content.1.message
+        cell.resizeChatBubble()
     }
 }

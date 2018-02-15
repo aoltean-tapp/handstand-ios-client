@@ -91,7 +91,7 @@ class HSUpcomingSessionCell: UITableViewCell {
         mainView.layer.shadowPath = shadowPath.cgPath
         mainView.layer.shadowOffset = CGSize(width: 0.0, height: 1.2)
         mainView.layer.shadowColor = UIColor.black.cgColor
-        mainView.layer.shadowOpacity = 0.5
+        mainView.layer.shadowOpacity = 0.3
         
         dayMonthView.layer.borderWidth = 1.5
         dayMonthView.layer.borderColor = #colorLiteral(red: 0.3529411765, green: 0.7764705882, blue: 0.5725490196, alpha: 1).cgColor
