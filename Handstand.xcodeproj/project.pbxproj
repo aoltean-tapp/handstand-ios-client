@@ -1324,6 +1324,9 @@
 		A5B4252A1F335111006C6EBA /* HSSubscribeTileInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5B425261F335111006C6EBA /* HSSubscribeTileInfoCell.xib */; };
 		A5B4252B1F335111006C6EBA /* HSSubscribeTileInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5B425261F335111006C6EBA /* HSSubscribeTileInfoCell.xib */; };
 		A5B4252C1F335111006C6EBA /* HSSubscribeTileInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5B425261F335111006C6EBA /* HSSubscribeTileInfoCell.xib */; };
+		BB2A12392035BC030018AAF5 /* HSRescheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2A12382035BC030018AAF5 /* HSRescheduleView.swift */; };
+		BB2A123A2035BC030018AAF5 /* HSRescheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2A12382035BC030018AAF5 /* HSRescheduleView.swift */; };
+		BB2A123B2035BC030018AAF5 /* HSRescheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2A12382035BC030018AAF5 /* HSRescheduleView.swift */; };
 		BB695B6B202DEF0E00A31C86 /* HSConversationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB695B69202DEF0E00A31C86 /* HSConversationCell.swift */; };
 		BB695B6C202DEF0E00A31C86 /* HSConversationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB695B69202DEF0E00A31C86 /* HSConversationCell.swift */; };
 		BB695B6D202DEF0E00A31C86 /* HSConversationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB695B69202DEF0E00A31C86 /* HSConversationCell.swift */; };
@@ -1945,6 +1948,7 @@
 		A5B425211F334A21006C6EBA /* UIColor+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Additions.swift"; sourceTree = "<group>"; };
 		A5B425251F335111006C6EBA /* HSSubscribeTileInfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSSubscribeTileInfoCell.swift; sourceTree = "<group>"; };
 		A5B425261F335111006C6EBA /* HSSubscribeTileInfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HSSubscribeTileInfoCell.xib; sourceTree = "<group>"; };
+		BB2A12382035BC030018AAF5 /* HSRescheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSRescheduleView.swift; sourceTree = "<group>"; };
 		BB695B69202DEF0E00A31C86 /* HSConversationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSConversationCell.swift; sourceTree = "<group>"; };
 		BB695B6A202DEF0E00A31C86 /* HSConversationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HSConversationCell.xib; sourceTree = "<group>"; };
 		BB695B7120318E3C00A31C86 /* HSConversationCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSConversationCellController.swift; sourceTree = "<group>"; };
@@ -3229,6 +3233,7 @@
 				BB695B8C2032E9BB00A31C86 /* HSClientChatBubbleCell.swift */,
 				BB695B8D2032E9BB00A31C86 /* HSClientChatBubbleCell.xib */,
 				BB695BB02034778E00A31C86 /* HSOwnChatBubbleCellController.swift */,
+				BB2A12382035BC030018AAF5 /* HSRescheduleView.swift */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -4334,6 +4339,7 @@
 				074E1D2A1FABEF1D00FDEB9D /* HSOriginalTrainerDetails.swift in Sources */,
 				079EB06B1FE6B16B00E6DA2B /* HSPlansHeaderTitleReusableView.swift in Sources */,
 				762A32FC1EE55C8B0043E8D9 /* UITableViewController+ISRefreshControl.m in Sources */,
+				BB2A123B2035BC030018AAF5 /* HSRescheduleView.swift in Sources */,
 				762A31E61EE163960043E8D9 /* ConstraintDSL.swift in Sources */,
 				762A31E71EE163960043E8D9 /* HSLoadingButton.swift in Sources */,
 				762A31E81EE163960043E8D9 /* HSTextfiledView.swift in Sources */,
@@ -4650,6 +4656,7 @@
 				76ECF2D31E8DA2EE0094C2C8 /* ConstraintDSL.swift in Sources */,
 				079EB0691FE6B16B00E6DA2B /* HSPlansHeaderTitleReusableView.swift in Sources */,
 				76DF66671E957ADC008DC306 /* HSLoadingButton.swift in Sources */,
+				BB2A12392035BC030018AAF5 /* HSRescheduleView.swift in Sources */,
 				7658D1631E937603006552E8 /* HSTextfiledView.swift in Sources */,
 				764EE6E21ECF22B200ED8BDB /* HSPaymentCardCell.swift in Sources */,
 				76ECF2E61E8DA2EE0094C2C8 /* ConstraintRelatableTarget.swift in Sources */,
@@ -4966,6 +4973,7 @@
 				074E1D281FABEF1D00FDEB9D /* HSOriginalTrainerDetails.swift in Sources */,
 				079EB06A1FE6B16B00E6DA2B /* HSPlansHeaderTitleReusableView.swift in Sources */,
 				762A32FB1EE55C8B0043E8D9 /* UITableViewController+ISRefreshControl.m in Sources */,
+				BB2A123A2035BC030018AAF5 /* HSRescheduleView.swift in Sources */,
 				76E31F0E1ECB138600DD4979 /* ConstraintDSL.swift in Sources */,
 				76E31F0F1ECB138600DD4979 /* HSLoadingButton.swift in Sources */,
 				76E31F101ECB138600DD4979 /* HSTextfiledView.swift in Sources */,

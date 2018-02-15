@@ -27,16 +27,26 @@ class HSChatController: HSBaseCollectionFeedController {
     @IBOutlet weak var sessionDateLabel: UILabel!
     @IBOutlet weak var sessionStatusLabel: UILabel!
     @IBOutlet weak var messageTextView: UITextView!
+    @IBOutlet weak var rescheduleView: HSRescheduleView!
+    @IBOutlet weak var rescheduleViewHeight: NSLayoutConstraint!
     
     var conversation: HSConversation?
     
     fileprivate var allMessages: [Any] = []
     fileprivate var chatManager: SocketManager!
     
+    var shouldReschedule: Bool = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         HSNavigationBarManager.shared.applyProperties(key: .type_21, viewController: self, titleView: getTitleView())
+        
+        if shouldReschedule {
+            rescheduleViewHeight.constant = 379.0
+        } else {
+            rescheduleViewHeight.constant = 0.0
+        }
         
         trainerNameLabel.text = conversation?.name
         
