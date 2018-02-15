@@ -10,7 +10,7 @@ import Foundation
 import Tapptitude
 import SDWebImage
 
-class HSOwnChatBubbleCellController: CollectionCellController<HSChatMessage, HSTrainerChatBubbleCell> {
+class HSOwnChatBubbleCellController: CollectionCellController<HSChatMessage, HSClientChatBubbleCell> {
     
     init() {
         super.init(cellSize: CGSize(width: -1.0, height: 103.0))
@@ -31,7 +31,7 @@ class HSOwnChatBubbleCellController: CollectionCellController<HSChatMessage, HST
         return size
     }
     
-    override func configureCell(_ cell: HSTrainerChatBubbleCell, for content: HSChatMessage, at indexPath: IndexPath) {
-        cell.trainerMessageLabel.text = content.message
+    override func configureCell(_ cell: HSClientChatBubbleCell, for content: HSChatMessage, at indexPath: IndexPath) {
+        cell.clientMessageLabel.text = content.message
     }
 }

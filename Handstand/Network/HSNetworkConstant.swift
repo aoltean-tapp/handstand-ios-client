@@ -12,12 +12,14 @@ import Foundation
 #if Handstand
 var url = "https://api.handstandapp.com/api/v2/" //- LIVE
 let base_url = "https://api.handstandapp.com/api/"
+let chat_url = "http://chat.handstandapp.com/"
 //    var url = "https://api-acceptance.handstandapp.com/api/v2/"
 #elseif HandstandStage
 //var url = "https://api-stage.handstandapp.com/api/v2/" // - DEV
 //let base_url = "https://api-stage.handstandapp.com/api/"
 var url = "https://api-acceptance.handstandapp.com/api/v2/" // - DEV
 let base_url = "https://api-acceptance.handstandapp.com/api/"
+let chat_url = "http://chat-stage.handstandapp.com/"
 #endif
 //#elseif HandstandLiveDev
 //var url = "https://api-acceptance.handstandapp.com/api/v2/" // - ACCEPTANCE

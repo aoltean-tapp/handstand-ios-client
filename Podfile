@@ -9,6 +9,7 @@ def shared_pods
     pod 'ReachabilitySwift'
     pod 'SDWebImage', '~>3.7'
     pod 'SwiftyJSON'
+    pod 'Socket.IO-Client-Swift'
 
     #    pod 'RMPZoomTransitionAnimator'
     pod 'AAViewAnimator'
@@ -38,7 +39,7 @@ end
 target 'Handstand' do
     shared_pods
     
-    swift4Targets = ['TTSegmentedControl']
+    swift4Targets = ['TTSegmentedControl', 'Socket.IO-Client-Swift']
 
     post_install do |installer|
         installer.pods_project.targets.each do |target|

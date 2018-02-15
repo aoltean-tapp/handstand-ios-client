@@ -24,6 +24,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HSChatController" customModule="Handstand" customModuleProvider="target">
             <connections>
                 <outlet property="collectionView" destination="eIe-U0-qui" id="gPF-IA-ktD"/>
+                <outlet property="messageTextView" destination="jDY-EY-tOI" id="AaF-cD-kdy"/>
                 <outlet property="sessionDateLabel" destination="Cn9-li-22G" id="wnA-uM-nvU"/>
                 <outlet property="sessionStatusLabel" destination="our-UN-cNB" id="TLA-0b-Fyj"/>
                 <outlet property="trainerNameLabel" destination="Itn-Hf-syR" id="Z4R-ru-hV7"/>
@@ -45,13 +46,13 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cn9-li-22G">
-                            <rect key="frame" x="17" y="54" width="254" height="14.5"/>
+                            <rect key="frame" x="17" y="54" width="254" height="14"/>
                             <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
                             <color key="textColor" red="0.46666666670000001" green="0.46666666670000001" blue="0.46666666670000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="our-UN-cNB">
-                            <rect key="frame" x="281" y="54.5" width="75" height="14.5"/>
+                            <rect key="frame" x="281" y="54.5" width="75" height="14"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="75" id="3r2-gf-Sec"/>
                             </constraints>
@@ -98,6 +99,9 @@
                             <color key="textColor" red="0.56470588239999997" green="0.56470588239999997" blue="0.56470588239999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="13"/>
                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="z8D-zq-tfH"/>
+                            </connections>
                         </textView>
                         <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sTa-9x-Qx3">
                             <rect key="frame" x="315" y="19" width="40" height="30"/>
@@ -105,6 +109,9 @@
                             <state key="normal" title="SEND">
                                 <color key="titleColor" red="0.3529411764705882" green="0.77647058823529413" blue="0.5725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
+                            <connections>
+                                <action selector="sendMessage:" destination="-1" eventType="touchUpInside" id="Vr9-Mh-UqB"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

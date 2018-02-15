@@ -12,7 +12,7 @@ import Alamofire
 class HSChatNetworkHandler: HSNetworkHandler {
     
     func getAllChats(completionHandler: @escaping (_ result: Result<[HSConversation]>) -> ()) {
-        self.request("https://api-stage.handstandapp.com/api/v3/chat/get_all", method: .get, parameters: [:]).responseJSON { response in
+        self.request("https://api-stage.handstandapp.com/api/v4/chat/get_all", method: .get, parameters: [:]).responseJSON { response in
             switch response.result {
             case .success:
                 if let responseData = response.data {
@@ -29,7 +29,7 @@ class HSChatNetworkHandler: HSNetworkHandler {
     }
     
     func getChatMessages(for chatId: Int, completionHandler: @escaping (_ result: Result<[HSChatMessage]>) -> ()) {
-        self.request("https://api-stage.handstandapp.com/api/v3/chat/messages/\(chatId)", method: .get, parameters: [:]).responseJSON { response in
+        self.request("https://api-stage.handstandapp.com/api/v4/chat/messages/\(chatId)", method: .get, parameters: [:]).responseJSON { response in
             switch response.result {
             case .success:
                 if let responseData = response.data {
