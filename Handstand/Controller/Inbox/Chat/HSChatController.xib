@@ -79,7 +79,7 @@
                         <constraint firstItem="Itn-Hf-syR" firstAttribute="leading" secondItem="TbH-Ys-UPc" secondAttribute="leading" constant="17" id="uCf-hd-dHE"/>
                     </constraints>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z9M-Aj-gvd" customClass="HSRescheduleView" customModule="Handstand" customModuleProvider="target">
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z9M-Aj-gvd" customClass="HSRescheduleView" customModule="Handstand" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="100" width="375" height="0.0"/>
                     <subviews>
                         <view clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C8v-sa-Aot">
