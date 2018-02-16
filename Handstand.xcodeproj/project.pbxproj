@@ -1333,6 +1333,15 @@
 		BB2A12412036DF610018AAF5 /* HSReviewTrainerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB2A123D2036DF610018AAF5 /* HSReviewTrainerController.xib */; };
 		BB2A12422036DF610018AAF5 /* HSReviewTrainerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB2A123D2036DF610018AAF5 /* HSReviewTrainerController.xib */; };
 		BB2A12432036DF610018AAF5 /* HSReviewTrainerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB2A123D2036DF610018AAF5 /* HSReviewTrainerController.xib */; };
+		BB2A12462037084D0018AAF5 /* HSInboxNotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2A12442037084D0018AAF5 /* HSInboxNotificationCell.swift */; };
+		BB2A12472037084D0018AAF5 /* HSInboxNotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2A12442037084D0018AAF5 /* HSInboxNotificationCell.swift */; };
+		BB2A12482037084D0018AAF5 /* HSInboxNotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2A12442037084D0018AAF5 /* HSInboxNotificationCell.swift */; };
+		BB2A12492037084D0018AAF5 /* HSInboxNotificationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB2A12452037084D0018AAF5 /* HSInboxNotificationCell.xib */; };
+		BB2A124A2037084D0018AAF5 /* HSInboxNotificationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB2A12452037084D0018AAF5 /* HSInboxNotificationCell.xib */; };
+		BB2A124B2037084D0018AAF5 /* HSInboxNotificationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB2A12452037084D0018AAF5 /* HSInboxNotificationCell.xib */; };
+		BB2A124D20370B270018AAF5 /* HSInboxNotificationCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2A124C20370B270018AAF5 /* HSInboxNotificationCellController.swift */; };
+		BB2A124E20370B270018AAF5 /* HSInboxNotificationCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2A124C20370B270018AAF5 /* HSInboxNotificationCellController.swift */; };
+		BB2A124F20370B270018AAF5 /* HSInboxNotificationCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2A124C20370B270018AAF5 /* HSInboxNotificationCellController.swift */; };
 		BB695B6B202DEF0E00A31C86 /* HSConversationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB695B69202DEF0E00A31C86 /* HSConversationCell.swift */; };
 		BB695B6C202DEF0E00A31C86 /* HSConversationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB695B69202DEF0E00A31C86 /* HSConversationCell.swift */; };
 		BB695B6D202DEF0E00A31C86 /* HSConversationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB695B69202DEF0E00A31C86 /* HSConversationCell.swift */; };
@@ -1957,6 +1966,9 @@
 		BB2A12382035BC030018AAF5 /* HSRescheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSRescheduleView.swift; sourceTree = "<group>"; };
 		BB2A123C2036DF610018AAF5 /* HSReviewTrainerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSReviewTrainerController.swift; sourceTree = "<group>"; };
 		BB2A123D2036DF610018AAF5 /* HSReviewTrainerController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HSReviewTrainerController.xib; sourceTree = "<group>"; };
+		BB2A12442037084D0018AAF5 /* HSInboxNotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSInboxNotificationCell.swift; sourceTree = "<group>"; };
+		BB2A12452037084D0018AAF5 /* HSInboxNotificationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HSInboxNotificationCell.xib; sourceTree = "<group>"; };
+		BB2A124C20370B270018AAF5 /* HSInboxNotificationCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSInboxNotificationCellController.swift; sourceTree = "<group>"; };
 		BB695B69202DEF0E00A31C86 /* HSConversationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSConversationCell.swift; sourceTree = "<group>"; };
 		BB695B6A202DEF0E00A31C86 /* HSConversationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HSConversationCell.xib; sourceTree = "<group>"; };
 		BB695B7120318E3C00A31C86 /* HSConversationCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSConversationCellController.swift; sourceTree = "<group>"; };
@@ -3226,6 +3238,9 @@
 				BB695B69202DEF0E00A31C86 /* HSConversationCell.swift */,
 				BB695B6A202DEF0E00A31C86 /* HSConversationCell.xib */,
 				BB695B7120318E3C00A31C86 /* HSConversationCellController.swift */,
+				BB2A12442037084D0018AAF5 /* HSInboxNotificationCell.swift */,
+				BB2A12452037084D0018AAF5 /* HSInboxNotificationCell.xib */,
+				BB2A124C20370B270018AAF5 /* HSInboxNotificationCellController.swift */,
 			);
 			path = Conversations;
 			sourceTree = "<group>";
@@ -3453,6 +3468,7 @@
 				BB2A12432036DF610018AAF5 /* HSReviewTrainerController.xib in Resources */,
 				762A329E1EE163960043E8D9 /* HSSubcriptionController.xib in Resources */,
 				762A329F1EE163960043E8D9 /* HSHomeComingSoonView.xib in Resources */,
+				BB2A124B2037084D0018AAF5 /* HSInboxNotificationCell.xib in Resources */,
 				0734A0121FC74B3E00407845 /* HSProfileSettingsCell.xib in Resources */,
 				07EE73991FCC182500AAF34E /* HSSignupInfoCell.xib in Resources */,
 				BB695B70202DEF0E00A31C86 /* HSConversationCell.xib in Resources */,
@@ -3695,6 +3711,7 @@
 				07E8856E1FEA76AB00B8B408 /* SourceSansPro-SemiboldIt.otf in Resources */,
 				07E885AB1FEA7E8F00B8B408 /* Lato-Regular.ttf in Resources */,
 				07E885AC1FEA7E8F00B8B408 /* Lato-Semibold.ttf in Resources */,
+				BB2A12492037084D0018AAF5 /* HSInboxNotificationCell.xib in Resources */,
 				76ECF2CC1E8DA2EE0094C2C8 /* LICENSE in Resources */,
 				07E885A11FEA7E8F00B8B408 /* Lato-BoldItalic.ttf in Resources */,
 				071CBF6520068FA60055A920 /* HSNewSubscriptionHeaderCell.xib in Resources */,
@@ -3775,6 +3792,7 @@
 				BB2A12422036DF610018AAF5 /* HSReviewTrainerController.xib in Resources */,
 				76E31FB81ECB138600DD4979 /* HSSubcriptionController.xib in Resources */,
 				76E31FB91ECB138600DD4979 /* HSHomeComingSoonView.xib in Resources */,
+				BB2A124A2037084D0018AAF5 /* HSInboxNotificationCell.xib in Resources */,
 				0734A0111FC74B3E00407845 /* HSProfileSettingsCell.xib in Resources */,
 				07EE73981FCC182500AAF34E /* HSSignupInfoCell.xib in Resources */,
 				BB695B6F202DEF0E00A31C86 /* HSConversationCell.xib in Resources */,
@@ -4315,6 +4333,7 @@
 				07828B901FDF57A000EADC0A /* HSQuizGetResponse.swift in Sources */,
 				762A31C91EE163960043E8D9 /* HSOnboardingServiceVideo.swift in Sources */,
 				0797B4AD1F39DDE80098E75A /* HSTilePushNotificationCell.swift in Sources */,
+				BB2A12482037084D0018AAF5 /* HSInboxNotificationCell.swift in Sources */,
 				762A31CA1EE163960043E8D9 /* HSPlanConfirmationController.swift in Sources */,
 				762A31CB1EE163960043E8D9 /* HSValidationTextfield.swift in Sources */,
 				762A31CC1EE163960043E8D9 /* UGTextView.m in Sources */,
@@ -4386,6 +4405,7 @@
 				07B71D531F99F9EA000B60A5 /* HSAppManager.swift in Sources */,
 				762A31F61EE163960043E8D9 /* NVActivityIndicatorViewable.swift in Sources */,
 				07FDED551F600FE1004BC833 /* HSPhneVerificationQueryController.swift in Sources */,
+				BB2A124F20370B270018AAF5 /* HSInboxNotificationCellController.swift in Sources */,
 				078E411B1F61456A00222191 /* HSPackageSuccessController.swift in Sources */,
 				762A31F71EE163960043E8D9 /* UILayoutSupport+Extensions.swift in Sources */,
 				762A31F81EE163960043E8D9 /* ConstraintMultiplierTarget.swift in Sources */,
@@ -4633,6 +4653,7 @@
 				07828B8C1FDF571C00EADC0A /* HSQuizGetResponse.swift in Sources */,
 				7623F0F41EB9021600C245A2 /* HSPlanConfirmationController.swift in Sources */,
 				7658D1611E937582006552E8 /* HSValidationTextfield.swift in Sources */,
+				BB2A12462037084D0018AAF5 /* HSInboxNotificationCell.swift in Sources */,
 				76F870611EC47E32004FD5CC /* UGTextView.m in Sources */,
 				766D02B51EC1DE3600C66B54 /* HSMyWorkoutController.swift in Sources */,
 				07FDED411F600F89004BC833 /* CountrySelectionTableViewCell.swift in Sources */,
@@ -4704,6 +4725,7 @@
 				76ECF2E21E8DA2EE0094C2C8 /* ConstraintMultiplierTarget.swift in Sources */,
 				76ECF29D1E8DA2EE0094C2C8 /* BMPlayer.swift in Sources */,
 				76ECF2B11E8DA2EE0094C2C8 /* NVActivityIndicatorAnimationBallScale.swift in Sources */,
+				BB2A124D20370B270018AAF5 /* HSInboxNotificationCellController.swift in Sources */,
 				76ECF2C01E8DA2EE0094C2C8 /* NVActivityIndicatorAnimationOrbit.swift in Sources */,
 				76BBDD841EBC5E0D00DBC420 /* HSTileUpcomingSessionCell.swift in Sources */,
 				76ECF2AC1E8DA2EE0094C2C8 /* NVActivityIndicatorAnimationBallPulse.swift in Sources */,
@@ -4951,6 +4973,7 @@
 				07828B8E1FDF57A000EADC0A /* HSQuizGetResponse.swift in Sources */,
 				76E31EF21ECB138600DD4979 /* HSOnboardingServiceVideo.swift in Sources */,
 				0797B4AC1F39DDE80098E75A /* HSTilePushNotificationCell.swift in Sources */,
+				BB2A12472037084D0018AAF5 /* HSInboxNotificationCell.swift in Sources */,
 				76E31EF31ECB138600DD4979 /* HSPlanConfirmationController.swift in Sources */,
 				76E31EF41ECB138600DD4979 /* HSValidationTextfield.swift in Sources */,
 				76E31EF51ECB138600DD4979 /* UGTextView.m in Sources */,
@@ -5022,6 +5045,7 @@
 				07B71D521F99F9EA000B60A5 /* HSAppManager.swift in Sources */,
 				76E31F1D1ECB138600DD4979 /* NVActivityIndicatorViewable.swift in Sources */,
 				07FDED4D1F600FE0004BC833 /* HSPhneVerificationQueryController.swift in Sources */,
+				BB2A124E20370B270018AAF5 /* HSInboxNotificationCellController.swift in Sources */,
 				078E411A1F61456A00222191 /* HSPackageSuccessController.swift in Sources */,
 				76E31F1E1ECB138600DD4979 /* UILayoutSupport+Extensions.swift in Sources */,
 				76E31F1F1ECB138600DD4979 /* ConstraintMultiplierTarget.swift in Sources */,
