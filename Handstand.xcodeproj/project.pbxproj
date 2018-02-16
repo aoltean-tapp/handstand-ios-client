@@ -1327,6 +1327,12 @@
 		BB2A12392035BC030018AAF5 /* HSRescheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2A12382035BC030018AAF5 /* HSRescheduleView.swift */; };
 		BB2A123A2035BC030018AAF5 /* HSRescheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2A12382035BC030018AAF5 /* HSRescheduleView.swift */; };
 		BB2A123B2035BC030018AAF5 /* HSRescheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2A12382035BC030018AAF5 /* HSRescheduleView.swift */; };
+		BB2A123E2036DF610018AAF5 /* HSReviewTrainerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2A123C2036DF610018AAF5 /* HSReviewTrainerController.swift */; };
+		BB2A123F2036DF610018AAF5 /* HSReviewTrainerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2A123C2036DF610018AAF5 /* HSReviewTrainerController.swift */; };
+		BB2A12402036DF610018AAF5 /* HSReviewTrainerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2A123C2036DF610018AAF5 /* HSReviewTrainerController.swift */; };
+		BB2A12412036DF610018AAF5 /* HSReviewTrainerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB2A123D2036DF610018AAF5 /* HSReviewTrainerController.xib */; };
+		BB2A12422036DF610018AAF5 /* HSReviewTrainerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB2A123D2036DF610018AAF5 /* HSReviewTrainerController.xib */; };
+		BB2A12432036DF610018AAF5 /* HSReviewTrainerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB2A123D2036DF610018AAF5 /* HSReviewTrainerController.xib */; };
 		BB695B6B202DEF0E00A31C86 /* HSConversationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB695B69202DEF0E00A31C86 /* HSConversationCell.swift */; };
 		BB695B6C202DEF0E00A31C86 /* HSConversationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB695B69202DEF0E00A31C86 /* HSConversationCell.swift */; };
 		BB695B6D202DEF0E00A31C86 /* HSConversationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB695B69202DEF0E00A31C86 /* HSConversationCell.swift */; };
@@ -1949,6 +1955,8 @@
 		A5B425251F335111006C6EBA /* HSSubscribeTileInfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSSubscribeTileInfoCell.swift; sourceTree = "<group>"; };
 		A5B425261F335111006C6EBA /* HSSubscribeTileInfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HSSubscribeTileInfoCell.xib; sourceTree = "<group>"; };
 		BB2A12382035BC030018AAF5 /* HSRescheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSRescheduleView.swift; sourceTree = "<group>"; };
+		BB2A123C2036DF610018AAF5 /* HSReviewTrainerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSReviewTrainerController.swift; sourceTree = "<group>"; };
+		BB2A123D2036DF610018AAF5 /* HSReviewTrainerController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HSReviewTrainerController.xib; sourceTree = "<group>"; };
 		BB695B69202DEF0E00A31C86 /* HSConversationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSConversationCell.swift; sourceTree = "<group>"; };
 		BB695B6A202DEF0E00A31C86 /* HSConversationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HSConversationCell.xib; sourceTree = "<group>"; };
 		BB695B7120318E3C00A31C86 /* HSConversationCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSConversationCellController.swift; sourceTree = "<group>"; };
@@ -3234,6 +3242,8 @@
 				BB695B8D2032E9BB00A31C86 /* HSClientChatBubbleCell.xib */,
 				BB695BB02034778E00A31C86 /* HSOwnChatBubbleCellController.swift */,
 				BB2A12382035BC030018AAF5 /* HSRescheduleView.swift */,
+				BB2A123C2036DF610018AAF5 /* HSReviewTrainerController.swift */,
+				BB2A123D2036DF610018AAF5 /* HSReviewTrainerController.xib */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -3440,6 +3450,7 @@
 				762A329C1EE163960043E8D9 /* HSTileLocationCell.xib in Resources */,
 				762A329D1EE163960043E8D9 /* FacebookSDKStrings.bundle in Resources */,
 				071CBF6720068FA60055A920 /* HSNewSubscriptionHeaderCell.xib in Resources */,
+				BB2A12432036DF610018AAF5 /* HSReviewTrainerController.xib in Resources */,
 				762A329E1EE163960043E8D9 /* HSSubcriptionController.xib in Resources */,
 				762A329F1EE163960043E8D9 /* HSHomeComingSoonView.xib in Resources */,
 				0734A0121FC74B3E00407845 /* HSProfileSettingsCell.xib in Resources */,
@@ -3624,6 +3635,7 @@
 				07E885A01FEA7E8F00B8B408 /* Lato-Bold.ttf in Resources */,
 				76BBDD8F1EBC812300DBC420 /* HSTileBookCell.xib in Resources */,
 				07FF4F111FE69D5D002DF7CD /* HSChoosePlanCVCell.xib in Resources */,
+				BB2A12412036DF610018AAF5 /* HSReviewTrainerController.xib in Resources */,
 				76DF667B1E965E1A008DC306 /* HSHomeController.xib in Resources */,
 				07CC5A1C1FC2D03A004A1963 /* HSLoginController.xib in Resources */,
 				07FDED401F600F89004BC833 /* CountryCodeSelectionViewController.xib in Resources */,
@@ -3760,6 +3772,7 @@
 				76E31FB71ECB138600DD4979 /* HSTileLocationCell.xib in Resources */,
 				76C6F8D81EDD8DCB00ABB6D1 /* FacebookSDKStrings.bundle in Resources */,
 				071CBF6620068FA60055A920 /* HSNewSubscriptionHeaderCell.xib in Resources */,
+				BB2A12422036DF610018AAF5 /* HSReviewTrainerController.xib in Resources */,
 				76E31FB81ECB138600DD4979 /* HSSubcriptionController.xib in Resources */,
 				76E31FB91ECB138600DD4979 /* HSHomeComingSoonView.xib in Resources */,
 				0734A0111FC74B3E00407845 /* HSProfileSettingsCell.xib in Resources */,
@@ -3914,6 +3927,7 @@
 				"${BUILT_PRODUCTS_DIR}/AAViewAnimator/AAViewAnimator.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
 				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
@@ -3935,6 +3949,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AAViewAnimator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cosmos.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
@@ -4021,6 +4036,7 @@
 				"${BUILT_PRODUCTS_DIR}/AAViewAnimator/AAViewAnimator.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
 				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
@@ -4042,6 +4058,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AAViewAnimator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cosmos.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
@@ -4197,6 +4214,7 @@
 				"${BUILT_PRODUCTS_DIR}/AAViewAnimator/AAViewAnimator.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
 				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
@@ -4218,6 +4236,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AAViewAnimator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cosmos.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
@@ -4452,6 +4471,7 @@
 				762A32381EE163960043E8D9 /* LayoutConstraintItem.swift in Sources */,
 				762A32391EE163960043E8D9 /* HSOnboardingServiceHandler.swift in Sources */,
 				07828B861FDF30B800EADC0A /* HSGetPlanListResponse.swift in Sources */,
+				BB2A12402036DF610018AAF5 /* HSReviewTrainerController.swift in Sources */,
 				07828B871FDF30B800EADC0A /* HSPlanDetails.swift in Sources */,
 				762A32F61EE55C8B0043E8D9 /* UIColor+ISRefreshControl.m in Sources */,
 				762A323A1EE163960043E8D9 /* NVActivityIndicatorAnimationBallRotateChase.swift in Sources */,
@@ -4769,6 +4789,7 @@
 				762A32F41EE55C8A0043E8D9 /* UIColor+ISRefreshControl.m in Sources */,
 				76ECF2B01E8DA2EE0094C2C8 /* NVActivityIndicatorAnimationBallRotateChase.swift in Sources */,
 				07E3355B1F9779B600918613 /* HSBaseController.swift in Sources */,
+				BB2A123E2036DF610018AAF5 /* HSReviewTrainerController.swift in Sources */,
 				07828B7D1FDF308600EADC0A /* HSPlanDetails.swift in Sources */,
 				76B4A0B41EA79D7D00CB059E /* HSTrainerFilterView.swift in Sources */,
 				76DF66621E951617008DC306 /* UGTextfield.m in Sources */,
@@ -5086,6 +5107,7 @@
 				76E31F5C1ECB138600DD4979 /* LayoutConstraintItem.swift in Sources */,
 				76E31F5D1ECB138600DD4979 /* HSOnboardingServiceHandler.swift in Sources */,
 				07828B811FDF30B800EADC0A /* HSGetPlanListResponse.swift in Sources */,
+				BB2A123F2036DF610018AAF5 /* HSReviewTrainerController.swift in Sources */,
 				07828B821FDF30B800EADC0A /* HSPlanDetails.swift in Sources */,
 				762A32F51EE55C8A0043E8D9 /* UIColor+ISRefreshControl.m in Sources */,
 				76E31F5E1ECB138600DD4979 /* NVActivityIndicatorAnimationBallRotateChase.swift in Sources */,

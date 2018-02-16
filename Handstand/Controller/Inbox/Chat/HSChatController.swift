@@ -29,6 +29,7 @@ class HSChatController: HSBaseCollectionFeedController {
     @IBOutlet weak var messageTextView: UITextView!
     @IBOutlet weak var rescheduleView: HSRescheduleView!
     @IBOutlet weak var rescheduleViewHeight: NSLayoutConstraint!
+    @IBOutlet weak var reviewOverlayView: UIView!
     
     var conversation: HSConversation?
     
@@ -36,6 +37,7 @@ class HSChatController: HSBaseCollectionFeedController {
     fileprivate var chatManager: SocketManager!
     
     var shouldReschedule: Bool = false
+    var shouldReview: Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,6 +48,12 @@ class HSChatController: HSBaseCollectionFeedController {
             rescheduleViewHeight.constant = 379.0
         } else {
             rescheduleViewHeight.constant = 0.0
+        }
+        
+        if shouldReview {
+            reviewOverlayView.isHidden = false
+        } else {
+            reviewOverlayView.isHidden = true
         }
         
         trainerNameLabel.text = conversation?.name
@@ -88,9 +96,8 @@ class HSChatController: HSBaseCollectionFeedController {
         config.insert(.compress)
 //        config.insert(.forceWebsockets(true))
 
-        let manager = SocketManager(socketURL: URL(string: chat_url)!, config: config)
-        self.chatManager = manager
-        let socket = manager.defaultSocket
+        chatManager = SocketManager(socketURL: URL(string: chat_url)!, config: config)
+        let socket = chatManager.defaultSocket
         
         socket.on(clientEvent: .connect) { data, ack in
             self.chatManager.defaultSocket.emitWithAck("authentication", HSUserManager.shared.accessToken ?? "").timingOut(after: 10, callback: { response in
@@ -125,6 +132,11 @@ class HSChatController: HSBaseCollectionFeedController {
                 messageTextView.text = ""
             }
         }
+    }
+    
+    @IBAction func reviewTrainer(_ sender: Any) {
+        let reviewController = HSReviewTrainerController()
+        navigationController?.pushViewController(reviewController, animated: true)
     }
 }
 

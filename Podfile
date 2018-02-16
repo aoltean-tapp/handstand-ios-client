@@ -18,6 +18,7 @@ def shared_pods
     pod 'IQKeyboardManagerSwift'
     pod 'Tapptitude', :path => '.'
     pod 'TTSegmentedControl'
+    pod 'Cosmos'
 
     #Google
     pod 'GoogleMaps'
@@ -39,7 +40,7 @@ end
 target 'Handstand' do
     shared_pods
     
-    swift4Targets = ['TTSegmentedControl', 'Socket.IO-Client-Swift']
+    swift4Targets = ['TTSegmentedControl', 'Socket.IO-Client-Swift', 'Cosmos']
 
     post_install do |installer|
         installer.pods_project.targets.each do |target|
